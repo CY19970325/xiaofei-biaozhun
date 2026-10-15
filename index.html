@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head>
-<script id="help-doc-export-data">window.__HELP_DOC_EXPORT__={"pickup_help_doc_v1":"1.消费点展示屏 提供「取餐码-制作中」「取餐码-待取餐」两个消费组件，可拖入画板，每个组件同一页面只能设置一次。\n2. 组件仅展示取餐码；「备餐中 / 请取餐」标题放在页面背景上。\n3. 支持配置字号、字体颜色、数量、列数、行/列间距、位置尺寸；拖拽缩放时列数与间距自动适配，拖拽时不可超出画布。\n4.号码从上到下从左到右排序，新号码排前面\n5.有新的待取餐码，悬浮提示  请 xxx号取餐展示2s后消失，同时语音播报，播报两次，间隔1s","call_screen_help_doc_v1":"1. 在「消费点设置」勾选一个消费点后，通过「更多操作 → 叫号屏设置」打开配置。该功能点默认关闭（3001024）\n2. 弹窗展示当前消费点名称、编号，并需选择关联叫号屏，单选，选项取信息推送已接入的FB6132_M设备。\n3. 保存后，该消费点与叫号屏建立关联，消费点待取餐/制作中的点餐订单变化时，定时下发设备","stall_rank_help_doc_v1":"1. 「消费点就餐人数排行」为整块消费组件，用于展示档口就餐人数排行，每个页面只能设置一次。\n2. 前三名固定展台展示；展示数量可选 TOP 3～TOP 10，超出前三的在列表区展示。\n3.该设备绑定的消费点在前三名，则展示当前档口的标签。\n4.就餐人数\n当前月的消费次数，除以本月的工作日天数（默认按消费设置的企业日历，未设置则按自然天数），得到日均消费数，即消费人数\n5.列表滚动按固定时间从下往上滚动，滚动到最后一条数据后，自动从第4名开始展示\n","recharge_import_help_doc_v1":"烽火通信\n1、充值名单审批-充值名单导入列表增加总金额，该导入文件校验通过数据的总充值金额\n2、增加配置项，充值名单审批通过后是否自动确认，该项目需要人工确认","cost_center_summary_help_doc_v1":"1、消费报表增加定制报表，成本中心汇总统计（烽火通信）\n默认关闭，查询（3001979）、导出（3001980）\n2、成本中心+部门树+钱包为唯一值，统计筛选时段内消费金额，按消费时的部门和成本中心数据。同一成本中心的人员在不同部门，按多条展示，同一个树下不同级别的也拆开多条。只统计一二三四级的，五级及以上不统计。\n3、相同成本中心的排在一起\n4、已和现场确认，最多到四级部门，同一部门的员工可能属于不同成本中心，但一个成本中心的员工部门均相同。\n5、筛选条件：消费日期（默认近7天，按交易时间，实时统计），成本中心（模糊搜索、多选），所属部门、商户（模糊搜索，树状多选，商户数据过滤），钱包（多选）\n6、数据权：商户数据权控制消费金额（消费点-场所-商户）","person_wallet_stats_help_doc_v1":"1、消费报表增加人员钱包消费统计（烽火通信）\n默认关闭，查询（3001981），导出（3001982）\n2、只统计无成本中心的人员\n人员+钱包唯一统计筛选时间内的消费金额\n展示人员当前的各级部门\n3、筛选条件：消费日期（默认近7天，按交易时间，实时统计），所属部门（树状模糊搜索、多选），商户（树状模糊搜索、多选，数据权过滤），钱包（多选），人员编号和姓名模糊搜索\n4、数据权：商户数据权控制\n","dept_daily_stats_help_doc_v1":"1、消费报表新增部门日消费统计\n默认关闭，查询（3001983）、导出（3001984）\n2、按日统计各个二级部门及下面所有子级部门的消费金额，以及总计消费金额\n二级部门表头按消费时的部门数据动态生成\n3、按日期从早到晚排序\n4、底部增加两行数据，统计各个二级部门及下面所有子级部门筛选时间内的刷卡消费次数和刷卡消费金额，两行数据固定在每个页面底部\n5、筛选：消费日期（默认当月，按交易时间，实时统计）","dept_today_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，当日部门消费统计\n默认关闭，查询（3001985）、导出（3001986）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计当天的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、消费组筛选多选","dept_history_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，历史消费组消费统计\n默认关闭，查询（3001987）、导出（3001988）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计历史的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、筛选条件：消费日期（默认近7天，例如当天是10.14，10.8 0点至10.15 0点），实时统计，消费组筛选多选","dining_trend_help_doc_v1":"江西人社厅定制首页\n1. 系统管理的首页替换成「就餐人数趋势」折线图，按去重就餐人数统计。\n2. 右上角筛选卡为「月」「年」，默认展示月。\n3. 「月」展示当月每日数据，底部显示日期标签（如 09-01）。\n4. 「年」展示当年每月数据，底部显示月份标签（如 01月）。\n5. 尚未到达的日期、月份不展示。\n6. 无记录的自然日 / 自然月保留节点，数值为 0。\n7. 当日、当月只展示已产生的真实值，不做补数预估。\n8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。\n9.按消费组数据权过滤"};</script>
+<script id="help-doc-export-data">window.__HELP_DOC_EXPORT__={"pickup_help_doc_v1":"1.消费点展示屏 提供「取餐码-制作中」「取餐码-待取餐」两个消费组件，可拖入画板，每个组件同一页面只能设置一次。\n2. 组件仅展示取餐码；「备餐中 / 请取餐」标题放在页面背景上。\n3. 支持配置字号、字体颜色、数量、列数、行/列间距、位置尺寸；拖拽缩放时列数与间距自动适配，拖拽时不可超出画布。\n4.号码从上到下从左到右排序，新号码排前面\n5.有新的待取餐码，悬浮提示  请 xxx号取餐展示2s后消失，同时语音播报，播报两次，间隔1s","call_screen_help_doc_v1":"1. 在「消费点设置」勾选一个消费点后，通过「更多操作 → 叫号屏设置」打开配置。该功能点默认关闭（3001024）\n2. 弹窗展示当前消费点名称、编号，并需选择关联叫号屏，单选，选项取信息推送已接入的FB6132_M设备。\n3. 保存后，该消费点与叫号屏建立关联，消费点待取餐/制作中的点餐订单变化时，定时下发设备","stall_rank_help_doc_v1":"1. 「消费点就餐人数排行」为整块消费组件，用于展示档口就餐人数排行，每个页面只能设置一次。\n2. 前三名固定展台展示；展示数量可选 TOP 3～TOP 10，超出前三的在列表区展示。\n3.该设备绑定的消费点在前三名，则展示当前档口的标签。\n4.就餐人数\n当前月的消费次数，除以本月的工作日天数（默认按消费设置的企业日历，未设置则按自然天数），得到日均消费数，即消费人数\n5.列表滚动按固定时间从下往上滚动，滚动到最后一条数据后，自动从第4名开始展示\n","recharge_import_help_doc_v1":"烽火通信\n1、充值名单审批-充值名单导入列表增加总金额，该导入文件校验通过数据的总充值金额\n2、增加配置项，充值名单审批通过后是否自动确认，该项目需要人工确认","cost_center_summary_help_doc_v1":"1、消费报表增加定制报表，成本中心汇总统计（烽火通信）\n默认关闭，查询（3001979）、导出（3001980）\n2、成本中心+部门树+钱包为唯一值，统计筛选时段内消费金额，按消费时的部门和成本中心数据。同一成本中心的人员在不同部门，按多条展示，同一个树下不同级别的也拆开多条。只统计一二三四级的，五级及以上不统计。\n3、相同成本中心的排在一起\n4、已和现场确认，最多到四级部门，同一部门的员工可能属于不同成本中心，但一个成本中心的员工部门均相同。\n5、筛选条件：消费日期（默认近7天，按交易时间，实时统计），成本中心（模糊搜索、多选），所属部门、商户（模糊搜索，树状多选，商户数据过滤），钱包（多选）\n6、数据权：商户数据权控制消费金额（消费点-场所-商户）","person_wallet_stats_help_doc_v1":"1、消费报表增加人员钱包消费统计（烽火通信）\n默认关闭，查询（3001981），导出（3001982）\n2、只统计无成本中心的人员\n人员+钱包唯一统计筛选时间内的消费金额\n展示人员当前的各级部门\n3、筛选条件：消费日期（默认近7天，按交易时间，实时统计），所属部门（树状模糊搜索、多选），商户（树状模糊搜索、多选，数据权过滤），钱包（多选），人员编号和姓名模糊搜索\n4、数据权：商户数据权控制\n","dept_daily_stats_help_doc_v1":"1、消费报表新增部门日消费统计\n默认关闭，查询（3001983）、导出（3001984）\n2、按日统计各个二级部门及下面所有子级部门的消费金额，以及总计消费金额\n二级部门表头按消费时的部门数据动态生成\n3、按日期从早到晚排序\n4、底部增加两行数据，统计各个二级部门及下面所有子级部门筛选时间内的刷卡消费次数和刷卡消费金额，两行数据固定在每个页面底部\n5、筛选：消费日期（默认当月，按交易时间，实时统计）","dept_today_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，当日部门消费统计\n默认关闭，查询（3001985）、导出（3001986）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计当天的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、消费组筛选多选","dept_history_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，历史消费组消费统计\n默认关闭，查询（3001987）、导出（3001988）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计历史的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、筛选条件：消费日期（默认近7天，例如当天是10.14，10.8 0点至10.15 0点），实时统计，消费组筛选多选","person_withdraw_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 个人取款明细表。\n默认关闭，查询（3001989）、导出（3001990）、打印（3001991）\n2. 筛选条件：取款日期（开始-结束），默认当月\n3. 列表字段：序号、部门名称、人员编号、人员姓名、卡流水号（取人员虚拟号）、现有金额、取款额、取款日期、操作员。\n展示筛选时间内人员95钱包的余额退款明细，取款额（余额退款的金额），现有金额（退款后的账户余额）\n4. 部门名称只展示最后一级部门；现有金额为本次取款后的账户余额；取款日期只展示到日（年-月-日）。\n5. 排序：相同部门的记录放在一起，部门内同一人员的记录放在一起，同一人员按取款日期从早到晚排列；部门之间、人员之间默认排序\n6. 表格底部总计：显示当前筛选结果的取款总额（不受分页影响）；记录条数在左下角分页处显示。\n7. 金额单位：元，保留两位小数。\n8. 支持导出当前筛选结果，导出文件末尾附总计行。\n9.打印预览，点击跳转新页签查看打印效果，预览页展示起始日期、截止日期、制表日期（点击打印的日期），经手人、复核人、审核人（打印后签字）","cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 会计出纳汇总表。\n默认关闭，查询（3001992）、导出（3001993）、打印（3001994）\n2. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期；操作员（多选，用户登录名），默认全部。\n3. 页面为两栏汇总（操作员选全部时汇总全部出纳员，选具体操作员时只汇总该操作员）：左栏依次为存款次数、管理费次数、取款次数、销户退款次数、总计次数、应缴金额；右栏依次为总存款金额、管理费金额、总取款金额、销户退款金额。\n》存款次数（总存款金额）：账户管理-充值+批量自动充值到账的次数和金额\n》管理费次数（管理费金额）：账户管理-充值扣除管理费的次数和金额\n》取款次数（取款金额）:余额退款成功的次数和金额\n》销户退款次数（销户退款金额）：销户时退款的次数和金额\n4. 总计次数 = 存款次数 + 管理费次数 + 取款次数 + 销户退款次数。\n5. 应缴金额 = 总存款金额 + 管理费金额 - 总取款金额 - 销户退款金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员取筛选的操作员（全部时显示 ALL），制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 支持导出，导出内容与页面汇总一致。","online_cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 圈存、网页、微信、APP出纳汇总表。\n默认关闭，查询（3001995）、导出（3001996）、打印（3001997）\n2. 统计范围：通过我们对接农行部署的充值渠道（包括我们自己的微信h5和提供给第三方的农行充值接口）充值总金额和管理费金额，出纳员为点击打印的用户名称。\n3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。\n4. 页面为两栏汇总：左栏为圈存微信等充值次数、管理费数量、应缴金额；右栏为圈存微信等总存款金额、管理费金额。\n5. 应缴金额 = 圈存微信等总存款金额 + 管理费金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为点击打印的用户登录名，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出内容与页面汇总一致。","device_consume_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。\n默认关闭，查询（3005100）、导出（3005101）、打印（3005102）\n2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。\n3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。\n4. 列表字段：商户名称、消费机号、消费机名称、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。\n5. 消费人数 = 该消费机全部消费笔数（含不分餐段的 APP 消费/退款）；消费金额 = 全部消费金额合计，退款为负数。\n6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。\n7. 打印：在新页签打开打印预览，左上角为打印按钮；表头为开始日期、截止日期、设备名称、商户名称（未选择时显示 ALL）、制表日期（点击打印的日期）；末行为总计，底部为经手人、复核人、审核人签字栏，打印时页脚右下角显示「第 X 页，共 Y 页」。\n8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dept_balance_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 账户余额表(按部门)。\n默认关闭，查询（3001503）、导出（3001504）、打印（3001505）\n2. 筛选条件：截止日期（单个日期），默认今天；所属部门（树状筛选，多选，支持模糊搜索）；统计截至该日期日终各部门人员账户余额合计（二级和三级）。二级部门只统计直属人员，三级部门统计直属人员及下面所有子级部门人员。\n3. 列表字段：序号、部门编号、部门名称、账户余额；按部门编号顺序展示，不分页。\n4. 表格末行总计：部门数量、总余额（全部部门账户余额合计）。\n5. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为截止日期、制表日期（点击打印的日期）、金额：元；末行为总计，底部为经手人、复核人、审核人签字栏。\n6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dining_trend_help_doc_v1":"江西人社厅定制首页\n1. 系统管理的首页替换成「就餐人数趋势」折线图，按去重就餐人数统计。\n2. 右上角筛选卡为「月」「年」，默认展示月。\n3. 「月」展示当月每日数据，底部显示日期标签（如 09-01）。\n4. 「年」展示当年每月数据，底部显示月份标签（如 01月）。\n5. 尚未到达的日期、月份不展示。\n6. 无记录的自然日 / 自然月保留节点，数值为 0。\n7. 当日、当月只展示已产生的真实值，不做补数预估。\n8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。\n9.按消费组数据权过滤"};</script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -171,9 +171,12 @@
     .submenu-list { display: none; }
     .submenu.open > .submenu-list { display: block; }
     .submenu-list .menu-item {
-      padding-left: 44px;
-      height: 44px;
-      line-height: 44px;
+      padding: 12px 20px 12px 44px;
+      min-height: 44px;
+      height: auto;
+      line-height: 20px;
+      box-sizing: border-box;
+      white-space: normal;
     }
 
     /* ===== 内容区 ===== */
@@ -835,6 +838,54 @@
     .meal-foot .foot-value {
       color: var(--text);
       line-height: 20px;
+    }
+
+    /* 账户余额表：金额右对齐，总计行加粗 */
+    .balance-table th.num,
+    .balance-table td.num {
+      text-align: right;
+      padding-right: 24px;
+    }
+    .balance-table tfoot td {
+      background: #fafafa;
+      border-top: 1px solid var(--border-light);
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* 会计出纳汇总表：左次数、右金额的两栏汇总 */
+    .cashier-sum-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text);
+    }
+    .cashier-sum-table td {
+      height: 44px;
+      padding: 0 16px;
+      border-bottom: 1px solid var(--border-light);
+      white-space: nowrap;
+    }
+    .cashier-sum-table .k {
+      width: 16%;
+      text-align: center;
+      color: var(--text-regular);
+    }
+    .cashier-sum-table .v {
+      width: 24%;
+      text-align: center;
+      font-weight: 600;
+    }
+    .cashier-sum-table .k2 {
+      width: 30%;
+      text-align: right;
+      color: var(--text-regular);
+    }
+    .cashier-sum-table .v2 {
+      width: 30%;
+      text-align: center;
     }
 
     /* 分页 */
@@ -2135,6 +2186,11 @@
             <div class="menu-item" data-key="dept-daily-stats">部门日消费统计</div>
             <div class="menu-item" data-key="dept-today-meal">当日消费组消费统计</div>
             <div class="menu-item" data-key="dept-history-meal">历史消费组消费统计</div>
+            <div class="menu-item" data-key="person-withdraw-detail">个人取款明细表</div>
+            <div class="menu-item" data-key="cashier-summary">会计出纳汇总表</div>
+            <div class="menu-item" data-key="online-cashier-summary">圈存、网页、微信、APP出纳汇总表</div>
+            <div class="menu-item" data-key="device-consume-summary">消费机消费汇总表</div>
+            <div class="menu-item" data-key="dept-balance">账户余额表(按部门)</div>
           </div>
         </div>
         <div class="submenu" data-group="approve">
@@ -2409,7 +2465,7 @@
               <tbody id="costCenterBody"></tbody>
             </table>
           </div>
-          <div class="table-summary" id="costCenterSummary">总计：0 条</div>
+          <div class="table-summary" id="costCenterSummary">总计：消费金额 0.00</div>
           <div class="pager">
             <span class="pager-info" id="ccPagerInfo">共 0 条记录 第1/1页</span>
             <div class="pager-controls">
@@ -2495,7 +2551,7 @@
               <tbody id="personWalletBody"></tbody>
             </table>
           </div>
-          <div class="table-summary" id="personWalletSummary">总计：0 条</div>
+          <div class="table-summary" id="personWalletSummary">总计：消费金额 0.00</div>
           <div class="pager">
             <span class="pager-info" id="pwPagerInfo">共 0 条记录 第1/1页</span>
             <div class="pager-controls">
@@ -2657,6 +2713,247 @@
                 跳至 <input type="text" id="dhJumpPage"> 页
               </span>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-person-withdraw-detail">
+        <div class="page-card">
+          <div class="page-title">
+            个人取款明细表
+            <button class="help-link" id="btnWdHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="withdrawFilter">
+            <span class="filter-label">取款日期</span>
+            <input class="date-input" id="wdDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="wdDateEnd" type="date">
+            <button class="btn btn-primary" id="btnWdSearch" type="button">查询</button>
+            <button class="btn" id="btnWdReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnWdExport" type="button">导出</button>
+            <button class="btn" id="btnWdPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>部门名称</th>
+                  <th>人员编号</th>
+                  <th>人员姓名</th>
+                  <th>卡流水号</th>
+                  <th>现有金额</th>
+                  <th>取款额</th>
+                  <th>取款日期</th>
+                  <th>操作员</th>
+                </tr>
+              </thead>
+              <tbody id="withdrawBody"></tbody>
+              <tfoot class="meal-foot" id="withdrawFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="wdPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="wdPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="wdPagerPage" type="button">1</button>
+              <button class="pager-btn" id="wdPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="wdPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="wdJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-cashier-summary">
+        <div class="page-card">
+          <div class="page-title">
+            会计出纳汇总表
+            <button class="help-link" id="btnAcsHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="cashierSummaryFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="acsDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="acsDateEnd" type="date">
+            <span class="filter-label">操作员</span>
+            <div class="el-select" id="acsOperatorSelect">
+              <input class="el-select-inner" readonly="" placeholder="全部">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="系统管理员">系统管理员</div>
+                <div class="dropdown-item" data-value="财务-李娜">财务-李娜</div>
+                <div class="dropdown-item" data-value="财务-陈刚">财务-陈刚</div>
+                <div class="dropdown-item" data-value="财务-王芳">财务-王芳</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnAcsSearch" type="button">查询</button>
+            <button class="btn" id="btnAcsReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnAcsExport" type="button">导出</button>
+            <button class="btn" id="btnAcsPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <table class="cashier-sum-table">
+            <tbody id="cashierSummaryBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-online-cashier-summary">
+        <div class="page-card">
+          <div class="page-title">
+            圈存、网页、微信、APP出纳汇总表
+            <button class="help-link" id="btnOcsHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="onlineCashierFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="ocsDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="ocsDateEnd" type="date">
+            <button class="btn btn-primary" id="btnOcsSearch" type="button">查询</button>
+            <button class="btn" id="btnOcsReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnOcsExport" type="button">导出</button>
+            <button class="btn" id="btnOcsPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <table class="cashier-sum-table">
+            <tbody id="onlineCashierBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-device-consume-summary">
+        <div class="page-card">
+          <div class="page-title">
+            消费机消费汇总表
+            <button class="help-link" id="btnDvsHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="deviceSummaryFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="dvsDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="dvsDateEnd" type="date">
+            <div class="tree-select" id="dvsDeviceTree">
+              <input class="el-select-inner w200" id="dvsDeviceInput" readonly="" placeholder="请选择设备名称">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="dvsDeviceTreeBody"></div>
+              </div>
+            </div>
+            <div class="tree-select" id="dvsMerchantTree">
+              <input class="el-select-inner w200" id="dvsMerchantInput" readonly="" placeholder="请选择商户名称">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="dvsMerchantTreeBody"></div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnDvsSearch" type="button">查询</button>
+            <button class="btn" id="btnDvsReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnDvsExport" type="button">导出</button>
+            <button class="btn" id="btnDvsPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>商户名称</th>
+                  <th>消费机号</th>
+                  <th>消费机名称</th>
+                  <th>早段次数</th>
+                  <th>早段金额</th>
+                  <th>午段次数</th>
+                  <th>午段金额</th>
+                  <th>晚段次数</th>
+                  <th>晚段金额</th>
+                  <th>消费人数</th>
+                  <th>消费金额</th>
+                </tr>
+              </thead>
+              <tbody id="deviceSummaryBody"></tbody>
+              <tfoot class="meal-foot" id="deviceSummaryFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="dvsPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="dvsPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="dvsPagerPage" type="button">1</button>
+              <button class="pager-btn" id="dvsPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="dvsPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="dvsJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-dept-balance">
+        <div class="page-card">
+          <div class="page-title">
+            账户余额表(按部门)
+            <button class="help-link" id="btnAbdHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="deptBalanceFilter">
+            <span class="filter-label">截止日期</span>
+            <input class="date-input" id="abdDate" type="date">
+            <div class="tree-select" id="abdDeptTree">
+              <input class="el-select-inner w200" id="abdDeptInput" readonly="" placeholder="请选择所属部门">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="abdDeptTreeBody"></div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnAbdSearch" type="button">查询</button>
+            <button class="btn" id="btnAbdReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnAbdExport" type="button">导出</button>
+            <button class="btn" id="btnAbdPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table balance-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>部门编号</th>
+                  <th>部门名称</th>
+                  <th class="num">账户余额</th>
+                </tr>
+              </thead>
+              <tbody id="deptBalanceBody"></tbody>
+              <tfoot id="deptBalanceFoot"></tfoot>
+            </table>
           </div>
         </div>
       </div>
@@ -3065,6 +3362,91 @@
     </div>
   </div>
 
+  <div class="modal-mask" id="wdHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>个人取款明细表 - 需求说明</span>
+        <span class="modal-close" id="wdHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="wdHelpEditor" spellcheck="false" placeholder="在此填写个人取款明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="wdHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="wdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="acsHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>会计出纳汇总表 - 需求说明</span>
+        <span class="modal-close" id="acsHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="acsHelpEditor" spellcheck="false" placeholder="在此填写会计出纳汇总表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="acsHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="acsHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="ocsHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>圈存、网页、微信、APP出纳汇总表 - 需求说明</span>
+        <span class="modal-close" id="ocsHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="ocsHelpEditor" spellcheck="false" placeholder="在此填写圈存、网页、微信、APP出纳汇总表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="ocsHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="ocsHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="dvsHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>消费机消费汇总表 - 需求说明</span>
+        <span class="modal-close" id="dvsHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="dvsHelpEditor" spellcheck="false" placeholder="在此填写消费机消费汇总表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="dvsHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="dvsHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="abdHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>账户余额表(按部门) - 需求说明</span>
+        <span class="modal-close" id="abdHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="abdHelpEditor" spellcheck="false" placeholder="在此填写账户余额表(按部门)相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="abdHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="abdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
   <div class="modal-mask" id="diningHelpModal">
     <div class="modal modal-help">
       <div class="modal-header">
@@ -3374,6 +3756,11 @@
         "dept-daily-stats": { el: "page-dept-daily-stats", title: "部门日消费统计", group: "report" },
         "dept-today-meal": { el: "page-dept-today-meal", title: "当日消费组消费统计", group: "report" },
         "dept-history-meal": { el: "page-dept-history-meal", title: "历史消费组消费统计", group: "report" },
+        "person-withdraw-detail": { el: "page-person-withdraw-detail", title: "个人取款明细表", group: "report" },
+        "cashier-summary": { el: "page-cashier-summary", title: "会计出纳汇总表", group: "report" },
+        "online-cashier-summary": { el: "page-online-cashier-summary", title: "圈存、网页、微信、APP出纳汇总表", group: "report" },
+        "device-consume-summary": { el: "page-device-consume-summary", title: "消费机消费汇总表", group: "report" },
+        "dept-balance": { el: "page-dept-balance", title: "账户余额表(按部门)", group: "report" },
         "recharge-approve": { el: "page-recharge-approve", title: "充值名单审批", group: "approve" }
       };
       Object.keys(pages).forEach((key) => {
@@ -3410,6 +3797,21 @@
       }
       if (pageKey === "dept-history-meal") {
         renderDeptHistoryMealTable();
+      }
+      if (pageKey === "person-withdraw-detail") {
+        renderWithdrawTable();
+      }
+      if (pageKey === "cashier-summary") {
+        renderCashierSummaryTable();
+      }
+      if (pageKey === "online-cashier-summary") {
+        renderOnlineCashierSummary();
+      }
+      if (pageKey === "device-consume-summary") {
+        renderDeviceSummaryTable();
+      }
+      if (pageKey === "dept-balance") {
+        renderDeptBalanceTable();
       }
       if (pageKey === "recharge-approve") {
         renderRechargeApproveTable();
@@ -3542,6 +3944,26 @@
       }
       if (item.dataset.key === "dept-history-meal") {
         switchConsumePage("dept-history-meal");
+        return;
+      }
+      if (item.dataset.key === "person-withdraw-detail") {
+        switchConsumePage("person-withdraw-detail");
+        return;
+      }
+      if (item.dataset.key === "cashier-summary") {
+        switchConsumePage("cashier-summary");
+        return;
+      }
+      if (item.dataset.key === "online-cashier-summary") {
+        switchConsumePage("online-cashier-summary");
+        return;
+      }
+      if (item.dataset.key === "device-consume-summary") {
+        switchConsumePage("device-consume-summary");
+        return;
+      }
+      if (item.dataset.key === "dept-balance") {
+        switchConsumePage("dept-balance");
         return;
       }
       if (item.dataset.key === "point") {
@@ -3910,7 +4332,7 @@
         `).join("");
       }
       const totalAmount = costCenterRows.reduce((s, r) => s + r.amount, 0);
-      summary.textContent = `总计：${costCenterRows.length} 条　　消费金额 ${totalAmount.toFixed(2)}`;
+      summary.textContent = `总计：消费金额 ${totalAmount.toFixed(2)}`;
     }
 
     const ccPager = createPager({
@@ -4047,7 +4469,7 @@
         `).join("");
       }
       const totalAmount = personWalletRows.reduce((s, r) => s + r.amount, 0);
-      summary.textContent = `总计：${personWalletRows.length} 条　　消费金额 ${totalAmount.toFixed(2)}`;
+      summary.textContent = `总计：消费金额 ${totalAmount.toFixed(2)}`;
     }
 
     const pwPager = createPager({
@@ -4547,6 +4969,931 @@
       document.getElementById("dhDateStart").value = formatDateYMD(start);
       document.getElementById("dhDateEnd").value = today;
     })();
+
+    /* ===== 个人取款明细表 ===== */
+    const WITHDRAW_PEOPLE = [
+      { dept: "技术中心/研发部", code: "E10001", name: "张三", card: "C0010231" },
+      { dept: "技术中心/研发部", code: "E10002", name: "李四", card: "C0010232" },
+      { dept: "行政中心/人力资源部", code: "E10003", name: "王五", card: "C0010547" },
+      { dept: "行政中心/人力资源部", code: "E10004", name: "赵六", card: "C0010548" },
+      { dept: "运营中心/食堂运营部", code: "E10005", name: "钱七", card: "C0011026" },
+      { dept: "运营中心/食堂运营部", code: "E10006", name: "孙八", card: "C0011027" },
+      { dept: "市场中心/品牌部", code: "E10007", name: "周九", card: "C0011390" },
+      { dept: "市场中心/销售部", code: "E10008", name: "吴十", card: "C0011391" },
+      { dept: "财务经营部", code: "E10009", name: "郑十一", card: "C0011802" },
+      { dept: "质量部", code: "E10010", name: "冯十二", card: "C0011803" }
+    ];
+    const WITHDRAW_OPERATORS = ["系统管理员", "财务-李娜", "财务-陈刚"];
+    const WITHDRAW_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 40; i++) {
+        const p = WITHDRAW_PEOPLE[(i * 3) % WITHDRAW_PEOPLE.length];
+        const d = new Date(now);
+        d.setDate(now.getDate() - ((i * 5) % 28));
+        const amount = 20 + ((i * 37) % 9) * 10;
+        const balance = Math.round((60 + ((i * 53) % 400) + ((i * 13) % 10) / 10) * 100) / 100;
+        rows.push({
+          dept: p.dept.split("/").pop(),
+          code: p.code,
+          name: p.name,
+          card: p.card,
+          balance,
+          amount,
+          date: formatDateYMD(d),
+          operator: WITHDRAW_OPERATORS[i % WITHDRAW_OPERATORS.length]
+        });
+      }
+      return rows;
+    })();
+    let withdrawRows = [];
+
+    function setWithdrawDefaultDates() {
+      const start = new Date();
+      start.setDate(start.getDate() - 13);
+      document.getElementById("wdDateStart").value = formatDateYMD(start);
+      document.getElementById("wdDateEnd").value = getReportToday();
+    }
+
+    function filterWithdrawRows() {
+      const start = document.getElementById("wdDateStart").value;
+      const end = document.getElementById("wdDateEnd").value;
+      const rows = WITHDRAW_DATA.filter((r) => {
+        if (start && r.date < start) return false;
+        if (end && r.date > end) return false;
+        return true;
+      });
+      /* 同部门连续、部门内同一人员连续，再按取款日期从早到晚；部门、人员各按其最早取款日期先后排列 */
+      const deptFirst = {};
+      const personFirst = {};
+      rows.forEach((r) => {
+        if (!deptFirst[r.dept] || r.date < deptFirst[r.dept]) deptFirst[r.dept] = r.date;
+        if (!personFirst[r.code] || r.date < personFirst[r.code]) personFirst[r.code] = r.date;
+      });
+      return rows.sort((a, b) =>
+        deptFirst[a.dept].localeCompare(deptFirst[b.dept]) ||
+        a.dept.localeCompare(b.dept, "zh-CN") ||
+        personFirst[a.code].localeCompare(personFirst[b.code]) ||
+        a.code.localeCompare(b.code) ||
+        a.date.localeCompare(b.date)
+      );
+    }
+
+    function withdrawCsvCells(r, index) {
+      return [index + 1, r.dept, r.code, r.name, r.card, r.balance.toFixed(2), r.amount.toFixed(2), r.date, r.operator];
+    }
+
+    function renderWithdrawTable() {
+      withdrawRows = filterWithdrawRows();
+      const body = document.getElementById("withdrawBody");
+      const page = wdPager.slice(withdrawRows);
+      const offset = withdrawRows.indexOf(page.rows[0]);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="9"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r, i) => `
+          <tr>${withdrawCsvCells(r, offset + i).map((v) => `<td>${v}</td>`).join("")}</tr>
+        `).join("");
+      }
+      const totalAmount = withdrawRows.reduce((s, r) => s + r.amount, 0);
+      document.getElementById("withdrawFoot").innerHTML = `
+        <tr>
+          <td colspan="5"><span class="foot-title">总计：</span></td>
+          <td></td>
+          <td><div class="foot-label">取款总额</div><div class="foot-value">${totalAmount.toFixed(2)}</div></td>
+          <td colspan="2"></td>
+        </tr>`;
+    }
+
+    const wdPager = createPager({
+      info: "wdPagerInfo",
+      prev: "wdPagerPrev",
+      next: "wdPagerNext",
+      pageBtn: "wdPagerPage",
+      size: "wdPageSize",
+      jump: "wdJumpPage"
+    }, () => renderWithdrawTable());
+
+    function exportWithdrawCsv() {
+      const rows = withdrawRows.length ? withdrawRows : filterWithdrawRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const headers = ["序号", "部门名称", "人员编号", "人员姓名", "卡流水号", "现有金额", "取款额", "取款日期", "操作员"];
+      const lines = [headers.join(",")];
+      rows.forEach((r, i) => {
+        lines.push(withdrawCsvCells(r, i).map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      });
+      const totalAmount = rows.reduce((s, r) => s + r.amount, 0);
+      lines.push(["总计", "", "", "", "", "", totalAmount.toFixed(2), "", ""].map((v) => `"${v}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `个人取款明细表_${document.getElementById("wdDateStart").value}_${document.getElementById("wdDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    document.getElementById("btnWdSearch").addEventListener("click", () => {
+      const start = document.getElementById("wdDateStart").value;
+      const end = document.getElementById("wdDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return;
+      }
+      wdPager.reset();
+      renderWithdrawTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnWdReset").addEventListener("click", () => {
+      setWithdrawDefaultDates();
+      wdPager.reset();
+      renderWithdrawTable();
+    });
+    document.getElementById("btnWdExport").addEventListener("click", exportWithdrawCsv);
+    setWithdrawDefaultDates();
+
+    function formatMoney(n) {
+      return n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function openWithdrawPrint() {
+      const start = document.getElementById("wdDateStart").value;
+      const end = document.getElementById("wdDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return;
+      }
+      const rows = filterWithdrawRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const totalAmount = rows.reduce((s, r) => s + r.amount, 0);
+      openPrintTab("个人取款明细表", `
+        <h1>个人取款明细表</h1>
+        <div class="print-meta"><span>起始日期：${start || "-"}</span><span>截止日期：${end || "-"}</span></div>
+        <div class="print-meta"><span>制表日期：${getReportToday()}</span><span class="meta-right">金额：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr>
+              <th>序号</th><th>部门名称</th><th>人员编号</th><th>人员姓名</th><th>卡流水号</th>
+              <th>现有金额</th><th>取款额</th><th>取款日期</th><th>操作员</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((r, i) => `
+              <tr>
+                <td>${i + 1}</td><td>${r.dept}</td><td>${r.code}</td><td>${r.name}</td><td>${r.card}</td>
+                <td class="num">${formatMoney(r.balance)}</td><td class="num">${formatMoney(r.amount)}</td>
+                <td>${r.date}</td><td>${r.operator}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td><td>${rows.length}</td><td></td><td></td><td></td>
+              <td class="num">取款总额</td><td class="num">${formatMoney(totalAmount)}</td><td></td><td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`);
+    }
+
+    function openPrintTab(title, sheetHtml, extraCss = "") {
+      const win = window.open("", "_blank");
+      if (!win) {
+        toast("新页签被浏览器拦截，请允许弹出窗口后重试");
+        return;
+      }
+      win.document.open();
+      win.document.write(`<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>${title} - 打印预览</title>
+<style>${PRINT_DOC_CSS}${extraCss}</style>
+</head>
+<body>
+  <div class="print-toolbar"><button type="button" onclick="window.print()">打印</button></div>
+  <div class="print-sheet">${sheetHtml}</div>
+</body>
+</html>`);
+      win.document.close();
+    }
+
+    const PRINT_DOC_CSS = `
+      body { margin: 0; background: #e9ebef; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+      .print-toolbar { position: sticky; top: 0; padding: 10px 16px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+      .print-toolbar button { height: 32px; padding: 0 16px; border: 1px solid #409eff; border-radius: 4px; background: #409eff; color: #fff; font-size: 14px; cursor: pointer; }
+      .print-toolbar button:hover { background: #66b1ff; border-color: #66b1ff; }
+      .print-sheet { width: 273mm; margin: 20px auto; padding: 12mm; box-sizing: border-box; background: #fff; color: #000; font-size: 13px; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+      .print-sheet h1 { margin: 0 0 12px; text-align: center; font-size: 24px; font-weight: 700; }
+      .print-meta { display: flex; align-items: center; line-height: 24px; }
+      .print-meta span { width: 30%; }
+      .print-meta .meta-right { margin-left: auto; width: auto; }
+      .print-table { width: 100%; margin-top: 4px; border-collapse: collapse; }
+      .print-table th, .print-table td { padding: 4px 6px; text-align: center; font-weight: 400; white-space: nowrap; }
+      .print-table thead th { border-top: 1px solid #000; border-bottom: 1px solid #000; }
+      .print-table .num { text-align: right; }
+      .print-table tfoot td { border-top: 1px solid #000; border-bottom: 1px solid #000; font-weight: 700; }
+      .print-sign { display: flex; margin-top: 10px; line-height: 24px; }
+      .print-sign span { width: 30%; }
+      .print-summary { width: 100%; margin-top: 6px; border-collapse: collapse; border-top: 1px solid #000; border-bottom: 1px solid #000; }
+      .print-summary td { padding: 6px 8px; white-space: nowrap; }
+      .print-summary .k { width: 16%; text-align: center; }
+      .print-summary .v { width: 24%; text-align: center; font-weight: 700; }
+      .print-summary .k2 { width: 30%; text-align: right; }
+      .print-summary .v2 { width: 30%; text-align: center; }
+      @page { size: A4 landscape; margin: 10mm; }
+      @media print {
+        body { background: #fff; }
+        .print-toolbar { display: none; }
+        .print-sheet { width: auto; margin: 0; padding: 0; box-shadow: none; }
+      }`;
+
+    document.getElementById("btnWdPrint").addEventListener("click", openWithdrawPrint);
+
+    /* ===== 会计出纳汇总表 ===== */
+    const CASHIERS = ["系统管理员", "财务-李娜", "财务-陈刚", "财务-王芳"];
+    const CASHIER_DAILY_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let back = 0; back < 75; back++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() - back);
+        const date = formatDateYMD(d);
+        CASHIERS.forEach((cashier, ci) => {
+          const seed = back * 7 + ci * 13;
+          const depositCount = (seed * 5) % 9;
+          const withdrawCount = seed % 4 === 0 ? 1 + (seed % 3) : 0;
+          const feeCount = seed % 11 === 0 ? 1 : 0;
+          const closeCount = seed % 17 === 0 ? 1 : 0;
+          rows.push({
+            date,
+            cashier,
+            depositCount,
+            depositAmount: depositCount * (150 + (seed * 37) % 350),
+            feeCount,
+            feeAmount: feeCount * 10,
+            withdrawCount,
+            withdrawAmount: withdrawCount * (20 + (seed * 23) % 180),
+            closeCount,
+            closeAmount: closeCount * (35.5 + (seed * 19) % 260)
+          });
+        });
+      }
+      return rows;
+    })();
+    const CASHIER_SUM_KEYS = ["depositCount", "depositAmount", "feeCount", "feeAmount", "withdrawCount", "withdrawAmount", "closeCount", "closeAmount"];
+    let cashierSummary = null;
+
+    function setCashierSummaryDefaultDates() {
+      const now = new Date();
+      document.getElementById("acsDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("acsDateEnd").value = getReportToday();
+    }
+
+    function finishCashierSum(s) {
+      s.totalCount = s.depositCount + s.feeCount + s.withdrawCount + s.closeCount;
+      s.payable = s.depositAmount + s.feeAmount - s.withdrawAmount - s.closeAmount;
+      return s;
+    }
+
+    function emptyCashierSum(cashier) {
+      const s = { cashier };
+      CASHIER_SUM_KEYS.forEach((k) => { s[k] = 0; });
+      return s;
+    }
+
+    function getCashierOperatorLabel() {
+      return getSelectValue("acsOperatorSelect") || "ALL";
+    }
+
+    function calcCashierSummary() {
+      const start = document.getElementById("acsDateStart").value;
+      const end = document.getElementById("acsDateEnd").value;
+      const operator = getSelectValue("acsOperatorSelect");
+      const s = emptyCashierSum(operator || "ALL");
+      CASHIER_DAILY_DATA.forEach((r) => {
+        if (start && r.date < start) return;
+        if (end && r.date > end) return;
+        if (operator && r.cashier !== operator) return;
+        CASHIER_SUM_KEYS.forEach((k) => { s[k] += r[k]; });
+      });
+      return finishCashierSum(s);
+    }
+
+    /* 左列次数、右列金额；每项为 [左标签, 左值, 右标签, 右值] */
+    function cashierSummaryLines(s) {
+      return [
+        ["存款次数", s.depositCount, "总存款金额", formatMoney(s.depositAmount)],
+        ["管理费次数", s.feeCount, "管理费金额", formatMoney(s.feeAmount)],
+        ["取款次数", s.withdrawCount, "总取款金额", formatMoney(s.withdrawAmount)],
+        ["销户退款次数", s.closeCount, "销户退款金额", formatMoney(s.closeAmount)],
+        ["总计次数", s.totalCount, "", ""],
+        ["应缴金额", formatMoney(s.payable), "", ""]
+      ];
+    }
+
+    function cashierSummaryRowsHtml(s) {
+      return cashierSummaryLines(s).map(([k, v, k2, v2]) =>
+        `<tr><td class="k">${k}</td><td class="v">${v}</td><td class="k2">${k2}</td><td class="v2">${v2}</td></tr>`
+      ).join("");
+    }
+
+    function renderCashierSummaryTable() {
+      cashierSummary = calcCashierSummary();
+      document.getElementById("cashierSummaryBody").innerHTML = cashierSummaryRowsHtml(cashierSummary);
+    }
+
+    function checkCashierDateRange() {
+      const start = document.getElementById("acsDateStart").value;
+      const end = document.getElementById("acsDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function exportCashierSummaryCsv() {
+      if (!checkCashierDateRange()) return;
+      const s = calcCashierSummary();
+      const start = document.getElementById("acsDateStart").value;
+      const end = document.getElementById("acsDateEnd").value;
+      const lines = [
+        ["会计出纳汇总表"],
+        ["汇总日期", `${start} -- ${end}`, "制表日期", getReportToday()],
+        ["出纳员", getCashierOperatorLabel(), "金额", "元"],
+        ...cashierSummaryLines(s)
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `会计出纳汇总表_${document.getElementById("acsDateStart").value}_${document.getElementById("acsDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openCashierSummaryPrint() {
+      if (!checkCashierDateRange()) return;
+      const s = calcCashierSummary();
+      const start = document.getElementById("acsDateStart").value;
+      const end = document.getElementById("acsDateEnd").value;
+      openPrintTab("会计出纳汇总表", `
+        <h1>会计出纳汇总表</h1>
+        <div class="print-meta"><span>汇总日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>出纳员：${getCashierOperatorLabel()}</span><span class="meta-right">金额：元</span></div>
+        <table class="print-summary">
+          <tbody>${cashierSummaryRowsHtml(s)}</tbody>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`);
+    }
+
+    document.getElementById("btnAcsSearch").addEventListener("click", () => {
+      if (!checkCashierDateRange()) return;
+      renderCashierSummaryTable();
+      toast("查询完成");
+    });
+    bindSelect("acsOperatorSelect");
+    document.getElementById("btnAcsReset").addEventListener("click", () => {
+      setCashierSummaryDefaultDates();
+      resetSelect("acsOperatorSelect");
+      renderCashierSummaryTable();
+    });
+    document.getElementById("btnAcsExport").addEventListener("click", exportCashierSummaryCsv);
+    document.getElementById("btnAcsPrint").addEventListener("click", openCashierSummaryPrint);
+    setCashierSummaryDefaultDates();
+
+    /* ===== 圈存、网页、微信、APP出纳汇总表 ===== */
+    const ONLINE_CASHIER_DAILY_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let back = 0; back < 75; back++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() - back);
+        const rechargeCount = 2 + (back * 7) % 9;
+        const feeCount = back % 13 === 0 ? 1 : 0;
+        rows.push({
+          date: formatDateYMD(d),
+          rechargeCount,
+          rechargeAmount: Math.round(rechargeCount * (50 + (back * 29) % 120 + ((back * 17) % 100) / 100) * 100) / 100,
+          feeCount,
+          feeAmount: feeCount * 2
+        });
+      }
+      return rows;
+    })();
+
+    function setOnlineCashierDefaultDates() {
+      const now = new Date();
+      document.getElementById("ocsDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("ocsDateEnd").value = getReportToday();
+    }
+
+    function checkOnlineCashierDateRange() {
+      const start = document.getElementById("ocsDateStart").value;
+      const end = document.getElementById("ocsDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function calcOnlineCashierSummary() {
+      const start = document.getElementById("ocsDateStart").value;
+      const end = document.getElementById("ocsDateEnd").value;
+      const s = { rechargeCount: 0, rechargeAmount: 0, feeCount: 0, feeAmount: 0 };
+      ONLINE_CASHIER_DAILY_DATA.forEach((r) => {
+        if (start && r.date < start) return;
+        if (end && r.date > end) return;
+        Object.keys(s).forEach((k) => { s[k] += r[k]; });
+      });
+      s.payable = s.rechargeAmount + s.feeAmount;
+      return s;
+    }
+
+    /* 左列次数/数量、右列金额；每项为 [左标签, 左值, 右标签, 右值] */
+    function onlineCashierLines(s) {
+      return [
+        ["圈存微信等充值次数", s.rechargeCount, "圈存微信等总存款金额", formatMoney(s.rechargeAmount)],
+        ["管理费数量", s.feeCount, "管理费金额", formatMoney(s.feeAmount)],
+        ["应缴金额", formatMoney(s.payable), "", ""]
+      ];
+    }
+
+    function onlineCashierRowsHtml(s) {
+      return onlineCashierLines(s).map(([k, v, k2, v2]) =>
+        `<tr><td class="k">${k}</td><td class="v">${v}</td><td class="k2">${k2}</td><td class="v2">${v2}</td></tr>`
+      ).join("");
+    }
+
+    function renderOnlineCashierSummary() {
+      document.getElementById("onlineCashierBody").innerHTML = onlineCashierRowsHtml(calcOnlineCashierSummary());
+    }
+
+    function exportOnlineCashierCsv() {
+      if (!checkOnlineCashierDateRange()) return;
+      const start = document.getElementById("ocsDateStart").value;
+      const end = document.getElementById("ocsDateEnd").value;
+      const lines = [
+        ["圈存、网页、微信、APP出纳汇总表"],
+        ["汇总日期", `${start} -- ${end}`, "制表日期", getReportToday()],
+        ["出纳员", "system", "金额单位", "元"],
+        ...onlineCashierLines(calcOnlineCashierSummary())
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `圈存网页微信APP出纳汇总表_${start}_${end}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openOnlineCashierPrint() {
+      if (!checkOnlineCashierDateRange()) return;
+      const start = document.getElementById("ocsDateStart").value;
+      const end = document.getElementById("ocsDateEnd").value;
+      openPrintTab("圈存、网页、微信、APP出纳汇总表", `
+        <h1>圈存、网页、微信、APP出纳汇总表</h1>
+        <div class="print-meta"><span>汇总日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>出纳员：system</span><span class="meta-right">金额单位：元</span></div>
+        <table class="print-summary">
+          <tbody>${onlineCashierRowsHtml(calcOnlineCashierSummary())}</tbody>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`);
+    }
+
+    document.getElementById("btnOcsSearch").addEventListener("click", () => {
+      if (!checkOnlineCashierDateRange()) return;
+      renderOnlineCashierSummary();
+      toast("查询完成");
+    });
+    document.getElementById("btnOcsReset").addEventListener("click", () => {
+      setOnlineCashierDefaultDates();
+      renderOnlineCashierSummary();
+    });
+    document.getElementById("btnOcsExport").addEventListener("click", exportOnlineCashierCsv);
+    document.getElementById("btnOcsPrint").addEventListener("click", openOnlineCashierPrint);
+    setOnlineCashierDefaultDates();
+
+    /* ===== 消费机消费汇总表 ===== */
+    /* segs：参与的餐段；app：APP 消费（不分餐段）；refund：APP 退款（金额为负） */
+    const CONSUME_DEVICES = [
+      { merchant: "二楼早餐", no: "14012", name: "一食堂二楼早餐机（新款）", segs: ["b"], price: 4.4 },
+      { merchant: "二食堂食品外卖", no: "65533", name: "APPXF", app: true },
+      { merchant: "发展超市", no: "1037", name: "发展超市", segs: ["l", "d"], price: 13.8 },
+      { merchant: "发展超市", no: "65533", name: "APPXF", app: true },
+      { merchant: "风味餐厅", no: "14014", name: "风味餐厅周末机", segs: ["b", "l", "d"], price: 5.73 },
+      { merchant: "生鲜直供", no: "65533", name: "APPXF", app: true },
+      { merchant: "生鲜直供", no: "65534", name: "APPTK", refund: true },
+      { merchant: "十足超市", no: "1031", name: "十足超市", segs: ["b", "l"], price: 11.2 },
+      { merchant: "洗车场", no: "1012", name: "大会堂洗车场", segs: ["b"], price: 40 },
+      { merchant: "行政中心理发室", no: "1032", name: "行政中心理发室", segs: ["l"], price: 26.67 },
+      { merchant: "一、二楼快餐", no: "14018", name: "一食堂4元周末机", segs: ["l", "d"], price: 4.85 },
+      { merchant: "一、二楼快餐", no: "14030", name: "一食堂周末6元机", segs: ["l", "d"], price: 7.2 },
+      { merchant: "一鸣奶吧", no: "1085", name: "一鸣奶吧（新机）", segs: ["b", "l"], price: 5.87 },
+      { merchant: "奕家人超市", no: "1063", name: "奕家人超市（原1楼智盘备用机）", segs: ["b", "l", "d"], price: 37.4 }
+    ];
+    const DEVICE_SUM_KEYS = ["bCount", "bAmount", "lCount", "lAmount", "dCount", "dAmount", "otherCount", "otherAmount"];
+    const DEVICE_DAILY_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let back = 0; back < 75; back++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() - back);
+        const date = formatDateYMD(d);
+        CONSUME_DEVICES.forEach((dev, i) => {
+          const seed = back * 7 + i * 11;
+          const r = { date, idx: i };
+          DEVICE_SUM_KEYS.forEach((k) => { r[k] = 0; });
+          (dev.segs || []).forEach((seg) => {
+            const count = seed % 5 === 0 ? 0 : 1 + (seed * 3 + seg.charCodeAt(0)) % 9;
+            r[seg + "Count"] = count;
+            r[seg + "Amount"] = Math.round(count * dev.price * 100) / 100;
+          });
+          if (dev.app && seed % 3 === 0) {
+            r.otherCount = 1 + seed % 3;
+            r.otherAmount = Math.round(r.otherCount * (8 + (seed * 13) % 60) * 100) / 100;
+          }
+          if (dev.refund && seed % 6 === 0) {
+            r.otherCount = 1;
+            r.otherAmount = -Math.round((5 + (seed * 7) % 40) * 100) / 100;
+          }
+          rows.push(r);
+        });
+      }
+      return rows;
+    })();
+    const DEVICE_NAME_TREE = [...new Set(CONSUME_DEVICES.map((d) => d.name))].map((label) => ({ label }));
+    const DEVICE_MERCHANT_TREE = [
+      {
+        label: "结算中心",
+        children: [
+          {
+            label: "餐饮商户",
+            children: ["二楼早餐", "二食堂食品外卖", "风味餐厅", "一、二楼快餐", "一鸣奶吧"].map((label) => ({ label }))
+          },
+          {
+            label: "超市商户",
+            children: ["发展超市", "十足超市", "生鲜直供", "奕家人超市"].map((label) => ({ label }))
+          },
+          {
+            label: "生活服务商户",
+            children: ["洗车场", "行政中心理发室"].map((label) => ({ label }))
+          }
+        ]
+      }
+    ];
+
+    function matchDeviceMerchant(merchant) {
+      if (!dvsMerchantChecked.size) return true;
+      return Array.from(dvsMerchantChecked).some((p) => {
+        const node = findTreeNode(DEVICE_MERCHANT_TREE, p.split("/"));
+        const labels = node ? collectTreeLabels(node, []) : [p.split("/").pop()];
+        return labels.includes(merchant);
+      });
+    }
+    let dvsDeviceChecked = new Set();
+    let dvsMerchantChecked = new Set();
+    let deviceSummaryRows = [];
+
+    const dvsDeviceTreeCtl = initCheckTree({
+      rootId: "dvsDeviceTree",
+      bodyId: "dvsDeviceTreeBody",
+      tree: DEVICE_NAME_TREE,
+      checkedSet: dvsDeviceChecked,
+      placeholder: "请选择设备名称",
+      inputId: "dvsDeviceInput",
+      expandAll: true
+    });
+    const dvsMerchantTreeCtl = initCheckTree({
+      rootId: "dvsMerchantTree",
+      bodyId: "dvsMerchantTreeBody",
+      tree: DEVICE_MERCHANT_TREE,
+      checkedSet: dvsMerchantChecked,
+      placeholder: "请选择商户名称",
+      inputId: "dvsMerchantInput",
+      expandAll: false
+    });
+
+    function setDeviceSummaryDefaultDates() {
+      const now = new Date();
+      document.getElementById("dvsDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("dvsDateEnd").value = getReportToday();
+    }
+
+    function checkDeviceSummaryDateRange() {
+      const start = document.getElementById("dvsDateStart").value;
+      const end = document.getElementById("dvsDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function finishDeviceSum(s) {
+      s.totalCount = s.bCount + s.lCount + s.dCount + s.otherCount;
+      s.totalAmount = s.bAmount + s.lAmount + s.dAmount + s.otherAmount;
+      return s;
+    }
+
+    function filterDeviceSummaryRows() {
+      const start = document.getElementById("dvsDateStart").value;
+      const end = document.getElementById("dvsDateEnd").value;
+      const sums = CONSUME_DEVICES.map((dev) => {
+        const s = { merchant: dev.merchant, no: dev.no, name: dev.name };
+        DEVICE_SUM_KEYS.forEach((k) => { s[k] = 0; });
+        return s;
+      });
+      DEVICE_DAILY_DATA.forEach((r) => {
+        if (start && r.date < start) return;
+        if (end && r.date > end) return;
+        DEVICE_SUM_KEYS.forEach((k) => { sums[r.idx][k] += r[k]; });
+      });
+      return sums
+        .filter((s) => matchGroupChecked(s.name, dvsDeviceChecked) && matchDeviceMerchant(s.merchant))
+        .map(finishDeviceSum)
+        .filter((s) => s.totalCount > 0);
+    }
+
+    function sumDeviceRows(rows) {
+      const s = {};
+      DEVICE_SUM_KEYS.forEach((k) => { s[k] = rows.reduce((t, r) => t + r[k], 0); });
+      return finishDeviceSum(s);
+    }
+
+    function deviceValueCells(s, fmt) {
+      return [s.bCount, fmt(s.bAmount), s.lCount, fmt(s.lAmount), s.dCount, fmt(s.dAmount), s.totalCount, fmt(s.totalAmount)];
+    }
+
+    const DEVICE_VALUE_LABELS = ["早段次数", "早段金额", "午段次数", "午段金额", "晚段次数", "晚段金额", "消费人数", "消费金额"];
+    const toFixed2 = (n) => n.toFixed(2);
+
+    function renderDeviceSummaryTable() {
+      deviceSummaryRows = filterDeviceSummaryRows();
+      const body = document.getElementById("deviceSummaryBody");
+      const page = dvsPager.slice(deviceSummaryRows);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="11"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r) => `
+          <tr><td>${r.merchant}</td><td>${r.no}</td><td>${r.name}</td>${deviceValueCells(r, toFixed2).map((v) => `<td>${v}</td>`).join("")}</tr>
+        `).join("");
+      }
+      const total = sumDeviceRows(deviceSummaryRows);
+      document.getElementById("deviceSummaryFoot").innerHTML = `
+        <tr>
+          <td colspan="3"><span class="foot-title">总计：</span></td>
+          ${deviceValueCells(total, toFixed2).map((v, i) => `<td><div class="foot-label">${DEVICE_VALUE_LABELS[i]}</div><div class="foot-value">${v}</div></td>`).join("")}
+        </tr>`;
+    }
+
+    const dvsPager = createPager({
+      info: "dvsPagerInfo",
+      prev: "dvsPagerPrev",
+      next: "dvsPagerNext",
+      pageBtn: "dvsPagerPage",
+      size: "dvsPageSize",
+      jump: "dvsJumpPage"
+    }, () => renderDeviceSummaryTable());
+
+    function checkedLabel(set) {
+      return set.size ? Array.from(set).map((p) => p.split("/").pop()).join("、") : "ALL";
+    }
+
+    function exportDeviceSummaryCsv() {
+      if (!checkDeviceSummaryDateRange()) return;
+      const rows = filterDeviceSummaryRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const total = sumDeviceRows(rows);
+      const lines = [
+        ["商户名称", "消费机号", "消费机名称", ...DEVICE_VALUE_LABELS],
+        ...rows.map((r) => [r.merchant, r.no, r.name, ...deviceValueCells(r, toFixed2)]),
+        ["总计", "", "", ...deviceValueCells(total, toFixed2)]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `消费机消费汇总表_${document.getElementById("dvsDateStart").value}_${document.getElementById("dvsDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openDeviceSummaryPrint() {
+      if (!checkDeviceSummaryDateRange()) return;
+      const rows = filterDeviceSummaryRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("dvsDateStart").value;
+      const end = document.getElementById("dvsDateEnd").value;
+      const money = (n) => (n ? formatMoney(n) : "");
+      const total = sumDeviceRows(rows);
+      const cells = (s) => deviceValueCells(s, money).map((v) => `<td class="num">${v}</td>`).join("");
+      openPrintTab("消费机消费汇总表", `
+        <h1>消费机消费汇总表</h1>
+        <div class="print-meta"><span>开始日期：${start || "-"}</span><span>截止日期：${end || "-"}</span></div>
+        <div class="print-meta"><span>设备名称：${checkedLabel(dvsDeviceChecked)}</span><span>商户名称：${checkedLabel(dvsMerchantChecked)}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <table class="print-table">
+          <thead>
+            <tr>
+              <th>商户名称</th><th>消费机号</th><th>消费机名称</th>
+              ${DEVICE_VALUE_LABELS.map((l) => `<th>${l}</th>`).join("")}
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((r) => `<tr><td>${r.merchant}</td><td>${r.no}</td><td class="left">${r.name}</td>${cells(r)}</tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr><td colspan="3">总计</td>${cells(total)}</tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-table td.left { text-align: left; }
+         .print-table td, .print-table th { white-space: normal; }
+         @page { @bottom-right { content: "第 " counter(page) " 页，共 " counter(pages) " 页"; font-size: 11px; } }`);
+    }
+
+    document.getElementById("btnDvsSearch").addEventListener("click", () => {
+      if (!checkDeviceSummaryDateRange()) return;
+      dvsPager.reset();
+      renderDeviceSummaryTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnDvsReset").addEventListener("click", () => {
+      setDeviceSummaryDefaultDates();
+      dvsDeviceTreeCtl.clear();
+      dvsMerchantTreeCtl.clear();
+      dvsPager.reset();
+      renderDeviceSummaryTable();
+    });
+    document.getElementById("btnDvsExport").addEventListener("click", exportDeviceSummaryCsv);
+    document.getElementById("btnDvsPrint").addEventListener("click", openDeviceSummaryPrint);
+    setDeviceSummaryDefaultDates();
+
+    /* ===== 账户余额表(按部门) ===== */
+    /* balance 为今天的余额，往前每天按 rate 回退，用于模拟不同截止日期的余额 */
+    const BALANCE_DEPTS = [
+      { code: "N01", name: "党委机构", balance: 7149648.0 },
+      { code: "N02", name: "人大机构", balance: 1656485.56 },
+      { code: "N03", name: "政府机构", balance: 10647785.98 },
+      { code: "N04", name: "政协机构", balance: 887157.14 },
+      { code: "N05", name: "市法院", balance: 6787.7 },
+      { code: "N06", name: "市检察院", balance: 2698.79 },
+      { code: "N07", name: "人民团体、协会", balance: 1033420.28 },
+      { code: "N08", name: "民主党派、工商联", balance: 705375.08 },
+      { code: "N09", name: "省、部属机构和企事业单位", balance: 283112.28 },
+      { code: "N10", name: "温州军分区、驻温部队", balance: 56.3 },
+      { code: "N11", name: "经济实体", balance: 43708.78 },
+      { code: "N13", name: "金融机构", balance: 4243.02 },
+      { code: "N14", name: "新闻单位", balance: 17471.84 },
+      { code: "N15", name: "大中专院校", balance: 69442.28 },
+      { code: "N16", name: "县（市、区）", balance: 280770.23 },
+      { code: "N17", name: "后勤服务单位", balance: 74034.77 },
+      { code: "N18", name: "驻点单位", balance: 71474.61 },
+      { code: "N20", name: "其他", balance: 29806.69 },
+      { code: "N21", name: "领导家属", balance: 1968.42 },
+      { code: "S100", name: "集团公司", balance: 841.1 },
+      { code: "S101", name: "酒店", balance: 0.07 },
+      { code: "S102", name: "医院／药店", balance: 427.68 },
+      { code: "新1", name: "温州市", balance: 532.29 },
+      { code: "新3", name: "停卡", balance: 153199.61 }
+    ];
+    const BALANCE_DEPT_TREE = [
+      {
+        label: "温州市行政中心",
+        children: [
+          { label: "党政机关", children: ["党委机构", "人大机构", "政府机构", "政协机构", "市法院", "市检察院"].map((label) => ({ label })) },
+          { label: "团体及驻温单位", children: ["人民团体、协会", "民主党派、工商联", "省、部属机构和企事业单位", "温州军分区、驻温部队"].map((label) => ({ label })) },
+          { label: "企事业单位", children: ["经济实体", "金融机构", "新闻单位", "大中专院校", "县（市、区）", "后勤服务单位", "驻点单位"].map((label) => ({ label })) },
+          { label: "集团企业", children: ["集团公司", "酒店", "医院／药店"].map((label) => ({ label })) },
+          { label: "其他单位", children: ["其他", "领导家属", "温州市", "停卡"].map((label) => ({ label })) }
+        ]
+      }
+    ];
+    let deptBalanceRows = [];
+    let abdDeptChecked = new Set();
+
+    const abdDeptTreeCtl = initCheckTree({
+      rootId: "abdDeptTree",
+      bodyId: "abdDeptTreeBody",
+      tree: BALANCE_DEPT_TREE,
+      checkedSet: abdDeptChecked,
+      placeholder: "请选择所属部门",
+      inputId: "abdDeptInput",
+      expandAll: true
+    });
+
+    /* 勾选上级部门时包含其全部下级 */
+    function matchTreeChecked(tree, checkedSet, label) {
+      if (!checkedSet.size) return true;
+      return Array.from(checkedSet).some((p) => {
+        const node = findTreeNode(tree, p.split("/"));
+        return (node ? collectTreeLabels(node, []) : [p.split("/").pop()]).includes(label);
+      });
+    }
+
+    function calcDeptBalanceRows() {
+      const date = document.getElementById("abdDate").value || getReportToday();
+      const daysBack = Math.max(0, Math.round((new Date(getReportToday()) - new Date(date)) / 86400000));
+      return BALANCE_DEPTS.map((d, i) => {
+        const rate = 0.0015 * ((i % 4) + 1);
+        return { code: d.code, name: d.name, balance: Math.max(0, Math.round(d.balance * (1 - rate * daysBack) * 100) / 100) };
+      }).filter((r) => matchTreeChecked(BALANCE_DEPT_TREE, abdDeptChecked, r.name));
+    }
+
+    function renderDeptBalanceTable() {
+      deptBalanceRows = calcDeptBalanceRows();
+      const total = deptBalanceRows.reduce((s, r) => s + r.balance, 0);
+      document.getElementById("deptBalanceBody").innerHTML = deptBalanceRows.map((r, i) => `
+        <tr><td>${i + 1}</td><td>${r.code}</td><td>${r.name}</td><td class="num">${formatMoney(r.balance)}</td></tr>
+      `).join("");
+      document.getElementById("deptBalanceFoot").innerHTML = `
+        <tr><td>总计</td><td>${deptBalanceRows.length}</td><td>总余额</td><td class="num">${formatMoney(total)}</td></tr>`;
+    }
+
+    function exportDeptBalanceCsv() {
+      const rows = calcDeptBalanceRows();
+      const total = rows.reduce((s, r) => s + r.balance, 0);
+      const date = document.getElementById("abdDate").value;
+      const lines = [
+        ["序号", "部门编号", "部门名称", "账户余额"],
+        ...rows.map((r, i) => [i + 1, r.code, r.name, r.balance.toFixed(2)]),
+        ["总计", rows.length, "总余额", total.toFixed(2)]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `账户余额表(按部门)_${date}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openDeptBalancePrint() {
+      const rows = calcDeptBalanceRows();
+      const total = rows.reduce((s, r) => s + r.balance, 0);
+      openPrintTab("账户余额表(按部门)", `
+        <h1>账户余额表(按部门)</h1>
+        <div class="print-meta"><span>截止日期：${document.getElementById("abdDate").value}</span><span>部门：${checkedLabel(abdDeptChecked)}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span class="meta-right">金额：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr><th>序号</th><th>部门编号</th><th>部门名称</th><th class="num">账户余额</th></tr>
+          </thead>
+          <tbody>
+            ${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${r.code}</td><td>${r.name}</td><td class="num">${formatMoney(r.balance)}</td></tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr><td>总计</td><td>${rows.length}</td><td>总余额</td><td class="num">${formatMoney(total)}</td></tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-sheet { width: 190mm; }
+         .print-table td { padding: 6px; }
+         .print-table th.num { text-align: right; }
+         @page { size: A4 portrait; }`);
+    }
+
+    document.getElementById("btnAbdSearch").addEventListener("click", () => {
+      renderDeptBalanceTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnAbdReset").addEventListener("click", () => {
+      document.getElementById("abdDate").value = getReportToday();
+      abdDeptTreeCtl.clear();
+      renderDeptBalanceTable();
+    });
+    document.getElementById("btnAbdExport").addEventListener("click", exportDeptBalanceCsv);
+    document.getElementById("btnAbdPrint").addEventListener("click", openDeptBalancePrint);
+    document.getElementById("abdDate").value = getReportToday();
 
     /* ===== 首页：就餐人数趋势（去重就餐人数） ===== */
     function createDiningTrendChart() {
@@ -5337,6 +6684,72 @@
     const DH_HELP_KEY = "dept_history_meal_help_doc_v1";
     const DH_HELP_DEFAULT = "";
 
+    const wdHelpModal = document.getElementById("wdHelpModal");
+    const wdHelpEditor = document.getElementById("wdHelpEditor");
+    const WD_HELP_KEY = "person_withdraw_detail_help_doc_v1";
+    const WD_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 个人取款明细表。",
+      "2. 筛选条件：取款日期（开始-结束），默认近两周，开始日期不能晚于结束日期。",
+      "3. 列表字段：序号、部门名称、人员编号、人员姓名、卡流水号、现有金额、取款额、取款日期、操作员。",
+      "4. 部门名称只展示最后一级部门；现有金额为本次取款后的账户余额；取款日期只展示到日（年-月-日）。",
+      "5. 排序：相同部门的记录放在一起，部门内同一人员的记录放在一起，同一人员按取款日期从早到晚排列；部门之间、人员之间按各自最早取款日期先后排列。",
+      "6. 表格底部总计：显示当前筛选结果的取款总额（不受分页影响）；记录条数在左下角分页处显示。",
+      "7. 金额单位：元，保留两位小数。",
+      "8. 支持导出当前筛选结果，导出文件末尾附总计行。"
+    ].join("\n");
+
+    const acsHelpModal = document.getElementById("acsHelpModal");
+    const acsHelpEditor = document.getElementById("acsHelpEditor");
+    const ACS_HELP_KEY = "cashier_summary_help_doc_v1";
+    const ACS_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 会计出纳汇总表。",
+      "2. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期；操作员（单选），默认全部。",
+      "3. 页面为两栏汇总（操作员选全部时汇总全部出纳员，选具体操作员时只汇总该操作员）：左栏依次为存款次数、管理费次数、取款次数、销户退款次数、总计次数、应缴金额；右栏依次为总存款金额、管理费金额、总取款金额、销户退款金额。",
+      "4. 总计次数 = 存款次数 + 管理费次数 + 取款次数 + 销户退款次数。",
+      "5. 应缴金额 = 总存款金额 + 管理费金额 - 总取款金额 - 销户退款金额。",
+      "6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员取筛选的操作员（全部时显示 ALL），制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数，带千分位；支持导出，导出内容与页面汇总一致。"
+    ].join("\n");
+
+    const ocsHelpModal = document.getElementById("ocsHelpModal");
+    const ocsHelpEditor = document.getElementById("ocsHelpEditor");
+    const OCS_HELP_KEY = "online_cashier_summary_help_doc_v1";
+    const OCS_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 圈存、网页、微信、APP出纳汇总表。",
+      "2. 统计范围：圈存、网页、微信、APP 等线上渠道的充值，出纳员统一为 system。",
+      "3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。",
+      "4. 页面为两栏汇总：左栏为圈存微信等充值次数、管理费数量、应缴金额；右栏为圈存微信等总存款金额、管理费金额。",
+      "5. 应缴金额 = 圈存微信等总存款金额 + 管理费金额。",
+      "6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为 system，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数，带千分位；支持导出，导出内容与页面汇总一致。"
+    ].join("\n");
+
+    const dvsHelpModal = document.getElementById("dvsHelpModal");
+    const dvsHelpEditor = document.getElementById("dvsHelpEditor");
+    const DVS_HELP_KEY = "device_consume_summary_help_doc_v1";
+    const DVS_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。",
+      "2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。",
+      "3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。",
+      "4. 列表字段：商户名称、消费机号、消费机名称、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。",
+      "5. 消费人数 = 该消费机全部消费笔数（含不分餐段的 APP 消费/退款）；消费金额 = 全部消费金额合计，退款为负数。",
+      "6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。",
+      "7. 打印：在新页签打开打印预览，左上角为打印按钮；表头为开始日期、截止日期、设备名称、商户名称（未选择时显示 ALL）、制表日期（点击打印的日期）；末行为总计，底部为经手人、复核人、审核人签字栏，打印时页脚右下角显示「第 X 页，共 Y 页」。",
+      "8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
+    const abdHelpModal = document.getElementById("abdHelpModal");
+    const abdHelpEditor = document.getElementById("abdHelpEditor");
+    const ABD_HELP_KEY = "dept_balance_help_doc_v1";
+    const ABD_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 账户余额表(按部门)。",
+      "2. 筛选条件：截止日期（单个日期），默认今天；统计截至该日期日终各部门人员账户余额合计。",
+      "3. 列表字段：序号、部门编号、部门名称、账户余额；按部门编号顺序展示，不分页。",
+      "4. 表格末行总计：部门数量、总余额（全部部门账户余额合计）。",
+      "5. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为截止日期、制表日期（点击打印的日期）、金额：元；末行为总计，底部为经手人、复核人、审核人签字栏。",
+      "6. 金额单位：元，保留两位小数，带千分位；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
     const diningHelpModal = document.getElementById("diningHelpModal");
     const diningHelpEditor = document.getElementById("diningHelpEditor");
     const DINING_HELP_KEY = "dining_trend_help_doc_v1";
@@ -5531,6 +6944,56 @@
       closeX: "dhHelpClose"
     });
     bindHelpEditor({
+      modal: wdHelpModal,
+      editor: wdHelpEditor,
+      key: WD_HELP_KEY,
+      defaultText: WD_HELP_DEFAULT,
+      openBtn: "btnWdHelp",
+      closeBtn: "wdHelpCloseBtn",
+      saveBtn: "wdHelpSave",
+      closeX: "wdHelpClose"
+    });
+    bindHelpEditor({
+      modal: acsHelpModal,
+      editor: acsHelpEditor,
+      key: ACS_HELP_KEY,
+      defaultText: ACS_HELP_DEFAULT,
+      openBtn: "btnAcsHelp",
+      closeBtn: "acsHelpCloseBtn",
+      saveBtn: "acsHelpSave",
+      closeX: "acsHelpClose"
+    });
+    bindHelpEditor({
+      modal: ocsHelpModal,
+      editor: ocsHelpEditor,
+      key: OCS_HELP_KEY,
+      defaultText: OCS_HELP_DEFAULT,
+      openBtn: "btnOcsHelp",
+      closeBtn: "ocsHelpCloseBtn",
+      saveBtn: "ocsHelpSave",
+      closeX: "ocsHelpClose"
+    });
+    bindHelpEditor({
+      modal: dvsHelpModal,
+      editor: dvsHelpEditor,
+      key: DVS_HELP_KEY,
+      defaultText: DVS_HELP_DEFAULT,
+      openBtn: "btnDvsHelp",
+      closeBtn: "dvsHelpCloseBtn",
+      saveBtn: "dvsHelpSave",
+      closeX: "dvsHelpClose"
+    });
+    bindHelpEditor({
+      modal: abdHelpModal,
+      editor: abdHelpEditor,
+      key: ABD_HELP_KEY,
+      defaultText: ABD_HELP_DEFAULT,
+      openBtn: "btnAbdHelp",
+      closeBtn: "abdHelpCloseBtn",
+      saveBtn: "abdHelpSave",
+      closeX: "abdHelpClose"
+    });
+    bindHelpEditor({
       modal: diningHelpModal,
       editor: diningHelpEditor,
       key: DINING_HELP_KEY,
@@ -5551,6 +7014,11 @@
       { key: DD_HELP_KEY, label: "部门日消费统计", defaultText: DD_HELP_DEFAULT },
       { key: DT_HELP_KEY, label: "当日消费组消费统计", defaultText: DT_HELP_DEFAULT },
       { key: DH_HELP_KEY, label: "历史消费组消费统计", defaultText: DH_HELP_DEFAULT },
+      { key: WD_HELP_KEY, label: "个人取款明细表", defaultText: WD_HELP_DEFAULT },
+      { key: ACS_HELP_KEY, label: "会计出纳汇总表", defaultText: ACS_HELP_DEFAULT },
+      { key: OCS_HELP_KEY, label: "圈存、网页、微信、APP出纳汇总表", defaultText: OCS_HELP_DEFAULT },
+      { key: DVS_HELP_KEY, label: "消费机消费汇总表", defaultText: DVS_HELP_DEFAULT },
+      { key: ABD_HELP_KEY, label: "账户余额表(按部门)", defaultText: ABD_HELP_DEFAULT },
       { key: DINING_HELP_KEY, label: "就餐人数趋势", defaultText: DINING_HELP_DEFAULT }
     ];
 
