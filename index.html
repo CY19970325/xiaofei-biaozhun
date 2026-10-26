@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head>
-<script id="help-doc-export-data">window.__HELP_DOC_EXPORT__={"pickup_help_doc_v1":"1.消费点展示屏 提供「取餐码-制作中」「取餐码-待取餐」两个消费组件，可拖入画板，每个组件同一页面只能设置一次。\n2. 组件仅展示取餐码；「备餐中 / 请取餐」标题放在页面背景上。\n3. 支持配置字号、字体颜色、数量、列数、行/列间距、位置尺寸；拖拽缩放时列数与间距自动适配，拖拽时不可超出画布。\n4.号码从上到下从左到右排序，新号码排前面\n5.有新的待取餐码，悬浮提示  请 xxx号取餐展示2s后消失，同时语音播报，播报两次，间隔1s","call_screen_help_doc_v1":"1. 在「消费点设置」勾选一个消费点后，通过「更多操作 → 叫号屏设置」打开配置。该功能点默认关闭（3001024）\n2. 弹窗展示当前消费点名称、编号，并需选择关联叫号屏，单选，选项取信息推送已接入的FB6132_M设备。\n3. 保存后，该消费点与叫号屏建立关联，消费点待取餐/制作中的点餐订单变化时，定时下发设备","stall_rank_help_doc_v1":"1. 「消费点就餐人数排行」为整块消费组件，用于展示档口就餐人数排行，每个页面只能设置一次。\n2. 前三名固定展台展示；展示数量可选 TOP 3～TOP 10，超出前三的在列表区展示。\n3.该设备绑定的消费点在前三名，则展示当前档口的标签。\n4.就餐人数\n当前月的消费次数，除以本月的工作日天数（默认按消费设置的企业日历，未设置则按自然天数），得到日均消费数，即消费人数\n5.列表滚动按固定时间从下往上滚动，滚动到最后一条数据后，自动从第4名开始展示\n","recharge_import_help_doc_v1":"烽火通信\n1、充值名单审批-充值名单导入列表增加总金额，该导入文件校验通过数据的总充值金额\n2、增加配置项，充值名单审批通过后是否自动确认，该项目需要人工确认","cost_center_summary_help_doc_v1":"1、消费报表增加定制报表，成本中心汇总统计（烽火通信）\n默认关闭，查询（3001979）、导出（3001980）\n2、成本中心+部门树+钱包为唯一值，统计筛选时段内消费金额，按消费时的部门和成本中心数据。同一成本中心的人员在不同部门，按多条展示，同一个树下不同级别的也拆开多条。只统计一二三四级的，五级及以上不统计。\n3、相同成本中心的排在一起\n4、已和现场确认，最多到四级部门，同一部门的员工可能属于不同成本中心，但一个成本中心的员工部门均相同。\n5、筛选条件：消费日期（默认近7天，按创建时间，实时统计），成本中心（模糊搜索、多选），所属部门、商户（模糊搜索，树状多选，商户数据过滤），钱包（多选）\n6、数据权：商户数据权控制消费金额（消费点-场所-商户）","person_wallet_stats_help_doc_v1":"1、消费报表增加人员钱包消费统计（烽火通信）\n默认关闭，查询（3001981），导出（3001982）\n2、只统计无成本中心的人员\n人员+钱包唯一统计筛选时间内的消费金额\n展示人员当前的各级部门\n3、筛选条件：消费日期（默认近7天，按创建时间，实时统计），所属部门（树状模糊搜索、多选），商户（树状模糊搜索、多选，数据权过滤），钱包（多选），人员编号和姓名模糊搜索\n4、数据权：商户数据权控制\n","dept_daily_stats_help_doc_v1":"1、消费报表新增部门日消费统计\n默认关闭，查询（3001983）、导出（3001984）\n2、按日统计各个二级部门及下面所有子级部门的消费金额，以及总计消费金额\n二级部门表头按消费时的部门数据动态生成\n3、按日期从早到晚排序\n4、底部增加两行数据，统计各个二级部门及下面所有子级部门筛选时间内的刷卡消费次数和刷卡消费金额，两行数据固定在每个页面底部\n5、筛选：消费日期（默认当月，按创建时间，实时统计）","dept_today_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，当日部门消费统计\n默认关闭，查询（3001985）、导出（3001986）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计当天的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、消费组筛选多选","dept_history_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，历史消费组消费统计\n默认关闭，查询（3001987）、导出（3001988）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计历史的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、筛选条件：消费日期（默认近7天，例如当天是10.14，10.8 0点至10.15 0点），实时统计，消费组筛选多选","person_withdraw_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 个人取款明细表。\n默认关闭，查询（3001989）、导出（3001990）、打印（3001991）\n2. 筛选条件：取款日期（开始-结束），默认当月\n3. 列表字段：序号、部门名称、人员编号、人员姓名、卡流水号（取人员虚拟号）、现有金额、取款额、取款日期、操作员（用户名称）。\n展示筛选时间内人员95钱包的余额退款明细，取款额（余额退款的金额），现有金额（退款后的账户余额）\n4. 部门名称只展示最后一级部门；现有金额为本次取款后的账户余额；取款日期只展示到日（年-月-日）。\n5. 排序：相同部门的记录放在一起，部门内同一人员的记录放在一起，同一人员按取款日期从早到晚排列；部门之间、人员之间默认排序\n6. 表格底部总计：显示当前筛选结果的取款总额（不受分页影响）；记录条数在左下角分页处显示。\n7. 金额单位：元，保留两位小数。\n8. 支持导出当前筛选结果，导出文件末尾附总计行。\n9.打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人\n中间每一页：表名、表头及数据、经手人、复核人、审核人\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人","cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 会计出纳汇总表。\n默认关闭，查询（3001992）、导出（3001993）、打印（3001994）\n2. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期；操作员（多选，用户名称），默认全部。\n3. 页面为两栏汇总（操作员选全部时汇总全部出纳员，选具体操作员时只汇总该操作员）：左栏依次为存款次数、管理费次数、取款次数、销户退款次数、总计次数、应缴金额；右栏依次为总存款金额、管理费金额、总取款金额、销户退款金额。\n》存款次数（总存款金额）：web后台所有充值到账的次数和金额\n》管理费次数（管理费金额）：web后台所有充值扣除管理费的次数和金额（0元不统计）\n》取款次数（取款金额）:余额退款成功的次数和金额\n》销户退款次数（销户退款金额）：销户时退款的次数和金额（0元不统计，按销户退款明细统计）\n4. 总计次数 = 存款次数 + 管理费次数 + 取款次数 + 销户退款次数。\n5. 应缴金额 = 总存款金额 + 管理费金额 - 总取款金额 - 销户退款金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员取筛选的操作员（全部时显示 ALL），制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 支持导出，导出内容与页面汇总一致。","online_cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 圈存、网页、微信、APP出纳汇总表。\n默认关闭，查询（3001995）、导出（3001996）、打印（3001997）\n2. 统计范围：通过我们对接农行部署的充值渠道（包括我们自己的微信h5和提供给第三方的农行充值接口）充值总金额和管理费金额，出纳员为点击打印的用户名称。\n3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。\n4. 页面为两栏汇总：左栏为圈存微信等充值次数、管理费数量、应缴金额；右栏为圈存微信等总存款金额、管理费金额。\n5. 应缴金额 = 圈存微信等总存款金额 + 管理费金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为点击打印的用户名称，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出内容与页面汇总一致。","device_consume_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。\n默认关闭，查询（3005100）、导出（3005101）、打印（3005102）\n2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。\n3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。\n4. 列表字段：商户名称、消费机号、消费机名称（取消费点编号和名称）、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。\n5. 消费人数 = 该消费点全部消费成功笔数；消费金额 = 全部消费成功金额合计\n6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。\n7. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dept_balance_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 账户余额表(按部门)。\n默认关闭，查询（3001503）、导出（3001504）、打印（3001505）\n2. 筛选条件：截止日期（单个日期），默认今天；所属部门（树状筛选，多选，支持模糊搜索，只展示二三级部门）；统计截至该日期日终各部门人员账户余额合计（二级和三级）。二级部门只统计直属人员，三级部门统计直属人员及下面所有子级部门人员。\n3. 列表字段：序号、部门编号、部门名称、账户余额；按部门编号顺序展示，不分页。\n4. 表格末行总计：部门数量、总余额（全部部门账户余额合计）。\n5. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dining_trend_help_doc_v1":"江西人社厅定制首页\n1. 系统管理的首页替换成「就餐人数趋势」折线图，按去重就餐人数统计。\n2. 右上角筛选卡为「月」「年」，默认展示月。\n3. 「月」展示当月每日数据，底部显示日期标签（如 09-01）。\n4. 「年」展示当年每月数据，底部显示月份标签（如 01月）。\n5. 尚未到达的日期、月份不展示。\n6. 无记录的自然日 / 自然月保留节点，数值为 0。\n7. 当日、当月只展示已产生的真实值，不做补数预估。\n8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。\n9.按消费组数据权过滤"};</script>
+<script id="help-doc-export-data">window.__HELP_DOC_EXPORT__={"pickup_help_doc_v1":"1.消费点展示屏 提供「取餐码-制作中」「取餐码-待取餐」两个消费组件，可拖入画板，每个组件同一页面只能设置一次。\n2. 组件仅展示取餐码；「备餐中 / 请取餐」标题放在页面背景上。\n3. 支持配置字号、字体颜色、数量、列数、行/列间距、位置尺寸；拖拽缩放时列数与间距自动适配，拖拽时不可超出画布。\n4.号码从上到下从左到右排序，新号码排前面\n5.有新的待取餐码，悬浮提示  请 xxx号取餐展示2s后消失，同时语音播报，播报两次，间隔1s","call_screen_help_doc_v1":"1. 在「消费点设置」勾选一个消费点后，通过「更多操作 → 叫号屏设置」打开配置。该功能点默认关闭（3001024）\n2. 弹窗展示当前消费点名称、编号，并需选择关联叫号屏，单选，选项取信息推送已接入的FB6132_M设备。\n3. 保存后，该消费点与叫号屏建立关联，消费点待取餐/制作中的点餐订单变化时，定时下发设备","pay_code_help_doc_v1":"1. 入口：消费点设置 → 更多操作 → 导出收款码。\n2. 勾选消费点后，只导出勾选的消费点；不勾选则导出全部消费点。\n3. 导出文件为 zip 压缩包，包内每个收款码一张 PNG。\n4. 图片样式：上方为收款码编号（系统自动生成，生成后不变），中间为二维码，下方为消费点名称。\n5. 文件命名：消费点名称_消费点编号。\n6. 消费点名称变更后，再次导出时图片下方文字和二维码内容同步为最新名称；收款码编号保持不变。","stall_rank_help_doc_v1":"1. 「消费点就餐人数排行」为整块消费组件，用于展示档口就餐人数排行，每个页面只能设置一次。\n2. 前三名固定展台展示；展示数量可选 TOP 3～TOP 10，超出前三的在列表区展示。\n3.该设备绑定的消费点在前三名，则展示当前档口的标签。\n4.就餐人数\n当前月的消费次数，除以本月的工作日天数（默认按消费设置的企业日历，未设置则按自然天数），得到日均消费数，即消费人数\n5.列表滚动按固定时间从下往上滚动，滚动到最后一条数据后，自动从第4名开始展示\n","recharge_import_help_doc_v1":"烽火通信\n1、充值名单审批-充值名单导入列表增加总金额，该导入文件校验通过数据的总充值金额\n2、增加配置项，充值名单审批通过后是否自动确认，该项目需要人工确认","cost_center_summary_help_doc_v1":"1、消费报表增加定制报表，成本中心汇总统计（烽火通信）\n默认关闭，查询（3001979）、导出（3001980）\n2、成本中心+部门树+钱包为唯一值，统计筛选时段内消费金额，按消费时的部门和成本中心数据。同一成本中心的人员在不同部门，按多条展示，同一个树下不同级别的也拆开多条。只统计一二三四级的，五级及以上不统计。\n3、相同成本中心的排在一起\n4、已和现场确认，最多到四级部门，同一部门的员工可能属于不同成本中心，但一个成本中心的员工部门均相同。\n5、筛选条件：消费日期（默认近7天，按创建时间，实时统计），成本中心（模糊搜索、多选），所属部门、商户（模糊搜索，树状多选，商户数据过滤），钱包（多选）\n6、数据权：商户数据权控制消费金额（消费点-场所-商户）","person_wallet_stats_help_doc_v1":"1、消费报表增加人员钱包消费统计（烽火通信）\n默认关闭，查询（3001981），导出（3001982）\n2、只统计无成本中心的人员\n人员+钱包唯一统计筛选时间内的消费金额\n展示人员当前的各级部门\n3、筛选条件：消费日期（默认近7天，按创建时间，实时统计），所属部门（树状模糊搜索、多选），商户（树状模糊搜索、多选，数据权过滤），钱包（多选），人员编号和姓名模糊搜索\n4、数据权：商户数据权控制\n","dept_daily_stats_help_doc_v1":"1、消费报表新增部门日消费统计\n默认关闭，查询（3001983）、导出（3001984）\n2、按日统计各个二级部门及下面所有子级部门的消费金额，以及总计消费金额\n二级部门表头按消费时的部门数据动态生成\n3、按日期从早到晚排序\n4、底部增加两行数据，统计各个二级部门及下面所有子级部门筛选时间内的刷卡消费次数和刷卡消费金额，两行数据固定在每个页面底部\n5、筛选：消费日期（默认当月，按创建时间，实时统计）","dept_today_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，当日部门消费统计\n默认关闭，查询（3001985）、导出（3001986）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计当天的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、消费组筛选多选","dept_history_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，历史消费组消费统计\n默认关闭，查询（3001987）、导出（3001988）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计历史的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、筛选条件：消费日期（默认近7天，例如当天是10.14，10.8 0点至10.15 0点），实时统计，消费组筛选多选","person_withdraw_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 个人取款明细表。\n默认关闭，查询（3001989）、导出（3001990）、打印（3001991）\n2. 筛选条件：取款日期（开始-结束），默认当月\n3. 列表字段：序号、部门名称、人员编号、人员姓名、卡流水号（取人员虚拟号）、现有金额、取款额、取款日期、操作员（用户名称）。\n展示筛选时间内人员95钱包的余额退款明细，取款额（余额退款的金额），现有金额（退款后的账户余额）\n4. 部门名称只展示最后一级部门；现有金额为本次取款后的账户余额；取款日期只展示到日（年-月-日）。\n5. 排序：相同部门的记录放在一起，部门内同一人员的记录放在一起，同一人员按取款日期从早到晚排列；部门之间、人员之间默认排序\n6. 表格底部总计：显示当前筛选结果的取款总额（不受分页影响）；记录条数在左下角分页处显示。\n7. 金额单位：元，保留两位小数。\n8. 支持导出当前筛选结果，导出文件末尾附总计行。\n9.打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人\n中间每一页：表名、表头及数据、经手人、复核人、审核人\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人","cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 会计出纳汇总表。\n默认关闭，查询（3001992）、导出（3001993）、打印（3001994）\n2. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期；操作员（多选，用户名称），默认全部。\n3. 页面为两栏汇总（操作员选全部时汇总全部出纳员，选具体操作员时只汇总该操作员）：左栏依次为存款次数、管理费次数、取款次数、销户退款次数、总计次数、应缴金额；右栏依次为总存款金额、管理费金额、总取款金额、销户退款金额。\n》存款次数（总存款金额）：web后台所有充值到账的次数和金额\n》管理费次数（管理费金额）：web后台所有充值扣除管理费的次数和金额（0元不统计）\n》取款次数（取款金额）:余额退款成功的次数和金额\n》销户退款次数（销户退款金额）：销户时退款的次数和金额（0元不统计，按销户退款明细统计）\n4. 总计次数 = 存款次数 + 管理费次数 + 取款次数 + 销户退款次数。\n5. 应缴金额 = 总存款金额 + 管理费金额 - 总取款金额 - 销户退款金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员取筛选的操作员（全部时显示 ALL），制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 支持导出，导出内容与页面汇总一致。","online_cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 圈存、网页、微信、APP出纳汇总表。\n默认关闭，查询（3001995）、导出（3001996）、打印（3001997）\n2. 统计范围：通过我们对接农行部署的充值渠道（包括我们自己的微信h5和提供给第三方的农行充值接口）充值总金额和管理费金额，出纳员为点击打印的用户名称。\n3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。\n4. 页面为两栏汇总：左栏为圈存微信等充值次数、管理费数量、应缴金额；右栏为圈存微信等总存款金额、管理费金额。\n5. 应缴金额 = 圈存微信等总存款金额 + 管理费金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为点击打印的用户名称，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出内容与页面汇总一致。","device_consume_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。\n默认关闭，查询（3005100）、导出（3005101）、打印（3005102）\n2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。\n3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。\n4. 列表字段：商户名称、消费机号、消费机名称（取消费点编号和名称）、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。\n5. 消费人数 = 该消费点全部消费成功笔数；消费金额 = 全部消费成功金额合计\n6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。\n7. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dept_balance_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 账户余额表(按部门)。\n默认关闭，查询（3001503）、导出（3001504）、打印（3001505）\n2. 筛选条件：截止日期（单个日期），默认今天；所属部门（树状筛选，多选，支持模糊搜索，只展示二三级部门）；统计截至该日期日终各部门人员账户余额合计（二级和三级）。二级部门只统计直属人员，三级部门统计直属人员及下面所有子级部门人员。\n3. 列表字段：序号、部门编号、部门名称、账户余额；按部门编号顺序展示，不分页。\n4. 表格末行总计：部门数量、总余额（全部部门账户余额合计）。\n5. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","batch_deduct_help_doc_v1":"1. 入口：消费业务 > 消费数据查询 > 历史消费明细 > 更多操作 > 批量扣费（3001635）。\n2. 选择消费组后显示该组人数，确认后对组内全部人员扣费。（根据消费组数据权过滤选项，只有一个组则默认选中）\n3. 填写字段：消费设备、消费时段（先选日期，再选早/午/晚/夜）、凭据类型（卡、人脸、人员二维码）、补扣方式（扣费钱包和金额，最多 5 个钱包，钱包选项展示非内置的本地钱包）、备注（默认手动扣费）。\n4. 点击确认扣费后弹出扣费结果：共计人数、成功人数、失败人数。扣费信息分两列展示，包括消费组、消费点、消费时段、凭据类型、扣费明细、备注。\n5. 扣费成功的人员写入历史消费明细。\n6.扣费失败\n人员离职、余额不足、余额过期、钱包冻结、销户、钱包不存在则扣费失败（同一人员一个钱包失败则整条数据失败）\n可下载扣费失败表格，列为姓名、人员编号、部门编号、部门名称、消费组、消费点、消费时段、凭据类型、扣费明细、失败原因（显示具体钱包的失败原因）。","dining_trend_help_doc_v1":"江西人社厅定制首页\n1. 系统管理的首页替换成「就餐人数趋势」折线图，按去重就餐人数统计。\n2. 右上角筛选卡为「月」「年」，默认展示月。\n3. 「月」展示当月每日数据，底部显示日期标签（如 09-01）。\n4. 「年」展示当年每月数据，底部显示月份标签（如 01月）。\n5. 尚未到达的日期、月份不展示。\n6. 无记录的自然日 / 自然月保留节点，数值为 0。\n7. 当日、当月只展示已产生的真实值，不做补数预估。\n8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。\n9.按消费组数据权过滤"};</script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -379,7 +379,8 @@
       overflow-y: auto;
       padding: 6px 0;
     }
-    .el-select.open .dropdown-panel { display: block; }
+    .el-select.open .dropdown-panel,
+    .tag-select.open .dropdown-panel { display: block; }
     .dropdown-item {
       padding: 0 12px;
       height: 34px;
@@ -773,6 +774,126 @@
 
     /* 表格 */
     .table-wrap { overflow: auto; }
+    .history-consume-table { min-width: 3240px; }
+    .history-consume-table th,
+    .history-consume-table td { white-space: nowrap; }
+    .hcd-filter { flex-wrap: wrap; align-items: center; }
+    .hcd-filter .el-select-inner,
+    .hcd-filter .el-select-inner.w180,
+    .hcd-filter .el-select-inner.w200,
+    .hcd-filter .el-input-inner,
+    .hcd-filter .tag-select-inner { width: 150px; }
+    .hcd-filter .el-select-inner[data-value="创建时间"],
+    .hcd-filter #hcdTimeFieldSelect .el-select-inner { width: 108px; }
+    .hcd-checkline { display: inline-flex; align-items: center; gap: 10px; margin-right: 4px; }
+    .hcd-datetime { width: 168px; }
+    .hcd-wide { width: 210px; }
+    .tag-select { position: relative; display: inline-block; }
+    .tag-select-inner {
+      min-width: 148px;
+      min-height: 32px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 2px 26px 2px 8px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    .tag-select.open .tag-select-inner { border-color: var(--primary); }
+    .tag-placeholder { color: #c0c4cc; font-size: 13px; line-height: 26px; }
+    .hcd-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      height: 22px;
+      padding: 0 6px;
+      background: #f0f2f5;
+      border-radius: 2px;
+      font-size: 12px;
+      color: var(--text-regular);
+    }
+    .hcd-tag i { font-style: normal; cursor: pointer; color: #909399; }
+    .hcd-split { position: relative; display: inline-flex; }
+    .hcd-split > .btn-primary:first-child { border-radius: 4px 0 0 4px; }
+    .hcd-split .split-caret {
+      border-radius: 0 4px 4px 0;
+      border-left: 1px solid rgba(255, 255, 255, 0.45);
+      padding: 0 10px;
+    }
+    .hcd-pop.open .more-menu { display: block; }
+    .modal.batch-modal { width: 760px; }
+    .modal.batch-modal [hidden] { display: none !important; }
+    .modal.batch-modal .modal-body { overflow: visible; }
+    .batch-label { width: 96px; }
+    .batch-time-line { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .meal-picker { position: relative; width: 280px; }
+    .meal-picker .el-select-inner { width: 100%; cursor: pointer; }
+    .meal-panel {
+      display: none;
+      position: absolute;
+      top: 36px;
+      left: 0;
+      z-index: 30;
+      background: #fff;
+      border: 1px solid #e4e7ed;
+      border-radius: 4px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+    .meal-picker.open .meal-panel { display: flex; }
+    .meal-cal { width: 280px; padding: 8px 12px 12px; }
+    .meal-cal-head { display: flex; align-items: center; justify-content: space-between; height: 32px; color: #606266; font-size: 14px; }
+    .meal-cal-head button { border: none; background: none; color: #606266; cursor: pointer; width: 24px; font-size: 14px; }
+    .meal-week, .meal-grid { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; }
+    .meal-week span { color: #606266; font-size: 12px; line-height: 28px; }
+    .meal-day { border: none; background: none; height: 28px; border-radius: 50%; cursor: pointer; color: #606266; font-size: 12px; }
+    .meal-day.out { color: #c0c4cc; }
+    .meal-day.today { color: var(--primary); }
+    .meal-day.picked { background: var(--primary); color: #fff; }
+    .meal-side { width: 56px; border-left: 1px solid #ebeef5; display: flex; flex-direction: column; padding: 8px 0; }
+    .meal-side button { flex: 1; border: none; background: none; cursor: pointer; color: #606266; font-size: 14px; }
+    .meal-side button.picked { background: #ecf5ff; color: var(--primary); }
+    .batch-modal .el-select,
+    .batch-modal .el-input { display: block; width: 280px; }
+    .batch-modal .el-select-inner,
+    .batch-modal .el-input-inner { width: 100%; }
+    .batch-wallet-box { border: 1px solid #ebeef5; border-radius: 4px; padding: 4px 12px 12px; }
+    .batch-wallet-head { display: flex; justify-content: flex-end; color: #909399; font-size: 12px; line-height: 28px; }
+    .batch-wallet-box table { width: 100%; border-collapse: collapse; }
+    .batch-wallet-box th { text-align: left; color: #606266; font-weight: 600; font-size: 13px; padding: 8px; }
+    .batch-wallet-box td { padding: 6px 8px; }
+    .batch-wallet-box .el-select,
+    .batch-wallet-box .el-input { width: 100%; }
+    .batch-del {
+      width: 32px; height: 32px; border: 1px solid var(--border); border-radius: 4px;
+      background: #fff; color: #909399; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+    }
+    .batch-del:hover { color: #f56c6c; border-color: #f56c6c; }
+    .batch-add {
+      margin-top: 8px; border: none; background: none; color: var(--primary); cursor: pointer; padding: 0; font-size: 13px;
+    }
+    .batch-add:disabled { color: #c0c4cc; cursor: not-allowed; }
+    .batch-confirm {
+      margin: 0 28px 4px; padding: 10px 12px; background: #fdf6ec; color: #e6a23c; border-radius: 4px; font-size: 13px; line-height: 1.6;
+    }
+    .modal.batch-result-modal { width: 680px; }
+    .batch-result-sum { font-size: 15px; color: var(--text); margin-bottom: 16px; line-height: 1.6; }
+    .batch-result-sum .ok { color: #67c23a; font-weight: 600; }
+    .batch-result-sum .fail { color: #f56c6c; font-weight: 600; }
+    .batch-result-grid { display: grid; grid-template-columns: 72px 1fr 72px 1fr; column-gap: 16px; row-gap: 12px; font-size: 13px; }
+    .batch-result-grid .k { color: #909399; text-align: right; }
+    .batch-wallet-result {
+      grid-column: 1 / -1;
+      display: inline-grid;
+      grid-template-columns: 72px max-content 56px max-content;
+      column-gap: 12px;
+      row-gap: 8px;
+      justify-content: start;
+      align-items: center;
+    }
     table.data-table {
       width: 100%;
       border-collapse: collapse;
@@ -2173,6 +2294,16 @@
             <div class="menu-item" data-key="device-1">设备列表</div>
           </div>
         </div>
+        <div class="submenu" data-group="consume-query">
+          <div class="submenu-title">
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            消费数据查询
+            <svg class="submenu-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"></path></svg>
+          </div>
+          <div class="submenu-list">
+            <div class="menu-item" data-key="history-consume-detail">历史消费明细</div>
+          </div>
+        </div>
         <div class="submenu" data-group="report">
           <div class="submenu-title">
             <svg class="menu-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
@@ -2219,6 +2350,7 @@
           <div class="page-title">
             消费点设置
             <button class="help-link" id="btnCallHelp" type="button">需求说明</button>
+            <button class="help-link" id="btnPayCodeHelp" type="button">收款码需求说明</button>
           </div>
 
           <div class="filter-bar">
@@ -2275,6 +2407,7 @@
                 <div class="more-item" role="button" data-action="展示屏设置">展示屏设置</div>
                 <div class="more-item" role="button" data-action="订餐设置">订餐设置</div>
                 <div class="more-item" role="button" data-action="导出离线收款码">导出离线收款码</div>
+                <div class="more-item" role="button" data-action="导出收款码">导出收款码</div>
                 <div class="more-item" role="button" data-action="限定消费规则">限定消费规则</div>
                 <div class="more-item" role="button" data-action="设置错峰就餐消费点">设置错峰就餐消费点</div>
                 <div class="more-item" role="button" data-action="批量设置基础信息">批量设置基础信息</div>
@@ -2958,6 +3091,245 @@
         </div>
       </div>
 
+      <div class="page-wrap page-panel hidden" id="page-history-consume-detail">
+        <div class="page-card">
+          <div class="page-title">
+            历史消费明细
+            <button class="help-link" id="btnHcdHelp" type="button">批量扣费需求说明</button>
+          </div>
+          <div class="filter-bar hcd-filter" id="historyConsumeFilter">
+            <span class="filter-label">消费状态</span>
+            <span class="hcd-checkline" id="hcdStateGroup">
+              <label class="radio-item"><input type="checkbox" value="消费成功" checked="">消费成功</label>
+              <label class="radio-item"><input type="checkbox" value="已退款">已退款</label>
+              <label class="radio-item"><input type="checkbox" value="退款成功">退款成功</label>
+            </span>
+            <span class="filter-label">消费类型</span>
+            <span class="radio-group" id="hcdOnlineGroup">
+              <label class="radio-item"><input type="radio" name="hcdOnline" value="在线消费" checked="">在线消费</label>
+              <label class="radio-item"><input type="radio" name="hcdOnline" value="离线消费">离线消费</label>
+            </span>
+            <div class="el-select" id="hcdTimeFieldSelect">
+              <input class="el-select-inner" readonly="" value="创建时间" data-value="创建时间" style="width:108px">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item selected" data-value="创建时间">创建时间</div>
+                <div class="dropdown-item" data-value="交易时间">交易时间</div>
+              </div>
+            </div>
+            <input class="date-input hcd-datetime" id="hcdDateStart" type="datetime-local">
+            <span class="date-sep">-</span>
+            <input class="date-input hcd-datetime" id="hcdDateEnd" type="datetime-local">
+            <div class="el-select" id="hcdFactorySelect">
+              <input class="el-select-inner w180" readonly="" placeholder="请选择人员厂区">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="总部厂区">总部厂区</div>
+                <div class="dropdown-item" data-value="东区厂区">东区厂区</div>
+              </div>
+            </div>
+            <div class="tag-select" id="hcdProofSelect">
+              <div class="tag-select-inner" id="hcdProofTags"><span class="tag-placeholder">请选择凭据类型</span></div>
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="卡片">卡片</div>
+                <div class="dropdown-item" data-value="人脸">人脸</div>
+                <div class="dropdown-item" data-value="二维码">二维码</div>
+                <div class="dropdown-item" data-value="访客二维码">访客二维码</div>
+              </div>
+            </div>
+            <div class="el-select" id="hcdPointSelect">
+              <input class="el-select-inner w180" readonly="" placeholder="请选择消费点">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="支付堂-7-消费点">支付堂-7-消费点</div>
+                <div class="dropdown-item" data-value="手持消费机-7E63-消费点">手持消费机-7E63-消费点</div>
+                <div class="dropdown-item" data-value="8365-hx-消费点">8365-hx-消费点</div>
+                <div class="dropdown-item" data-value="wjp-订餐核销-消费点">wjp-订餐核销-消费点</div>
+              </div>
+            </div>
+            <div class="el-select" id="hcdGroupSelect">
+              <input class="el-select-inner w180" readonly="" placeholder="请选择消费组">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="研发消费组">研发消费组</div>
+                <div class="dropdown-item" data-value="行政消费组">行政消费组</div>
+                <div class="dropdown-item" data-value="食堂消费组">食堂消费组</div>
+                <div class="dropdown-item" data-value="市场消费组">市场消费组</div>
+                <div class="dropdown-item" data-value="销售消费组">销售消费组</div>
+              </div>
+            </div>
+            <input class="el-input-inner" id="hcdKeyword" placeholder="请输入关键词">
+            <div class="tree-select" id="hcdDeptTree">
+              <input class="el-select-inner w200" id="hcdDeptInput" readonly="" placeholder="请选择所属部门">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="hcdDeptTreeBody"></div>
+              </div>
+            </div>
+            <div class="el-select" id="hcdCostSelect">
+              <input class="el-select-inner w180" readonly="" placeholder="请选择成本中心">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="研发成本中心">研发成本中心</div>
+                <div class="dropdown-item" data-value="平台成本中心">平台成本中心</div>
+                <div class="dropdown-item" data-value="招聘成本中心">招聘成本中心</div>
+                <div class="dropdown-item" data-value="薪酬成本中心">薪酬成本中心</div>
+                <div class="dropdown-item" data-value="一食堂成本中心">一食堂成本中心</div>
+                <div class="dropdown-item" data-value="二食堂成本中心">二食堂成本中心</div>
+                <div class="dropdown-item" data-value="档口成本中心">档口成本中心</div>
+                <div class="dropdown-item" data-value="食堂运营成本中心">食堂运营成本中心</div>
+                <div class="dropdown-item" data-value="推广成本中心">推广成本中心</div>
+                <div class="dropdown-item" data-value="品牌成本中心">品牌成本中心</div>
+                <div class="dropdown-item" data-value="上海办成本中心">上海办成本中心</div>
+                <div class="dropdown-item" data-value="销售成本中心">销售成本中心</div>
+              </div>
+            </div>
+            <div class="el-select" id="hcdGradeSelect">
+              <input class="el-select-inner w180" readonly="" placeholder="请选择人员等级">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="普通员工">普通员工</div>
+                <div class="dropdown-item" data-value="管理人员">管理人员</div>
+              </div>
+            </div>
+            <div class="el-select" id="hcdWalletSelect">
+              <input class="el-select-inner" readonly="" placeholder="请选择钱包类型">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="个人钱包">个人钱包</div>
+                <div class="dropdown-item" data-value="补贴钱包">补贴钱包</div>
+                <div class="dropdown-item" data-value="现金钱包">现金钱包</div>
+              </div>
+            </div>
+            <div class="el-select" id="hcdPlaceSelect">
+              <input class="el-select-inner w180" readonly="" placeholder="请选择消费场所">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="一食堂">一食堂</div>
+                <div class="dropdown-item" data-value="二食堂">二食堂</div>
+              </div>
+            </div>
+            <input class="el-input-inner hcd-wide" id="hcdTradeIds" placeholder="输入交易ID，空格分隔">
+            <div class="tree-select" id="hcdMerchantTree">
+              <input class="el-select-inner w200" id="hcdMerchantInput" readonly="" placeholder="请选择商户">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="hcdMerchantTreeBody"></div>
+              </div>
+            </div>
+            <input class="el-input-inner hcd-wide" id="hcdThirdNos" placeholder="输入第三方订单号，空格分隔">
+            <div class="hcd-split hcd-pop" id="hcdSearchSplit">
+              <button class="btn btn-primary" id="btnHcdSearch" type="button">查询</button>
+              <button class="btn btn-primary split-caret" id="btnHcdSearchMore" type="button" aria-label="更多查询"><span class="caret"></span></button>
+              <div class="more-menu">
+                <div class="more-item" data-action="导出">导出</div>
+              </div>
+            </div>
+            <button class="btn" id="btnHcdReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnHcdRefund" type="button">消费退款</button>
+            <div class="more-wrap hcd-pop" id="hcdMoreWrap">
+              <button class="btn" id="btnHcdMore" type="button">更多操作 <span class="caret"></span></button>
+              <div class="more-menu">
+                <div class="more-item" data-action="新增记录">新增记录</div>
+                <div class="more-item" data-action="批量扣费">批量扣费</div>
+                <div class="more-item" data-action="挂账记录">挂账记录</div>
+                <div class="more-item" data-action="消费记录校正">消费记录校正</div>
+                <div class="more-item" data-action="导入">导入</div>
+                <div class="more-item" data-action="导出">导出</div>
+                <div class="more-item" data-action="推送消费明细">推送消费明细</div>
+              </div>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table history-consume-table">
+              <thead>
+                <tr>
+                  <th class="col-check"><input type="checkbox" id="hcdCheckAll"></th>
+                  <th style="width:80px">姓名</th>
+                  <th style="width:90px">人员编号</th>
+                  <th style="width:90px">部门编号</th>
+                  <th style="width:100px">部门名称</th>
+                  <th style="width:100px">成本中心ID</th>
+                  <th style="width:120px">成本中心</th>
+                  <th style="width:105px">消费点编号</th>
+                  <th style="width:150px">消费点</th>
+                  <th style="width:150px">创建时间</th>
+                  <th style="width:150px">交易时间</th>
+                  <th style="width:90px">消费类型</th>
+                  <th style="width:80px">消费时段</th>
+                  <th style="width:120px">消费组名称</th>
+                  <th style="width:100px">凭据类型</th>
+                  <th style="width:80px">支付方式</th>
+                  <th style="width:120px">消费金额</th>
+                  <th style="width:100px">钱包</th>
+                  <th style="width:120px">交易金额</th>
+                  <th style="width:120px">余额</th>
+                  <th style="width:180px">交易ID</th>
+                  <th style="width:260px">第三方订单号</th>
+                  <th style="width:100px">消费券编号</th>
+                  <th style="width:80px">消费状态</th>
+                  <th style="width:80px">操作员</th>
+                  <th style="width:100px">消费机名称</th>
+                  <th style="width:120px">商户名称</th>
+                  <th style="width:150px">消费场所</th>
+                  <th style="width:100px">备注</th>
+                </tr>
+              </thead>
+              <tbody id="historyConsumeBody"></tbody>
+            </table>
+          </div>
+          <div class="table-summary" id="historyConsumeSummary">合计：消费金额 0.00　交易金额 0.00</div>
+          <div class="pager">
+            <span class="pager-info" id="hcdPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="hcdPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="hcdPagerPage" type="button">1</button>
+              <button class="pager-btn" id="hcdPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="hcdPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="hcdJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="page-wrap page-panel hidden" id="page-recharge-approve">
         <div class="page-card">
           <div class="page-title">
@@ -3226,6 +3598,23 @@
     </div>
   </div>
 
+  <div class="modal-mask" id="payCodeHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>收款码 - 需求说明</span>
+        <span class="modal-close" id="payCodeHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="payCodeHelpEditor" spellcheck="false" placeholder="在此填写收款码相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="payCodeHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="payCodeHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
   <div class="modal-mask" id="callHelpModal">
     <div class="modal modal-help">
       <div class="modal-header">
@@ -3447,6 +3836,134 @@
     </div>
   </div>
 
+  <div class="modal-mask" id="hcdHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>批量扣费需求说明</span>
+        <span class="modal-close" id="hcdHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="hcdHelpEditor" spellcheck="false" placeholder="在此填写批量扣费相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="hcdHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="hcdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="batchDeductModal">
+    <div class="modal batch-modal">
+      <div class="modal-header">
+        <span>批量扣费</span>
+        <span class="modal-close" id="batchDeductClose">×</span>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-label batch-label required">消费组</div>
+          <div class="form-value">
+            <div class="el-select" id="batchGroupSelect">
+              <input class="el-select-inner" readonly="" placeholder="请选择消费组">
+              <span class="select-caret"><svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg></span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="研发消费组">研发消费组</div>
+                <div class="dropdown-item" data-value="行政消费组">行政消费组</div>
+                <div class="dropdown-item" data-value="食堂消费组">食堂消费组</div>
+                <div class="dropdown-item" data-value="市场消费组">市场消费组</div>
+                <div class="dropdown-item" data-value="销售消费组">销售消费组</div>
+              </div>
+            </div>
+            <div class="media-tip" id="batchGroupCount"></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label batch-label required">消费点</div>
+          <div class="form-value">
+            <div class="el-select" id="batchDeviceSelect">
+              <input class="el-select-inner" readonly="" placeholder="请选择消费点">
+              <span class="select-caret"><svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg></span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="支付堂-7-消费点">支付堂-7-消费点</div>
+                <div class="dropdown-item" data-value="手持消费机-7E63-消费点">手持消费机-7E63-消费点</div>
+                <div class="dropdown-item" data-value="8365-hx-消费点">8365-hx-消费点</div>
+                <div class="dropdown-item" data-value="wjp-订餐核销-消费点">wjp-订餐核销-消费点</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label batch-label required">消费时段</div>
+          <div class="form-value">
+            <div class="meal-picker" id="batchMealPicker">
+              <input class="el-select-inner" id="batchMealInput" readonly="" placeholder="请选择消费时段">
+              <span class="select-caret"><svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg></span>
+              <div class="meal-panel">
+                <div class="meal-cal" id="batchMealCal"></div>
+                <div class="meal-side" id="batchMealSide">
+                  <button type="button" data-meal="早餐">早</button>
+                  <button type="button" data-meal="午餐">午</button>
+                  <button type="button" data-meal="晚餐">晚</button>
+                  <button type="button" data-meal="夜宵">夜</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label batch-label">凭据类型</div>
+          <div class="form-value batch-time-line">
+            <label class="radio-item"><input type="radio" name="batchProof" value="卡" checked="">卡</label>
+            <label class="radio-item"><input type="radio" name="batchProof" value="人脸">人脸</label>
+            <label class="radio-item"><input type="radio" name="batchProof" value="人员二维码">人员二维码</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label batch-label required">补扣方式</div>
+          <div class="form-value">
+            <div class="batch-wallet-box">
+              <div class="batch-wallet-head">单位：元</div>
+              <table>
+                <thead>
+                  <tr><th>扣费钱包</th><th>扣费金额</th><th>操作</th></tr>
+                </thead>
+                <tbody id="batchWalletBody"></tbody>
+              </table>
+              <button class="batch-add" id="batchAddWallet" type="button">＋ 添加扣费钱包，最多5个</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label batch-label required">备注</div>
+          <div class="form-value">
+            <input class="el-input-inner" id="batchRemark" value="手动扣费">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" id="batchFooter">
+        <button class="btn" id="batchCancel" type="button">取消</button>
+        <button class="btn btn-primary" id="batchOk" type="button">确认扣费</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="batchResultModal">
+    <div class="modal batch-result-modal">
+      <div class="modal-header">
+        <span>扣费结果</span>
+        <span class="modal-close" id="batchResultClose">×</span>
+      </div>
+      <div class="modal-body">
+        <div class="batch-result-sum" id="batchResultSum"></div>
+        <div class="batch-result-grid" id="batchResultInfo"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="batchFailDownload" type="button">下载扣费失败表格</button>
+        <button class="btn btn-primary" id="batchResultOk" type="button">关闭</button>
+      </div>
+    </div>
+  </div>
+
   <div class="modal-mask" id="diningHelpModal">
     <div class="modal modal-help">
       <div class="modal-header">
@@ -3567,6 +4084,2306 @@
   </div>
 
   <script>
+//---------------------------------------------------------------------
+//
+// QR Code Generator for JavaScript
+//
+// Copyright (c) 2009 Kazuhiko Arase
+//
+// URL: http://www.d-project.com/
+//
+// Licensed under the MIT license:
+//  http://www.opensource.org/licenses/mit-license.php
+//
+// The word 'QR Code' is registered trademark of
+// DENSO WAVE INCORPORATED
+//  http://www.denso-wave.com/qrcode/faqpatent-e.html
+//
+//---------------------------------------------------------------------
+
+var qrcode = function() {
+
+  //---------------------------------------------------------------------
+  // qrcode
+  //---------------------------------------------------------------------
+
+  /**
+   * qrcode
+   * @param typeNumber 1 to 40
+   * @param errorCorrectionLevel 'L','M','Q','H'
+   */
+  var qrcode = function(typeNumber, errorCorrectionLevel) {
+
+    var PAD0 = 0xEC;
+    var PAD1 = 0x11;
+
+    var _typeNumber = typeNumber;
+    var _errorCorrectionLevel = QRErrorCorrectionLevel[errorCorrectionLevel];
+    var _modules = null;
+    var _moduleCount = 0;
+    var _dataCache = null;
+    var _dataList = [];
+
+    var _this = {};
+
+    var makeImpl = function(test, maskPattern) {
+
+      _moduleCount = _typeNumber * 4 + 17;
+      _modules = function(moduleCount) {
+        var modules = new Array(moduleCount);
+        for (var row = 0; row < moduleCount; row += 1) {
+          modules[row] = new Array(moduleCount);
+          for (var col = 0; col < moduleCount; col += 1) {
+            modules[row][col] = null;
+          }
+        }
+        return modules;
+      }(_moduleCount);
+
+      setupPositionProbePattern(0, 0);
+      setupPositionProbePattern(_moduleCount - 7, 0);
+      setupPositionProbePattern(0, _moduleCount - 7);
+      setupPositionAdjustPattern();
+      setupTimingPattern();
+      setupTypeInfo(test, maskPattern);
+
+      if (_typeNumber >= 7) {
+        setupTypeNumber(test);
+      }
+
+      if (_dataCache == null) {
+        _dataCache = createData(_typeNumber, _errorCorrectionLevel, _dataList);
+      }
+
+      mapData(_dataCache, maskPattern);
+    };
+
+    var setupPositionProbePattern = function(row, col) {
+
+      for (var r = -1; r <= 7; r += 1) {
+
+        if (row + r <= -1 || _moduleCount <= row + r) continue;
+
+        for (var c = -1; c <= 7; c += 1) {
+
+          if (col + c <= -1 || _moduleCount <= col + c) continue;
+
+          if ( (0 <= r && r <= 6 && (c == 0 || c == 6) )
+              || (0 <= c && c <= 6 && (r == 0 || r == 6) )
+              || (2 <= r && r <= 4 && 2 <= c && c <= 4) ) {
+            _modules[row + r][col + c] = true;
+          } else {
+            _modules[row + r][col + c] = false;
+          }
+        }
+      }
+    };
+
+    var getBestMaskPattern = function() {
+
+      var minLostPoint = 0;
+      var pattern = 0;
+
+      for (var i = 0; i < 8; i += 1) {
+
+        makeImpl(true, i);
+
+        var lostPoint = QRUtil.getLostPoint(_this);
+
+        if (i == 0 || minLostPoint > lostPoint) {
+          minLostPoint = lostPoint;
+          pattern = i;
+        }
+      }
+
+      return pattern;
+    };
+
+    var setupTimingPattern = function() {
+
+      for (var r = 8; r < _moduleCount - 8; r += 1) {
+        if (_modules[r][6] != null) {
+          continue;
+        }
+        _modules[r][6] = (r % 2 == 0);
+      }
+
+      for (var c = 8; c < _moduleCount - 8; c += 1) {
+        if (_modules[6][c] != null) {
+          continue;
+        }
+        _modules[6][c] = (c % 2 == 0);
+      }
+    };
+
+    var setupPositionAdjustPattern = function() {
+
+      var pos = QRUtil.getPatternPosition(_typeNumber);
+
+      for (var i = 0; i < pos.length; i += 1) {
+
+        for (var j = 0; j < pos.length; j += 1) {
+
+          var row = pos[i];
+          var col = pos[j];
+
+          if (_modules[row][col] != null) {
+            continue;
+          }
+
+          for (var r = -2; r <= 2; r += 1) {
+
+            for (var c = -2; c <= 2; c += 1) {
+
+              if (r == -2 || r == 2 || c == -2 || c == 2
+                  || (r == 0 && c == 0) ) {
+                _modules[row + r][col + c] = true;
+              } else {
+                _modules[row + r][col + c] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+
+    var setupTypeNumber = function(test) {
+
+      var bits = QRUtil.getBCHTypeNumber(_typeNumber);
+
+      for (var i = 0; i < 18; i += 1) {
+        var mod = (!test && ( (bits >> i) & 1) == 1);
+        _modules[Math.floor(i / 3)][i % 3 + _moduleCount - 8 - 3] = mod;
+      }
+
+      for (var i = 0; i < 18; i += 1) {
+        var mod = (!test && ( (bits >> i) & 1) == 1);
+        _modules[i % 3 + _moduleCount - 8 - 3][Math.floor(i / 3)] = mod;
+      }
+    };
+
+    var setupTypeInfo = function(test, maskPattern) {
+
+      var data = (_errorCorrectionLevel << 3) | maskPattern;
+      var bits = QRUtil.getBCHTypeInfo(data);
+
+      // vertical
+      for (var i = 0; i < 15; i += 1) {
+
+        var mod = (!test && ( (bits >> i) & 1) == 1);
+
+        if (i < 6) {
+          _modules[i][8] = mod;
+        } else if (i < 8) {
+          _modules[i + 1][8] = mod;
+        } else {
+          _modules[_moduleCount - 15 + i][8] = mod;
+        }
+      }
+
+      // horizontal
+      for (var i = 0; i < 15; i += 1) {
+
+        var mod = (!test && ( (bits >> i) & 1) == 1);
+
+        if (i < 8) {
+          _modules[8][_moduleCount - i - 1] = mod;
+        } else if (i < 9) {
+          _modules[8][15 - i - 1 + 1] = mod;
+        } else {
+          _modules[8][15 - i - 1] = mod;
+        }
+      }
+
+      // fixed module
+      _modules[_moduleCount - 8][8] = (!test);
+    };
+
+    var mapData = function(data, maskPattern) {
+
+      var inc = -1;
+      var row = _moduleCount - 1;
+      var bitIndex = 7;
+      var byteIndex = 0;
+      var maskFunc = QRUtil.getMaskFunction(maskPattern);
+
+      for (var col = _moduleCount - 1; col > 0; col -= 2) {
+
+        if (col == 6) col -= 1;
+
+        while (true) {
+
+          for (var c = 0; c < 2; c += 1) {
+
+            if (_modules[row][col - c] == null) {
+
+              var dark = false;
+
+              if (byteIndex < data.length) {
+                dark = ( ( (data[byteIndex] >>> bitIndex) & 1) == 1);
+              }
+
+              var mask = maskFunc(row, col - c);
+
+              if (mask) {
+                dark = !dark;
+              }
+
+              _modules[row][col - c] = dark;
+              bitIndex -= 1;
+
+              if (bitIndex == -1) {
+                byteIndex += 1;
+                bitIndex = 7;
+              }
+            }
+          }
+
+          row += inc;
+
+          if (row < 0 || _moduleCount <= row) {
+            row -= inc;
+            inc = -inc;
+            break;
+          }
+        }
+      }
+    };
+
+    var createBytes = function(buffer, rsBlocks) {
+
+      var offset = 0;
+
+      var maxDcCount = 0;
+      var maxEcCount = 0;
+
+      var dcdata = new Array(rsBlocks.length);
+      var ecdata = new Array(rsBlocks.length);
+
+      for (var r = 0; r < rsBlocks.length; r += 1) {
+
+        var dcCount = rsBlocks[r].dataCount;
+        var ecCount = rsBlocks[r].totalCount - dcCount;
+
+        maxDcCount = Math.max(maxDcCount, dcCount);
+        maxEcCount = Math.max(maxEcCount, ecCount);
+
+        dcdata[r] = new Array(dcCount);
+
+        for (var i = 0; i < dcdata[r].length; i += 1) {
+          dcdata[r][i] = 0xff & buffer.getBuffer()[i + offset];
+        }
+        offset += dcCount;
+
+        var rsPoly = QRUtil.getErrorCorrectPolynomial(ecCount);
+        var rawPoly = qrPolynomial(dcdata[r], rsPoly.getLength() - 1);
+
+        var modPoly = rawPoly.mod(rsPoly);
+        ecdata[r] = new Array(rsPoly.getLength() - 1);
+        for (var i = 0; i < ecdata[r].length; i += 1) {
+          var modIndex = i + modPoly.getLength() - ecdata[r].length;
+          ecdata[r][i] = (modIndex >= 0)? modPoly.getAt(modIndex) : 0;
+        }
+      }
+
+      var totalCodeCount = 0;
+      for (var i = 0; i < rsBlocks.length; i += 1) {
+        totalCodeCount += rsBlocks[i].totalCount;
+      }
+
+      var data = new Array(totalCodeCount);
+      var index = 0;
+
+      for (var i = 0; i < maxDcCount; i += 1) {
+        for (var r = 0; r < rsBlocks.length; r += 1) {
+          if (i < dcdata[r].length) {
+            data[index] = dcdata[r][i];
+            index += 1;
+          }
+        }
+      }
+
+      for (var i = 0; i < maxEcCount; i += 1) {
+        for (var r = 0; r < rsBlocks.length; r += 1) {
+          if (i < ecdata[r].length) {
+            data[index] = ecdata[r][i];
+            index += 1;
+          }
+        }
+      }
+
+      return data;
+    };
+
+    var createData = function(typeNumber, errorCorrectionLevel, dataList) {
+
+      var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, errorCorrectionLevel);
+
+      var buffer = qrBitBuffer();
+
+      for (var i = 0; i < dataList.length; i += 1) {
+        var data = dataList[i];
+        buffer.put(data.getMode(), 4);
+        buffer.put(data.getLength(), QRUtil.getLengthInBits(data.getMode(), typeNumber) );
+        data.write(buffer);
+      }
+
+      // calc num max data.
+      var totalDataCount = 0;
+      for (var i = 0; i < rsBlocks.length; i += 1) {
+        totalDataCount += rsBlocks[i].dataCount;
+      }
+
+      if (buffer.getLengthInBits() > totalDataCount * 8) {
+        throw 'code length overflow. ('
+          + buffer.getLengthInBits()
+          + '>'
+          + totalDataCount * 8
+          + ')';
+      }
+
+      // end code
+      if (buffer.getLengthInBits() + 4 <= totalDataCount * 8) {
+        buffer.put(0, 4);
+      }
+
+      // padding
+      while (buffer.getLengthInBits() % 8 != 0) {
+        buffer.putBit(false);
+      }
+
+      // padding
+      while (true) {
+
+        if (buffer.getLengthInBits() >= totalDataCount * 8) {
+          break;
+        }
+        buffer.put(PAD0, 8);
+
+        if (buffer.getLengthInBits() >= totalDataCount * 8) {
+          break;
+        }
+        buffer.put(PAD1, 8);
+      }
+
+      return createBytes(buffer, rsBlocks);
+    };
+
+    _this.addData = function(data, mode) {
+
+      mode = mode || 'Byte';
+
+      var newData = null;
+
+      switch(mode) {
+      case 'Numeric' :
+        newData = qrNumber(data);
+        break;
+      case 'Alphanumeric' :
+        newData = qrAlphaNum(data);
+        break;
+      case 'Byte' :
+        newData = qr8BitByte(data);
+        break;
+      case 'Kanji' :
+        newData = qrKanji(data);
+        break;
+      default :
+        throw 'mode:' + mode;
+      }
+
+      _dataList.push(newData);
+      _dataCache = null;
+    };
+
+    _this.isDark = function(row, col) {
+      if (row < 0 || _moduleCount <= row || col < 0 || _moduleCount <= col) {
+        throw row + ',' + col;
+      }
+      return _modules[row][col];
+    };
+
+    _this.getModuleCount = function() {
+      return _moduleCount;
+    };
+
+    _this.make = function() {
+      if (_typeNumber < 1) {
+        var typeNumber = 1;
+
+        for (; typeNumber < 40; typeNumber++) {
+          var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, _errorCorrectionLevel);
+          var buffer = qrBitBuffer();
+
+          for (var i = 0; i < _dataList.length; i++) {
+            var data = _dataList[i];
+            buffer.put(data.getMode(), 4);
+            buffer.put(data.getLength(), QRUtil.getLengthInBits(data.getMode(), typeNumber) );
+            data.write(buffer);
+          }
+
+          var totalDataCount = 0;
+          for (var i = 0; i < rsBlocks.length; i++) {
+            totalDataCount += rsBlocks[i].dataCount;
+          }
+
+          if (buffer.getLengthInBits() <= totalDataCount * 8) {
+            break;
+          }
+        }
+
+        _typeNumber = typeNumber;
+      }
+
+      makeImpl(false, getBestMaskPattern() );
+    };
+
+    _this.createTableTag = function(cellSize, margin) {
+
+      cellSize = cellSize || 2;
+      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
+
+      var qrHtml = '';
+
+      qrHtml += '<table style="';
+      qrHtml += ' border-width: 0px; border-style: none;';
+      qrHtml += ' border-collapse: collapse;';
+      qrHtml += ' padding: 0px; margin: ' + margin + 'px;';
+      qrHtml += '">';
+      qrHtml += '<tbody>';
+
+      for (var r = 0; r < _this.getModuleCount(); r += 1) {
+
+        qrHtml += '<tr>';
+
+        for (var c = 0; c < _this.getModuleCount(); c += 1) {
+          qrHtml += '<td style="';
+          qrHtml += ' border-width: 0px; border-style: none;';
+          qrHtml += ' border-collapse: collapse;';
+          qrHtml += ' padding: 0px; margin: 0px;';
+          qrHtml += ' width: ' + cellSize + 'px;';
+          qrHtml += ' height: ' + cellSize + 'px;';
+          qrHtml += ' background-color: ';
+          qrHtml += _this.isDark(r, c)? '#000000' : '#ffffff';
+          qrHtml += ';';
+          qrHtml += '"/>';
+        }
+
+        qrHtml += '</tr>';
+      }
+
+      qrHtml += '</tbody>';
+      qrHtml += '</table>';
+
+      return qrHtml;
+    };
+
+    _this.createSvgTag = function(cellSize, margin, alt, title) {
+
+      var opts = {};
+      if (typeof arguments[0] == 'object') {
+        // Called by options.
+        opts = arguments[0];
+        // overwrite cellSize and margin.
+        cellSize = opts.cellSize;
+        margin = opts.margin;
+        alt = opts.alt;
+        title = opts.title;
+      }
+
+      cellSize = cellSize || 2;
+      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
+
+      // Compose alt property surrogate
+      alt = (typeof alt === 'string') ? {text: alt} : alt || {};
+      alt.text = alt.text || null;
+      alt.id = (alt.text) ? alt.id || 'qrcode-description' : null;
+
+      // Compose title property surrogate
+      title = (typeof title === 'string') ? {text: title} : title || {};
+      title.text = title.text || null;
+      title.id = (title.text) ? title.id || 'qrcode-title' : null;
+
+      var size = _this.getModuleCount() * cellSize + margin * 2;
+      var c, mc, r, mr, qrSvg='', rect;
+
+      rect = 'l' + cellSize + ',0 0,' + cellSize +
+        ' -' + cellSize + ',0 0,-' + cellSize + 'z ';
+
+      qrSvg += '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"';
+      qrSvg += !opts.scalable ? ' width="' + size + 'px" height="' + size + 'px"' : '';
+      qrSvg += ' viewBox="0 0 ' + size + ' ' + size + '" ';
+      qrSvg += ' preserveAspectRatio="xMinYMin meet"';
+      qrSvg += (title.text || alt.text) ? ' role="img" aria-labelledby="' +
+          escapeXml([title.id, alt.id].join(' ').trim() ) + '"' : '';
+      qrSvg += '>';
+      qrSvg += (title.text) ? '<title id="' + escapeXml(title.id) + '">' +
+          escapeXml(title.text) + '</title>' : '';
+      qrSvg += (alt.text) ? '<description id="' + escapeXml(alt.id) + '">' +
+          escapeXml(alt.text) + '</description>' : '';
+      qrSvg += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>';
+      qrSvg += '<path d="';
+
+      for (r = 0; r < _this.getModuleCount(); r += 1) {
+        mr = r * cellSize + margin;
+        for (c = 0; c < _this.getModuleCount(); c += 1) {
+          if (_this.isDark(r, c) ) {
+            mc = c*cellSize+margin;
+            qrSvg += 'M' + mc + ',' + mr + rect;
+          }
+        }
+      }
+
+      qrSvg += '" stroke="transparent" fill="black"/>';
+      qrSvg += '</svg>';
+
+      return qrSvg;
+    };
+
+    _this.createDataURL = function(cellSize, margin) {
+
+      cellSize = cellSize || 2;
+      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
+
+      var size = _this.getModuleCount() * cellSize + margin * 2;
+      var min = margin;
+      var max = size - margin;
+
+      return createDataURL(size, size, function(x, y) {
+        if (min <= x && x < max && min <= y && y < max) {
+          var c = Math.floor( (x - min) / cellSize);
+          var r = Math.floor( (y - min) / cellSize);
+          return _this.isDark(r, c)? 0 : 1;
+        } else {
+          return 1;
+        }
+      } );
+    };
+
+    _this.createImgTag = function(cellSize, margin, alt) {
+
+      cellSize = cellSize || 2;
+      margin = (typeof margin == 'undefined')? cellSize * 4 : margin;
+
+      var size = _this.getModuleCount() * cellSize + margin * 2;
+
+      var img = '';
+      img += '<img';
+      img += '\u0020src="';
+      img += _this.createDataURL(cellSize, margin);
+      img += '"';
+      img += '\u0020width="';
+      img += size;
+      img += '"';
+      img += '\u0020height="';
+      img += size;
+      img += '"';
+      if (alt) {
+        img += '\u0020alt="';
+        img += escapeXml(alt);
+        img += '"';
+      }
+      img += '/>';
+
+      return img;
+    };
+
+    var escapeXml = function(s) {
+      var escaped = '';
+      for (var i = 0; i < s.length; i += 1) {
+        var c = s.charAt(i);
+        switch(c) {
+        case '<': escaped += '&lt;'; break;
+        case '>': escaped += '&gt;'; break;
+        case '&': escaped += '&amp;'; break;
+        case '"': escaped += '&quot;'; break;
+        default : escaped += c; break;
+        }
+      }
+      return escaped;
+    };
+
+    var _createHalfASCII = function(margin) {
+      var cellSize = 1;
+      margin = (typeof margin == 'undefined')? cellSize * 2 : margin;
+
+      var size = _this.getModuleCount() * cellSize + margin * 2;
+      var min = margin;
+      var max = size - margin;
+
+      var y, x, r1, r2, p;
+
+      var blocks = {
+        '██': '█',
+        '█ ': '▀',
+        ' █': '▄',
+        '  ': ' '
+      };
+
+      var blocksLastLineNoMargin = {
+        '██': '▀',
+        '█ ': '▀',
+        ' █': ' ',
+        '  ': ' '
+      };
+
+      var ascii = '';
+      for (y = 0; y < size; y += 2) {
+        r1 = Math.floor((y - min) / cellSize);
+        r2 = Math.floor((y + 1 - min) / cellSize);
+        for (x = 0; x < size; x += 1) {
+          p = '█';
+
+          if (min <= x && x < max && min <= y && y < max && _this.isDark(r1, Math.floor((x - min) / cellSize))) {
+            p = ' ';
+          }
+
+          if (min <= x && x < max && min <= y+1 && y+1 < max && _this.isDark(r2, Math.floor((x - min) / cellSize))) {
+            p += ' ';
+          }
+          else {
+            p += '█';
+          }
+
+          // Output 2 characters per pixel, to create full square. 1 character per pixels gives only half width of square.
+          ascii += (margin < 1 && y+1 >= max) ? blocksLastLineNoMargin[p] : blocks[p];
+        }
+
+        ascii += '\n';
+      }
+
+      if (size % 2 && margin > 0) {
+        return ascii.substring(0, ascii.length - size - 1) + Array(size+1).join('▀');
+      }
+
+      return ascii.substring(0, ascii.length-1);
+    };
+
+    _this.createASCII = function(cellSize, margin) {
+      cellSize = cellSize || 1;
+
+      if (cellSize < 2) {
+        return _createHalfASCII(margin);
+      }
+
+      cellSize -= 1;
+      margin = (typeof margin == 'undefined')? cellSize * 2 : margin;
+
+      var size = _this.getModuleCount() * cellSize + margin * 2;
+      var min = margin;
+      var max = size - margin;
+
+      var y, x, r, p;
+
+      var white = Array(cellSize+1).join('██');
+      var black = Array(cellSize+1).join('  ');
+
+      var ascii = '';
+      var line = '';
+      for (y = 0; y < size; y += 1) {
+        r = Math.floor( (y - min) / cellSize);
+        line = '';
+        for (x = 0; x < size; x += 1) {
+          p = 1;
+
+          if (min <= x && x < max && min <= y && y < max && _this.isDark(r, Math.floor((x - min) / cellSize))) {
+            p = 0;
+          }
+
+          // Output 2 characters per pixel, to create full square. 1 character per pixels gives only half width of square.
+          line += p ? white : black;
+        }
+
+        for (r = 0; r < cellSize; r += 1) {
+          ascii += line + '\n';
+        }
+      }
+
+      return ascii.substring(0, ascii.length-1);
+    };
+
+    _this.renderTo2dContext = function(context, cellSize) {
+      cellSize = cellSize || 2;
+      var length = _this.getModuleCount();
+      for (var row = 0; row < length; row++) {
+        for (var col = 0; col < length; col++) {
+          context.fillStyle = _this.isDark(row, col) ? 'black' : 'white';
+          context.fillRect(row * cellSize, col * cellSize, cellSize, cellSize);
+        }
+      }
+    }
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // qrcode.stringToBytes
+  //---------------------------------------------------------------------
+
+  qrcode.stringToBytesFuncs = {
+    'default' : function(s) {
+      var bytes = [];
+      for (var i = 0; i < s.length; i += 1) {
+        var c = s.charCodeAt(i);
+        bytes.push(c & 0xff);
+      }
+      return bytes;
+    }
+  };
+
+  qrcode.stringToBytes = qrcode.stringToBytesFuncs['default'];
+
+  //---------------------------------------------------------------------
+  // qrcode.createStringToBytes
+  //---------------------------------------------------------------------
+
+  /**
+   * @param unicodeData base64 string of byte array.
+   * [16bit Unicode],[16bit Bytes], ...
+   * @param numChars
+   */
+  qrcode.createStringToBytes = function(unicodeData, numChars) {
+
+    // create conversion map.
+
+    var unicodeMap = function() {
+
+      var bin = base64DecodeInputStream(unicodeData);
+      var read = function() {
+        var b = bin.read();
+        if (b == -1) throw 'eof';
+        return b;
+      };
+
+      var count = 0;
+      var unicodeMap = {};
+      while (true) {
+        var b0 = bin.read();
+        if (b0 == -1) break;
+        var b1 = read();
+        var b2 = read();
+        var b3 = read();
+        var k = String.fromCharCode( (b0 << 8) | b1);
+        var v = (b2 << 8) | b3;
+        unicodeMap[k] = v;
+        count += 1;
+      }
+      if (count != numChars) {
+        throw count + ' != ' + numChars;
+      }
+
+      return unicodeMap;
+    }();
+
+    var unknownChar = '?'.charCodeAt(0);
+
+    return function(s) {
+      var bytes = [];
+      for (var i = 0; i < s.length; i += 1) {
+        var c = s.charCodeAt(i);
+        if (c < 128) {
+          bytes.push(c);
+        } else {
+          var b = unicodeMap[s.charAt(i)];
+          if (typeof b == 'number') {
+            if ( (b & 0xff) == b) {
+              // 1byte
+              bytes.push(b);
+            } else {
+              // 2bytes
+              bytes.push(b >>> 8);
+              bytes.push(b & 0xff);
+            }
+          } else {
+            bytes.push(unknownChar);
+          }
+        }
+      }
+      return bytes;
+    };
+  };
+
+  //---------------------------------------------------------------------
+  // QRMode
+  //---------------------------------------------------------------------
+
+  var QRMode = {
+    MODE_NUMBER :    1 << 0,
+    MODE_ALPHA_NUM : 1 << 1,
+    MODE_8BIT_BYTE : 1 << 2,
+    MODE_KANJI :     1 << 3
+  };
+
+  //---------------------------------------------------------------------
+  // QRErrorCorrectionLevel
+  //---------------------------------------------------------------------
+
+  var QRErrorCorrectionLevel = {
+    L : 1,
+    M : 0,
+    Q : 3,
+    H : 2
+  };
+
+  //---------------------------------------------------------------------
+  // QRMaskPattern
+  //---------------------------------------------------------------------
+
+  var QRMaskPattern = {
+    PATTERN000 : 0,
+    PATTERN001 : 1,
+    PATTERN010 : 2,
+    PATTERN011 : 3,
+    PATTERN100 : 4,
+    PATTERN101 : 5,
+    PATTERN110 : 6,
+    PATTERN111 : 7
+  };
+
+  //---------------------------------------------------------------------
+  // QRUtil
+  //---------------------------------------------------------------------
+
+  var QRUtil = function() {
+
+    var PATTERN_POSITION_TABLE = [
+      [],
+      [6, 18],
+      [6, 22],
+      [6, 26],
+      [6, 30],
+      [6, 34],
+      [6, 22, 38],
+      [6, 24, 42],
+      [6, 26, 46],
+      [6, 28, 50],
+      [6, 30, 54],
+      [6, 32, 58],
+      [6, 34, 62],
+      [6, 26, 46, 66],
+      [6, 26, 48, 70],
+      [6, 26, 50, 74],
+      [6, 30, 54, 78],
+      [6, 30, 56, 82],
+      [6, 30, 58, 86],
+      [6, 34, 62, 90],
+      [6, 28, 50, 72, 94],
+      [6, 26, 50, 74, 98],
+      [6, 30, 54, 78, 102],
+      [6, 28, 54, 80, 106],
+      [6, 32, 58, 84, 110],
+      [6, 30, 58, 86, 114],
+      [6, 34, 62, 90, 118],
+      [6, 26, 50, 74, 98, 122],
+      [6, 30, 54, 78, 102, 126],
+      [6, 26, 52, 78, 104, 130],
+      [6, 30, 56, 82, 108, 134],
+      [6, 34, 60, 86, 112, 138],
+      [6, 30, 58, 86, 114, 142],
+      [6, 34, 62, 90, 118, 146],
+      [6, 30, 54, 78, 102, 126, 150],
+      [6, 24, 50, 76, 102, 128, 154],
+      [6, 28, 54, 80, 106, 132, 158],
+      [6, 32, 58, 84, 110, 136, 162],
+      [6, 26, 54, 82, 110, 138, 166],
+      [6, 30, 58, 86, 114, 142, 170]
+    ];
+    var G15 = (1 << 10) | (1 << 8) | (1 << 5) | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0);
+    var G18 = (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0);
+    var G15_MASK = (1 << 14) | (1 << 12) | (1 << 10) | (1 << 4) | (1 << 1);
+
+    var _this = {};
+
+    var getBCHDigit = function(data) {
+      var digit = 0;
+      while (data != 0) {
+        digit += 1;
+        data >>>= 1;
+      }
+      return digit;
+    };
+
+    _this.getBCHTypeInfo = function(data) {
+      var d = data << 10;
+      while (getBCHDigit(d) - getBCHDigit(G15) >= 0) {
+        d ^= (G15 << (getBCHDigit(d) - getBCHDigit(G15) ) );
+      }
+      return ( (data << 10) | d) ^ G15_MASK;
+    };
+
+    _this.getBCHTypeNumber = function(data) {
+      var d = data << 12;
+      while (getBCHDigit(d) - getBCHDigit(G18) >= 0) {
+        d ^= (G18 << (getBCHDigit(d) - getBCHDigit(G18) ) );
+      }
+      return (data << 12) | d;
+    };
+
+    _this.getPatternPosition = function(typeNumber) {
+      return PATTERN_POSITION_TABLE[typeNumber - 1];
+    };
+
+    _this.getMaskFunction = function(maskPattern) {
+
+      switch (maskPattern) {
+
+      case QRMaskPattern.PATTERN000 :
+        return function(i, j) { return (i + j) % 2 == 0; };
+      case QRMaskPattern.PATTERN001 :
+        return function(i, j) { return i % 2 == 0; };
+      case QRMaskPattern.PATTERN010 :
+        return function(i, j) { return j % 3 == 0; };
+      case QRMaskPattern.PATTERN011 :
+        return function(i, j) { return (i + j) % 3 == 0; };
+      case QRMaskPattern.PATTERN100 :
+        return function(i, j) { return (Math.floor(i / 2) + Math.floor(j / 3) ) % 2 == 0; };
+      case QRMaskPattern.PATTERN101 :
+        return function(i, j) { return (i * j) % 2 + (i * j) % 3 == 0; };
+      case QRMaskPattern.PATTERN110 :
+        return function(i, j) { return ( (i * j) % 2 + (i * j) % 3) % 2 == 0; };
+      case QRMaskPattern.PATTERN111 :
+        return function(i, j) { return ( (i * j) % 3 + (i + j) % 2) % 2 == 0; };
+
+      default :
+        throw 'bad maskPattern:' + maskPattern;
+      }
+    };
+
+    _this.getErrorCorrectPolynomial = function(errorCorrectLength) {
+      var a = qrPolynomial([1], 0);
+      for (var i = 0; i < errorCorrectLength; i += 1) {
+        a = a.multiply(qrPolynomial([1, QRMath.gexp(i)], 0) );
+      }
+      return a;
+    };
+
+    _this.getLengthInBits = function(mode, type) {
+
+      if (1 <= type && type < 10) {
+
+        // 1 - 9
+
+        switch(mode) {
+        case QRMode.MODE_NUMBER    : return 10;
+        case QRMode.MODE_ALPHA_NUM : return 9;
+        case QRMode.MODE_8BIT_BYTE : return 8;
+        case QRMode.MODE_KANJI     : return 8;
+        default :
+          throw 'mode:' + mode;
+        }
+
+      } else if (type < 27) {
+
+        // 10 - 26
+
+        switch(mode) {
+        case QRMode.MODE_NUMBER    : return 12;
+        case QRMode.MODE_ALPHA_NUM : return 11;
+        case QRMode.MODE_8BIT_BYTE : return 16;
+        case QRMode.MODE_KANJI     : return 10;
+        default :
+          throw 'mode:' + mode;
+        }
+
+      } else if (type < 41) {
+
+        // 27 - 40
+
+        switch(mode) {
+        case QRMode.MODE_NUMBER    : return 14;
+        case QRMode.MODE_ALPHA_NUM : return 13;
+        case QRMode.MODE_8BIT_BYTE : return 16;
+        case QRMode.MODE_KANJI     : return 12;
+        default :
+          throw 'mode:' + mode;
+        }
+
+      } else {
+        throw 'type:' + type;
+      }
+    };
+
+    _this.getLostPoint = function(qrcode) {
+
+      var moduleCount = qrcode.getModuleCount();
+
+      var lostPoint = 0;
+
+      // LEVEL1
+
+      for (var row = 0; row < moduleCount; row += 1) {
+        for (var col = 0; col < moduleCount; col += 1) {
+
+          var sameCount = 0;
+          var dark = qrcode.isDark(row, col);
+
+          for (var r = -1; r <= 1; r += 1) {
+
+            if (row + r < 0 || moduleCount <= row + r) {
+              continue;
+            }
+
+            for (var c = -1; c <= 1; c += 1) {
+
+              if (col + c < 0 || moduleCount <= col + c) {
+                continue;
+              }
+
+              if (r == 0 && c == 0) {
+                continue;
+              }
+
+              if (dark == qrcode.isDark(row + r, col + c) ) {
+                sameCount += 1;
+              }
+            }
+          }
+
+          if (sameCount > 5) {
+            lostPoint += (3 + sameCount - 5);
+          }
+        }
+      };
+
+      // LEVEL2
+
+      for (var row = 0; row < moduleCount - 1; row += 1) {
+        for (var col = 0; col < moduleCount - 1; col += 1) {
+          var count = 0;
+          if (qrcode.isDark(row, col) ) count += 1;
+          if (qrcode.isDark(row + 1, col) ) count += 1;
+          if (qrcode.isDark(row, col + 1) ) count += 1;
+          if (qrcode.isDark(row + 1, col + 1) ) count += 1;
+          if (count == 0 || count == 4) {
+            lostPoint += 3;
+          }
+        }
+      }
+
+      // LEVEL3
+
+      for (var row = 0; row < moduleCount; row += 1) {
+        for (var col = 0; col < moduleCount - 6; col += 1) {
+          if (qrcode.isDark(row, col)
+              && !qrcode.isDark(row, col + 1)
+              &&  qrcode.isDark(row, col + 2)
+              &&  qrcode.isDark(row, col + 3)
+              &&  qrcode.isDark(row, col + 4)
+              && !qrcode.isDark(row, col + 5)
+              &&  qrcode.isDark(row, col + 6) ) {
+            lostPoint += 40;
+          }
+        }
+      }
+
+      for (var col = 0; col < moduleCount; col += 1) {
+        for (var row = 0; row < moduleCount - 6; row += 1) {
+          if (qrcode.isDark(row, col)
+              && !qrcode.isDark(row + 1, col)
+              &&  qrcode.isDark(row + 2, col)
+              &&  qrcode.isDark(row + 3, col)
+              &&  qrcode.isDark(row + 4, col)
+              && !qrcode.isDark(row + 5, col)
+              &&  qrcode.isDark(row + 6, col) ) {
+            lostPoint += 40;
+          }
+        }
+      }
+
+      // LEVEL4
+
+      var darkCount = 0;
+
+      for (var col = 0; col < moduleCount; col += 1) {
+        for (var row = 0; row < moduleCount; row += 1) {
+          if (qrcode.isDark(row, col) ) {
+            darkCount += 1;
+          }
+        }
+      }
+
+      var ratio = Math.abs(100 * darkCount / moduleCount / moduleCount - 50) / 5;
+      lostPoint += ratio * 10;
+
+      return lostPoint;
+    };
+
+    return _this;
+  }();
+
+  //---------------------------------------------------------------------
+  // QRMath
+  //---------------------------------------------------------------------
+
+  var QRMath = function() {
+
+    var EXP_TABLE = new Array(256);
+    var LOG_TABLE = new Array(256);
+
+    // initialize tables
+    for (var i = 0; i < 8; i += 1) {
+      EXP_TABLE[i] = 1 << i;
+    }
+    for (var i = 8; i < 256; i += 1) {
+      EXP_TABLE[i] = EXP_TABLE[i - 4]
+        ^ EXP_TABLE[i - 5]
+        ^ EXP_TABLE[i - 6]
+        ^ EXP_TABLE[i - 8];
+    }
+    for (var i = 0; i < 255; i += 1) {
+      LOG_TABLE[EXP_TABLE[i] ] = i;
+    }
+
+    var _this = {};
+
+    _this.glog = function(n) {
+
+      if (n < 1) {
+        throw 'glog(' + n + ')';
+      }
+
+      return LOG_TABLE[n];
+    };
+
+    _this.gexp = function(n) {
+
+      while (n < 0) {
+        n += 255;
+      }
+
+      while (n >= 256) {
+        n -= 255;
+      }
+
+      return EXP_TABLE[n];
+    };
+
+    return _this;
+  }();
+
+  //---------------------------------------------------------------------
+  // qrPolynomial
+  //---------------------------------------------------------------------
+
+  function qrPolynomial(num, shift) {
+
+    if (typeof num.length == 'undefined') {
+      throw num.length + '/' + shift;
+    }
+
+    var _num = function() {
+      var offset = 0;
+      while (offset < num.length && num[offset] == 0) {
+        offset += 1;
+      }
+      var _num = new Array(num.length - offset + shift);
+      for (var i = 0; i < num.length - offset; i += 1) {
+        _num[i] = num[i + offset];
+      }
+      return _num;
+    }();
+
+    var _this = {};
+
+    _this.getAt = function(index) {
+      return _num[index];
+    };
+
+    _this.getLength = function() {
+      return _num.length;
+    };
+
+    _this.multiply = function(e) {
+
+      var num = new Array(_this.getLength() + e.getLength() - 1);
+
+      for (var i = 0; i < _this.getLength(); i += 1) {
+        for (var j = 0; j < e.getLength(); j += 1) {
+          num[i + j] ^= QRMath.gexp(QRMath.glog(_this.getAt(i) ) + QRMath.glog(e.getAt(j) ) );
+        }
+      }
+
+      return qrPolynomial(num, 0);
+    };
+
+    _this.mod = function(e) {
+
+      if (_this.getLength() - e.getLength() < 0) {
+        return _this;
+      }
+
+      var ratio = QRMath.glog(_this.getAt(0) ) - QRMath.glog(e.getAt(0) );
+
+      var num = new Array(_this.getLength() );
+      for (var i = 0; i < _this.getLength(); i += 1) {
+        num[i] = _this.getAt(i);
+      }
+
+      for (var i = 0; i < e.getLength(); i += 1) {
+        num[i] ^= QRMath.gexp(QRMath.glog(e.getAt(i) ) + ratio);
+      }
+
+      // recursive call
+      return qrPolynomial(num, 0).mod(e);
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // QRRSBlock
+  //---------------------------------------------------------------------
+
+  var QRRSBlock = function() {
+
+    var RS_BLOCK_TABLE = [
+
+      // L
+      // M
+      // Q
+      // H
+
+      // 1
+      [1, 26, 19],
+      [1, 26, 16],
+      [1, 26, 13],
+      [1, 26, 9],
+
+      // 2
+      [1, 44, 34],
+      [1, 44, 28],
+      [1, 44, 22],
+      [1, 44, 16],
+
+      // 3
+      [1, 70, 55],
+      [1, 70, 44],
+      [2, 35, 17],
+      [2, 35, 13],
+
+      // 4
+      [1, 100, 80],
+      [2, 50, 32],
+      [2, 50, 24],
+      [4, 25, 9],
+
+      // 5
+      [1, 134, 108],
+      [2, 67, 43],
+      [2, 33, 15, 2, 34, 16],
+      [2, 33, 11, 2, 34, 12],
+
+      // 6
+      [2, 86, 68],
+      [4, 43, 27],
+      [4, 43, 19],
+      [4, 43, 15],
+
+      // 7
+      [2, 98, 78],
+      [4, 49, 31],
+      [2, 32, 14, 4, 33, 15],
+      [4, 39, 13, 1, 40, 14],
+
+      // 8
+      [2, 121, 97],
+      [2, 60, 38, 2, 61, 39],
+      [4, 40, 18, 2, 41, 19],
+      [4, 40, 14, 2, 41, 15],
+
+      // 9
+      [2, 146, 116],
+      [3, 58, 36, 2, 59, 37],
+      [4, 36, 16, 4, 37, 17],
+      [4, 36, 12, 4, 37, 13],
+
+      // 10
+      [2, 86, 68, 2, 87, 69],
+      [4, 69, 43, 1, 70, 44],
+      [6, 43, 19, 2, 44, 20],
+      [6, 43, 15, 2, 44, 16],
+
+      // 11
+      [4, 101, 81],
+      [1, 80, 50, 4, 81, 51],
+      [4, 50, 22, 4, 51, 23],
+      [3, 36, 12, 8, 37, 13],
+
+      // 12
+      [2, 116, 92, 2, 117, 93],
+      [6, 58, 36, 2, 59, 37],
+      [4, 46, 20, 6, 47, 21],
+      [7, 42, 14, 4, 43, 15],
+
+      // 13
+      [4, 133, 107],
+      [8, 59, 37, 1, 60, 38],
+      [8, 44, 20, 4, 45, 21],
+      [12, 33, 11, 4, 34, 12],
+
+      // 14
+      [3, 145, 115, 1, 146, 116],
+      [4, 64, 40, 5, 65, 41],
+      [11, 36, 16, 5, 37, 17],
+      [11, 36, 12, 5, 37, 13],
+
+      // 15
+      [5, 109, 87, 1, 110, 88],
+      [5, 65, 41, 5, 66, 42],
+      [5, 54, 24, 7, 55, 25],
+      [11, 36, 12, 7, 37, 13],
+
+      // 16
+      [5, 122, 98, 1, 123, 99],
+      [7, 73, 45, 3, 74, 46],
+      [15, 43, 19, 2, 44, 20],
+      [3, 45, 15, 13, 46, 16],
+
+      // 17
+      [1, 135, 107, 5, 136, 108],
+      [10, 74, 46, 1, 75, 47],
+      [1, 50, 22, 15, 51, 23],
+      [2, 42, 14, 17, 43, 15],
+
+      // 18
+      [5, 150, 120, 1, 151, 121],
+      [9, 69, 43, 4, 70, 44],
+      [17, 50, 22, 1, 51, 23],
+      [2, 42, 14, 19, 43, 15],
+
+      // 19
+      [3, 141, 113, 4, 142, 114],
+      [3, 70, 44, 11, 71, 45],
+      [17, 47, 21, 4, 48, 22],
+      [9, 39, 13, 16, 40, 14],
+
+      // 20
+      [3, 135, 107, 5, 136, 108],
+      [3, 67, 41, 13, 68, 42],
+      [15, 54, 24, 5, 55, 25],
+      [15, 43, 15, 10, 44, 16],
+
+      // 21
+      [4, 144, 116, 4, 145, 117],
+      [17, 68, 42],
+      [17, 50, 22, 6, 51, 23],
+      [19, 46, 16, 6, 47, 17],
+
+      // 22
+      [2, 139, 111, 7, 140, 112],
+      [17, 74, 46],
+      [7, 54, 24, 16, 55, 25],
+      [34, 37, 13],
+
+      // 23
+      [4, 151, 121, 5, 152, 122],
+      [4, 75, 47, 14, 76, 48],
+      [11, 54, 24, 14, 55, 25],
+      [16, 45, 15, 14, 46, 16],
+
+      // 24
+      [6, 147, 117, 4, 148, 118],
+      [6, 73, 45, 14, 74, 46],
+      [11, 54, 24, 16, 55, 25],
+      [30, 46, 16, 2, 47, 17],
+
+      // 25
+      [8, 132, 106, 4, 133, 107],
+      [8, 75, 47, 13, 76, 48],
+      [7, 54, 24, 22, 55, 25],
+      [22, 45, 15, 13, 46, 16],
+
+      // 26
+      [10, 142, 114, 2, 143, 115],
+      [19, 74, 46, 4, 75, 47],
+      [28, 50, 22, 6, 51, 23],
+      [33, 46, 16, 4, 47, 17],
+
+      // 27
+      [8, 152, 122, 4, 153, 123],
+      [22, 73, 45, 3, 74, 46],
+      [8, 53, 23, 26, 54, 24],
+      [12, 45, 15, 28, 46, 16],
+
+      // 28
+      [3, 147, 117, 10, 148, 118],
+      [3, 73, 45, 23, 74, 46],
+      [4, 54, 24, 31, 55, 25],
+      [11, 45, 15, 31, 46, 16],
+
+      // 29
+      [7, 146, 116, 7, 147, 117],
+      [21, 73, 45, 7, 74, 46],
+      [1, 53, 23, 37, 54, 24],
+      [19, 45, 15, 26, 46, 16],
+
+      // 30
+      [5, 145, 115, 10, 146, 116],
+      [19, 75, 47, 10, 76, 48],
+      [15, 54, 24, 25, 55, 25],
+      [23, 45, 15, 25, 46, 16],
+
+      // 31
+      [13, 145, 115, 3, 146, 116],
+      [2, 74, 46, 29, 75, 47],
+      [42, 54, 24, 1, 55, 25],
+      [23, 45, 15, 28, 46, 16],
+
+      // 32
+      [17, 145, 115],
+      [10, 74, 46, 23, 75, 47],
+      [10, 54, 24, 35, 55, 25],
+      [19, 45, 15, 35, 46, 16],
+
+      // 33
+      [17, 145, 115, 1, 146, 116],
+      [14, 74, 46, 21, 75, 47],
+      [29, 54, 24, 19, 55, 25],
+      [11, 45, 15, 46, 46, 16],
+
+      // 34
+      [13, 145, 115, 6, 146, 116],
+      [14, 74, 46, 23, 75, 47],
+      [44, 54, 24, 7, 55, 25],
+      [59, 46, 16, 1, 47, 17],
+
+      // 35
+      [12, 151, 121, 7, 152, 122],
+      [12, 75, 47, 26, 76, 48],
+      [39, 54, 24, 14, 55, 25],
+      [22, 45, 15, 41, 46, 16],
+
+      // 36
+      [6, 151, 121, 14, 152, 122],
+      [6, 75, 47, 34, 76, 48],
+      [46, 54, 24, 10, 55, 25],
+      [2, 45, 15, 64, 46, 16],
+
+      // 37
+      [17, 152, 122, 4, 153, 123],
+      [29, 74, 46, 14, 75, 47],
+      [49, 54, 24, 10, 55, 25],
+      [24, 45, 15, 46, 46, 16],
+
+      // 38
+      [4, 152, 122, 18, 153, 123],
+      [13, 74, 46, 32, 75, 47],
+      [48, 54, 24, 14, 55, 25],
+      [42, 45, 15, 32, 46, 16],
+
+      // 39
+      [20, 147, 117, 4, 148, 118],
+      [40, 75, 47, 7, 76, 48],
+      [43, 54, 24, 22, 55, 25],
+      [10, 45, 15, 67, 46, 16],
+
+      // 40
+      [19, 148, 118, 6, 149, 119],
+      [18, 75, 47, 31, 76, 48],
+      [34, 54, 24, 34, 55, 25],
+      [20, 45, 15, 61, 46, 16]
+    ];
+
+    var qrRSBlock = function(totalCount, dataCount) {
+      var _this = {};
+      _this.totalCount = totalCount;
+      _this.dataCount = dataCount;
+      return _this;
+    };
+
+    var _this = {};
+
+    var getRsBlockTable = function(typeNumber, errorCorrectionLevel) {
+
+      switch(errorCorrectionLevel) {
+      case QRErrorCorrectionLevel.L :
+        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 0];
+      case QRErrorCorrectionLevel.M :
+        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 1];
+      case QRErrorCorrectionLevel.Q :
+        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 2];
+      case QRErrorCorrectionLevel.H :
+        return RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
+      default :
+        return undefined;
+      }
+    };
+
+    _this.getRSBlocks = function(typeNumber, errorCorrectionLevel) {
+
+      var rsBlock = getRsBlockTable(typeNumber, errorCorrectionLevel);
+
+      if (typeof rsBlock == 'undefined') {
+        throw 'bad rs block @ typeNumber:' + typeNumber +
+            '/errorCorrectionLevel:' + errorCorrectionLevel;
+      }
+
+      var length = rsBlock.length / 3;
+
+      var list = [];
+
+      for (var i = 0; i < length; i += 1) {
+
+        var count = rsBlock[i * 3 + 0];
+        var totalCount = rsBlock[i * 3 + 1];
+        var dataCount = rsBlock[i * 3 + 2];
+
+        for (var j = 0; j < count; j += 1) {
+          list.push(qrRSBlock(totalCount, dataCount) );
+        }
+      }
+
+      return list;
+    };
+
+    return _this;
+  }();
+
+  //---------------------------------------------------------------------
+  // qrBitBuffer
+  //---------------------------------------------------------------------
+
+  var qrBitBuffer = function() {
+
+    var _buffer = [];
+    var _length = 0;
+
+    var _this = {};
+
+    _this.getBuffer = function() {
+      return _buffer;
+    };
+
+    _this.getAt = function(index) {
+      var bufIndex = Math.floor(index / 8);
+      return ( (_buffer[bufIndex] >>> (7 - index % 8) ) & 1) == 1;
+    };
+
+    _this.put = function(num, length) {
+      for (var i = 0; i < length; i += 1) {
+        _this.putBit( ( (num >>> (length - i - 1) ) & 1) == 1);
+      }
+    };
+
+    _this.getLengthInBits = function() {
+      return _length;
+    };
+
+    _this.putBit = function(bit) {
+
+      var bufIndex = Math.floor(_length / 8);
+      if (_buffer.length <= bufIndex) {
+        _buffer.push(0);
+      }
+
+      if (bit) {
+        _buffer[bufIndex] |= (0x80 >>> (_length % 8) );
+      }
+
+      _length += 1;
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // qrNumber
+  //---------------------------------------------------------------------
+
+  var qrNumber = function(data) {
+
+    var _mode = QRMode.MODE_NUMBER;
+    var _data = data;
+
+    var _this = {};
+
+    _this.getMode = function() {
+      return _mode;
+    };
+
+    _this.getLength = function(buffer) {
+      return _data.length;
+    };
+
+    _this.write = function(buffer) {
+
+      var data = _data;
+
+      var i = 0;
+
+      while (i + 2 < data.length) {
+        buffer.put(strToNum(data.substring(i, i + 3) ), 10);
+        i += 3;
+      }
+
+      if (i < data.length) {
+        if (data.length - i == 1) {
+          buffer.put(strToNum(data.substring(i, i + 1) ), 4);
+        } else if (data.length - i == 2) {
+          buffer.put(strToNum(data.substring(i, i + 2) ), 7);
+        }
+      }
+    };
+
+    var strToNum = function(s) {
+      var num = 0;
+      for (var i = 0; i < s.length; i += 1) {
+        num = num * 10 + chatToNum(s.charAt(i) );
+      }
+      return num;
+    };
+
+    var chatToNum = function(c) {
+      if ('0' <= c && c <= '9') {
+        return c.charCodeAt(0) - '0'.charCodeAt(0);
+      }
+      throw 'illegal char :' + c;
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // qrAlphaNum
+  //---------------------------------------------------------------------
+
+  var qrAlphaNum = function(data) {
+
+    var _mode = QRMode.MODE_ALPHA_NUM;
+    var _data = data;
+
+    var _this = {};
+
+    _this.getMode = function() {
+      return _mode;
+    };
+
+    _this.getLength = function(buffer) {
+      return _data.length;
+    };
+
+    _this.write = function(buffer) {
+
+      var s = _data;
+
+      var i = 0;
+
+      while (i + 1 < s.length) {
+        buffer.put(
+          getCode(s.charAt(i) ) * 45 +
+          getCode(s.charAt(i + 1) ), 11);
+        i += 2;
+      }
+
+      if (i < s.length) {
+        buffer.put(getCode(s.charAt(i) ), 6);
+      }
+    };
+
+    var getCode = function(c) {
+
+      if ('0' <= c && c <= '9') {
+        return c.charCodeAt(0) - '0'.charCodeAt(0);
+      } else if ('A' <= c && c <= 'Z') {
+        return c.charCodeAt(0) - 'A'.charCodeAt(0) + 10;
+      } else {
+        switch (c) {
+        case ' ' : return 36;
+        case '$' : return 37;
+        case '%' : return 38;
+        case '*' : return 39;
+        case '+' : return 40;
+        case '-' : return 41;
+        case '.' : return 42;
+        case '/' : return 43;
+        case ':' : return 44;
+        default :
+          throw 'illegal char :' + c;
+        }
+      }
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // qr8BitByte
+  //---------------------------------------------------------------------
+
+  var qr8BitByte = function(data) {
+
+    var _mode = QRMode.MODE_8BIT_BYTE;
+    var _data = data;
+    var _bytes = qrcode.stringToBytes(data);
+
+    var _this = {};
+
+    _this.getMode = function() {
+      return _mode;
+    };
+
+    _this.getLength = function(buffer) {
+      return _bytes.length;
+    };
+
+    _this.write = function(buffer) {
+      for (var i = 0; i < _bytes.length; i += 1) {
+        buffer.put(_bytes[i], 8);
+      }
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // qrKanji
+  //---------------------------------------------------------------------
+
+  var qrKanji = function(data) {
+
+    var _mode = QRMode.MODE_KANJI;
+    var _data = data;
+
+    var stringToBytes = qrcode.stringToBytesFuncs['SJIS'];
+    if (!stringToBytes) {
+      throw 'sjis not supported.';
+    }
+    !function(c, code) {
+      // self test for sjis support.
+      var test = stringToBytes(c);
+      if (test.length != 2 || ( (test[0] << 8) | test[1]) != code) {
+        throw 'sjis not supported.';
+      }
+    }('\u53cb', 0x9746);
+
+    var _bytes = stringToBytes(data);
+
+    var _this = {};
+
+    _this.getMode = function() {
+      return _mode;
+    };
+
+    _this.getLength = function(buffer) {
+      return ~~(_bytes.length / 2);
+    };
+
+    _this.write = function(buffer) {
+
+      var data = _bytes;
+
+      var i = 0;
+
+      while (i + 1 < data.length) {
+
+        var c = ( (0xff & data[i]) << 8) | (0xff & data[i + 1]);
+
+        if (0x8140 <= c && c <= 0x9FFC) {
+          c -= 0x8140;
+        } else if (0xE040 <= c && c <= 0xEBBF) {
+          c -= 0xC140;
+        } else {
+          throw 'illegal char at ' + (i + 1) + '/' + c;
+        }
+
+        c = ( (c >>> 8) & 0xff) * 0xC0 + (c & 0xff);
+
+        buffer.put(c, 13);
+
+        i += 2;
+      }
+
+      if (i < data.length) {
+        throw 'illegal char at ' + (i + 1);
+      }
+    };
+
+    return _this;
+  };
+
+  //=====================================================================
+  // GIF Support etc.
+  //
+
+  //---------------------------------------------------------------------
+  // byteArrayOutputStream
+  //---------------------------------------------------------------------
+
+  var byteArrayOutputStream = function() {
+
+    var _bytes = [];
+
+    var _this = {};
+
+    _this.writeByte = function(b) {
+      _bytes.push(b & 0xff);
+    };
+
+    _this.writeShort = function(i) {
+      _this.writeByte(i);
+      _this.writeByte(i >>> 8);
+    };
+
+    _this.writeBytes = function(b, off, len) {
+      off = off || 0;
+      len = len || b.length;
+      for (var i = 0; i < len; i += 1) {
+        _this.writeByte(b[i + off]);
+      }
+    };
+
+    _this.writeString = function(s) {
+      for (var i = 0; i < s.length; i += 1) {
+        _this.writeByte(s.charCodeAt(i) );
+      }
+    };
+
+    _this.toByteArray = function() {
+      return _bytes;
+    };
+
+    _this.toString = function() {
+      var s = '';
+      s += '[';
+      for (var i = 0; i < _bytes.length; i += 1) {
+        if (i > 0) {
+          s += ',';
+        }
+        s += _bytes[i];
+      }
+      s += ']';
+      return s;
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // base64EncodeOutputStream
+  //---------------------------------------------------------------------
+
+  var base64EncodeOutputStream = function() {
+
+    var _buffer = 0;
+    var _buflen = 0;
+    var _length = 0;
+    var _base64 = '';
+
+    var _this = {};
+
+    var writeEncoded = function(b) {
+      _base64 += String.fromCharCode(encode(b & 0x3f) );
+    };
+
+    var encode = function(n) {
+      if (n < 0) {
+        // error.
+      } else if (n < 26) {
+        return 0x41 + n;
+      } else if (n < 52) {
+        return 0x61 + (n - 26);
+      } else if (n < 62) {
+        return 0x30 + (n - 52);
+      } else if (n == 62) {
+        return 0x2b;
+      } else if (n == 63) {
+        return 0x2f;
+      }
+      throw 'n:' + n;
+    };
+
+    _this.writeByte = function(n) {
+
+      _buffer = (_buffer << 8) | (n & 0xff);
+      _buflen += 8;
+      _length += 1;
+
+      while (_buflen >= 6) {
+        writeEncoded(_buffer >>> (_buflen - 6) );
+        _buflen -= 6;
+      }
+    };
+
+    _this.flush = function() {
+
+      if (_buflen > 0) {
+        writeEncoded(_buffer << (6 - _buflen) );
+        _buffer = 0;
+        _buflen = 0;
+      }
+
+      if (_length % 3 != 0) {
+        // padding
+        var padlen = 3 - _length % 3;
+        for (var i = 0; i < padlen; i += 1) {
+          _base64 += '=';
+        }
+      }
+    };
+
+    _this.toString = function() {
+      return _base64;
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // base64DecodeInputStream
+  //---------------------------------------------------------------------
+
+  var base64DecodeInputStream = function(str) {
+
+    var _str = str;
+    var _pos = 0;
+    var _buffer = 0;
+    var _buflen = 0;
+
+    var _this = {};
+
+    _this.read = function() {
+
+      while (_buflen < 8) {
+
+        if (_pos >= _str.length) {
+          if (_buflen == 0) {
+            return -1;
+          }
+          throw 'unexpected end of file./' + _buflen;
+        }
+
+        var c = _str.charAt(_pos);
+        _pos += 1;
+
+        if (c == '=') {
+          _buflen = 0;
+          return -1;
+        } else if (c.match(/^\s$/) ) {
+          // ignore if whitespace.
+          continue;
+        }
+
+        _buffer = (_buffer << 6) | decode(c.charCodeAt(0) );
+        _buflen += 6;
+      }
+
+      var n = (_buffer >>> (_buflen - 8) ) & 0xff;
+      _buflen -= 8;
+      return n;
+    };
+
+    var decode = function(c) {
+      if (0x41 <= c && c <= 0x5a) {
+        return c - 0x41;
+      } else if (0x61 <= c && c <= 0x7a) {
+        return c - 0x61 + 26;
+      } else if (0x30 <= c && c <= 0x39) {
+        return c - 0x30 + 52;
+      } else if (c == 0x2b) {
+        return 62;
+      } else if (c == 0x2f) {
+        return 63;
+      } else {
+        throw 'c:' + c;
+      }
+    };
+
+    return _this;
+  };
+
+  //---------------------------------------------------------------------
+  // gifImage (B/W)
+  //---------------------------------------------------------------------
+
+  var gifImage = function(width, height) {
+
+    var _width = width;
+    var _height = height;
+    var _data = new Array(width * height);
+
+    var _this = {};
+
+    _this.setPixel = function(x, y, pixel) {
+      _data[y * _width + x] = pixel;
+    };
+
+    _this.write = function(out) {
+
+      //---------------------------------
+      // GIF Signature
+
+      out.writeString('GIF87a');
+
+      //---------------------------------
+      // Screen Descriptor
+
+      out.writeShort(_width);
+      out.writeShort(_height);
+
+      out.writeByte(0x80); // 2bit
+      out.writeByte(0);
+      out.writeByte(0);
+
+      //---------------------------------
+      // Global Color Map
+
+      // black
+      out.writeByte(0x00);
+      out.writeByte(0x00);
+      out.writeByte(0x00);
+
+      // white
+      out.writeByte(0xff);
+      out.writeByte(0xff);
+      out.writeByte(0xff);
+
+      //---------------------------------
+      // Image Descriptor
+
+      out.writeString(',');
+      out.writeShort(0);
+      out.writeShort(0);
+      out.writeShort(_width);
+      out.writeShort(_height);
+      out.writeByte(0);
+
+      //---------------------------------
+      // Local Color Map
+
+      //---------------------------------
+      // Raster Data
+
+      var lzwMinCodeSize = 2;
+      var raster = getLZWRaster(lzwMinCodeSize);
+
+      out.writeByte(lzwMinCodeSize);
+
+      var offset = 0;
+
+      while (raster.length - offset > 255) {
+        out.writeByte(255);
+        out.writeBytes(raster, offset, 255);
+        offset += 255;
+      }
+
+      out.writeByte(raster.length - offset);
+      out.writeBytes(raster, offset, raster.length - offset);
+      out.writeByte(0x00);
+
+      //---------------------------------
+      // GIF Terminator
+      out.writeString(';');
+    };
+
+    var bitOutputStream = function(out) {
+
+      var _out = out;
+      var _bitLength = 0;
+      var _bitBuffer = 0;
+
+      var _this = {};
+
+      _this.write = function(data, length) {
+
+        if ( (data >>> length) != 0) {
+          throw 'length over';
+        }
+
+        while (_bitLength + length >= 8) {
+          _out.writeByte(0xff & ( (data << _bitLength) | _bitBuffer) );
+          length -= (8 - _bitLength);
+          data >>>= (8 - _bitLength);
+          _bitBuffer = 0;
+          _bitLength = 0;
+        }
+
+        _bitBuffer = (data << _bitLength) | _bitBuffer;
+        _bitLength = _bitLength + length;
+      };
+
+      _this.flush = function() {
+        if (_bitLength > 0) {
+          _out.writeByte(_bitBuffer);
+        }
+      };
+
+      return _this;
+    };
+
+    var getLZWRaster = function(lzwMinCodeSize) {
+
+      var clearCode = 1 << lzwMinCodeSize;
+      var endCode = (1 << lzwMinCodeSize) + 1;
+      var bitLength = lzwMinCodeSize + 1;
+
+      // Setup LZWTable
+      var table = lzwTable();
+
+      for (var i = 0; i < clearCode; i += 1) {
+        table.add(String.fromCharCode(i) );
+      }
+      table.add(String.fromCharCode(clearCode) );
+      table.add(String.fromCharCode(endCode) );
+
+      var byteOut = byteArrayOutputStream();
+      var bitOut = bitOutputStream(byteOut);
+
+      // clear code
+      bitOut.write(clearCode, bitLength);
+
+      var dataIndex = 0;
+
+      var s = String.fromCharCode(_data[dataIndex]);
+      dataIndex += 1;
+
+      while (dataIndex < _data.length) {
+
+        var c = String.fromCharCode(_data[dataIndex]);
+        dataIndex += 1;
+
+        if (table.contains(s + c) ) {
+
+          s = s + c;
+
+        } else {
+
+          bitOut.write(table.indexOf(s), bitLength);
+
+          if (table.size() < 0xfff) {
+
+            if (table.size() == (1 << bitLength) ) {
+              bitLength += 1;
+            }
+
+            table.add(s + c);
+          }
+
+          s = c;
+        }
+      }
+
+      bitOut.write(table.indexOf(s), bitLength);
+
+      // end code
+      bitOut.write(endCode, bitLength);
+
+      bitOut.flush();
+
+      return byteOut.toByteArray();
+    };
+
+    var lzwTable = function() {
+
+      var _map = {};
+      var _size = 0;
+
+      var _this = {};
+
+      _this.add = function(key) {
+        if (_this.contains(key) ) {
+          throw 'dup key:' + key;
+        }
+        _map[key] = _size;
+        _size += 1;
+      };
+
+      _this.size = function() {
+        return _size;
+      };
+
+      _this.indexOf = function(key) {
+        return _map[key];
+      };
+
+      _this.contains = function(key) {
+        return typeof _map[key] != 'undefined';
+      };
+
+      return _this;
+    };
+
+    return _this;
+  };
+
+  var createDataURL = function(width, height, getPixel) {
+    var gif = gifImage(width, height);
+    for (var y = 0; y < height; y += 1) {
+      for (var x = 0; x < width; x += 1) {
+        gif.setPixel(x, y, getPixel(x, y) );
+      }
+    }
+
+    var b = byteArrayOutputStream();
+    gif.write(b);
+
+    var base64 = base64EncodeOutputStream();
+    var bytes = b.toByteArray();
+    for (var i = 0; i < bytes.length; i += 1) {
+      base64.writeByte(bytes[i]);
+    }
+    base64.flush();
+
+    return 'data:image/gif;base64,' + base64;
+  };
+
+  //---------------------------------------------------------------------
+  // returns qrcode function.
+
+  return qrcode;
+}();
+
+// multibyte support
+!function() {
+
+  qrcode.stringToBytesFuncs['UTF-8'] = function(s) {
+    // http://stackoverflow.com/questions/18729405/how-to-convert-utf8-string-to-byte-array
+    function toUTF8Array(str) {
+      var utf8 = [];
+      for (var i=0; i < str.length; i++) {
+        var charcode = str.charCodeAt(i);
+        if (charcode < 0x80) utf8.push(charcode);
+        else if (charcode < 0x800) {
+          utf8.push(0xc0 | (charcode >> 6),
+              0x80 | (charcode & 0x3f));
+        }
+        else if (charcode < 0xd800 || charcode >= 0xe000) {
+          utf8.push(0xe0 | (charcode >> 12),
+              0x80 | ((charcode>>6) & 0x3f),
+              0x80 | (charcode & 0x3f));
+        }
+        // surrogate pair
+        else {
+          i++;
+          // UTF-16 encodes 0x10000-0x10FFFF by
+          // subtracting 0x10000 and splitting the
+          // 20 bits of 0x0-0xFFFFF into two halves
+          charcode = 0x10000 + (((charcode & 0x3ff)<<10)
+            | (str.charCodeAt(i) & 0x3ff));
+          utf8.push(0xf0 | (charcode >>18),
+              0x80 | ((charcode>>12) & 0x3f),
+              0x80 | ((charcode>>6) & 0x3f),
+              0x80 | (charcode & 0x3f));
+        }
+      }
+      return utf8;
+    }
+    return toUTF8Array(s);
+  };
+
+}();
+
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+      define([], factory);
+  } else if (typeof exports === 'object') {
+      module.exports = factory();
+  }
+}(function () {
+    return qrcode;
+}));
+  </script>
+
+  <script>
     const PRISTINE_HTML = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
     const POINTS = [
       { name: "test", code: "", status: "", uid: "", type: "", device: "", period: "不在时段", wallet: "92-加餐钱包,:91-充值钱包", mode: "自动切换" },
@@ -3580,6 +6397,9 @@
       { name: "8365-hx-消费点", code: "8365-hx", status: "离线", uid: "ARMXF00000084293D9CBF20", type: "XF8365_M", device: "8365-hx", period: "默认消费时段", wallet: "92-加餐钱包,:91-充值钱包", mode: "不开启" },
       { name: "wjp-订餐核销-消费点", code: "wjp-订餐核销", status: "离线", uid: "ARMXF000000402C7662CD98", type: "XF7912_M", device: "wjp-订餐核销", period: "默认消费时段", wallet: "92-加餐钱包,:91-充值钱包", mode: "自动切换" }
     ];
+    POINTS.forEach((p, i) => {
+      if (!p.payNo) p.payNo = "admin" + String(346 + i).padStart(6, "0");
+    });
 
     const CALL_SCREENS = [
       { id: "ARMMJ0000001C54E6", name: "消费点叫号32寸屏" },
@@ -3662,7 +6482,7 @@
       const input = root.querySelector("input");
       root.addEventListener("click", (e) => {
         e.stopPropagation();
-        document.querySelectorAll(".el-select.open, .tree-select.open, .search-select.open").forEach((s) => {
+        document.querySelectorAll(".el-select.open, .tree-select.open, .search-select.open, .tag-select.open, .hcd-pop.open, .meal-picker.open").forEach((s) => {
           if (s !== root) s.classList.remove("open");
         });
         root.classList.toggle("open");
@@ -3686,6 +6506,16 @@
     bindSelect("rankMealSelect");
     bindSelect("ccWalletSelect");
     bindSelect("pwWalletSelect");
+    bindSelect("hcdPointSelect");
+    bindSelect("hcdWalletSelect");
+    bindSelect("hcdTimeFieldSelect");
+    bindSelect("hcdFactorySelect");
+    bindSelect("hcdGroupSelect");
+    bindSelect("hcdCostSelect");
+    bindSelect("hcdGradeSelect");
+    bindSelect("hcdPlaceSelect");
+    bindSelect("batchGroupSelect");
+    bindSelect("batchDeviceSelect");
 
     /* ===== 通用分页 ===== */
     function createPager(ids, onRender) {
@@ -3761,6 +6591,7 @@
         "online-cashier-summary": { el: "page-online-cashier-summary", title: "圈存、网页、微信、APP出纳汇总表", group: "report" },
         "device-consume-summary": { el: "page-device-consume-summary", title: "消费机消费汇总表", group: "report" },
         "dept-balance": { el: "page-dept-balance", title: "账户余额表(按部门)", group: "report" },
+        "history-consume-detail": { el: "page-history-consume-detail", title: "历史消费明细", group: "consume-query" },
         "recharge-approve": { el: "page-recharge-approve", title: "充值名单审批", group: "approve" }
       };
       Object.keys(pages).forEach((key) => {
@@ -3812,6 +6643,9 @@
       }
       if (pageKey === "dept-balance") {
         renderDeptBalanceTable();
+      }
+      if (pageKey === "history-consume-detail") {
+        renderHistoryConsumeTable();
       }
       if (pageKey === "recharge-approve") {
         renderRechargeApproveTable();
@@ -3966,6 +6800,10 @@
         switchConsumePage("dept-balance");
         return;
       }
+      if (item.dataset.key === "history-consume-detail") {
+        switchConsumePage("history-consume-detail");
+        return;
+      }
       if (item.dataset.key === "point") {
         switchConsumePage("point");
         return;
@@ -4103,7 +6941,7 @@
     }
 
     function closeFilterPopups(except) {
-      document.querySelectorAll(".el-select.open, .tree-select.open, .search-select.open").forEach((s) => {
+      document.querySelectorAll(".el-select.open, .tree-select.open, .search-select.open, .tag-select.open, .hcd-pop.open, .meal-picker.open").forEach((s) => {
         if (s !== except) s.classList.remove("open");
       });
     }
@@ -5922,6 +8760,690 @@
     document.getElementById("btnAbdPrint").addEventListener("click", openDeptBalancePrint);
     document.getElementById("abdDate").value = getReportToday();
 
+    /* ===== 历史消费明细 ===== */
+    const HISTORY_CONSUME_DATA = [
+      { name: "张三", code: "E10001", deptNo: "010101", dept: "研发部", card: "C0010231", serial: "100231", time: "2026-10-16 07:42:18", upload: "2026-10-16 07:42:26", pointNo: "XF001", point: "支付堂-7-消费点", merchant: "支付堂", device: "支付堂-7", walletNo: "1", wallet: "个人钱包", type: "单价消费", pay: "刷脸", meal: "早餐", amount: 8.5, discount: 0, balance: 126.4, operator: "系统管理员", place: "一食堂", remark: "" },
+      { name: "李四", code: "E10002", deptNo: "010102", dept: "平台小组", card: "C0010232", serial: "100232", time: "2026-10-16 11:58:03", upload: "2026-10-16 11:58:11", pointNo: "XF003", point: "8365-hx-消费点", merchant: "一食堂商户", device: "8365-hx", walletNo: "2", wallet: "补贴钱包", type: "定额消费", pay: "刷卡", meal: "午餐", amount: 15, discount: 1, balance: 86.2, operator: "财务-李娜", place: "一食堂", remark: "" },
+      { name: "王五", code: "E10003", deptNo: "020101", dept: "招聘组", card: "C0010547", serial: "100547", time: "2026-10-15 17:36:41", upload: "2026-10-15 17:36:49", pointNo: "XF002", point: "手持消费机-7E63-消费点", merchant: "手持消费", device: "手持消费机-7E63", walletNo: "3", wallet: "现金钱包", type: "菜单消费", pay: "二维码", meal: "晚餐", amount: 22.8, discount: 0, balance: 40.5, operator: "财务-陈刚", place: "二食堂", remark: "" },
+      { name: "钱七", code: "E10005", deptNo: "030101", dept: "一食堂", card: "C0011026", serial: "101026", time: "2026-10-15 12:06:22", upload: "2026-10-15 12:06:30", pointNo: "XF001", point: "支付堂-7-消费点", merchant: "支付堂", device: "支付堂-7", walletNo: "1", wallet: "个人钱包", type: "定额消费", pay: "刷卡", meal: "午餐", amount: 12, discount: 0, balance: 210, operator: "系统管理员", place: "一食堂", remark: "" },
+      { name: "孙八", code: "E10006", deptNo: "030102", dept: "二食堂", card: "C0011027", serial: "101027", time: "2026-10-14 07:51:09", upload: "2026-10-14 07:51:18", pointNo: "XF004", point: "wjp-订餐核销-消费点", merchant: "一食堂商户", device: "wjp-订餐核销", walletNo: "2", wallet: "补贴钱包", type: "单价消费", pay: "刷脸", meal: "早餐", amount: 6, discount: 0.5, balance: 54.3, operator: "财务-王芳", place: "二食堂", remark: "" },
+      { name: "周九", code: "E10007", deptNo: "040101", dept: "线上推广", card: "C0011390", serial: "101390", time: "2026-10-14 18:22:47", upload: "2026-10-14 18:22:55", pointNo: "XF002", point: "手持消费机-7E63-消费点", merchant: "手持消费", device: "手持消费机-7E63", walletNo: "1", wallet: "个人钱包", type: "菜单消费", pay: "刷卡", meal: "晚餐", amount: 18.6, discount: 0, balance: 73.1, operator: "财务-李娜", place: "一食堂", remark: "" },
+      { name: "吴十", code: "E10008", deptNo: "040201", dept: "上海办", card: "C0011391", serial: "101391", time: "2026-10-13 12:14:55", upload: "2026-10-13 12:15:03", pointNo: "XF003", point: "8365-hx-消费点", merchant: "一食堂商户", device: "8365-hx", walletNo: "3", wallet: "现金钱包", type: "单价消费", pay: "二维码", meal: "午餐", amount: 26.5, discount: 2, balance: 19.8, operator: "财务-陈刚", place: "一食堂", remark: "" },
+      { name: "赵六", code: "E10004", deptNo: "020102", dept: "薪酬组", card: "C0010548", serial: "100548", time: "2026-10-13 07:33:16", upload: "2026-10-13 07:33:24", pointNo: "XF001", point: "支付堂-7-消费点", merchant: "支付堂", device: "支付堂-7", walletNo: "2", wallet: "补贴钱包", type: "计次消费", pay: "刷脸", meal: "早餐", amount: 7.5, discount: 0, balance: 132, operator: "系统管理员", place: "一食堂", remark: "" },
+      { name: "张三", code: "E10001", deptNo: "010101", dept: "研发部", card: "C0010231", serial: "100231", time: "2026-10-12 12:01:28", upload: "2026-10-12 12:01:36", pointNo: "XF004", point: "wjp-订餐核销-消费点", merchant: "支付堂", device: "wjp-订餐核销", walletNo: "1", wallet: "个人钱包", type: "定额消费", pay: "刷卡", meal: "午餐", amount: 16.2, discount: 0, balance: 110.2, operator: "财务-王芳", place: "二食堂", remark: "" },
+      { name: "郑十一", code: "E10009", deptNo: "010101", dept: "研发部", card: "C0011802", serial: "101802", time: "2026-10-11 17:48:33", upload: "2026-10-11 17:48:41", pointNo: "XF003", point: "8365-hx-消费点", merchant: "一食堂商户", device: "8365-hx", walletNo: "1", wallet: "个人钱包", type: "菜单消费", pay: "刷脸", meal: "晚餐", amount: 19, discount: 1, balance: 66.4, operator: "财务-李娜", place: "一食堂", remark: "" },
+      { name: "冯十二", code: "E10010", deptNo: "040100", dept: "品牌部", card: "C0011803", serial: "101803", time: "2026-10-10 11:27:04", upload: "2026-10-10 11:27:12", pointNo: "XF002", point: "手持消费机-7E63-消费点", merchant: "手持消费", device: "手持消费机-7E63", walletNo: "2", wallet: "补贴钱包", type: "单价消费", pay: "刷卡", meal: "午餐", amount: 11.5, discount: 0, balance: 28.7, operator: "财务-陈刚", place: "二食堂", remark: "" },
+      { name: "李四", code: "E10002", deptNo: "010102", dept: "平台小组", card: "C0010232", serial: "100232", time: "2026-10-09 07:18:52", upload: "2026-10-09 07:19:00", pointNo: "XF001", point: "支付堂-7-消费点", merchant: "支付堂", device: "支付堂-7", walletNo: "3", wallet: "现金钱包", type: "定额消费", pay: "二维码", meal: "早餐", amount: 9, discount: 0, balance: 101.2, operator: "系统管理员", place: "一食堂", remark: "" },
+      { name: "钱七", code: "E10005", deptNo: "030111", dept: "档口管理", card: "C0011026", serial: "101026", time: "2026-10-08 12:40:11", upload: "2026-10-08 12:40:19", pointNo: "XF004", point: "wjp-订餐核销-消费点", merchant: "一食堂商户", device: "wjp-订餐核销", walletNo: "1", wallet: "个人钱包", type: "菜单消费", pay: "刷脸", meal: "午餐", amount: 13.8, discount: 0, balance: 196.2, operator: "财务-王芳", place: "一食堂", remark: "" },
+      { name: "王五", code: "E10003", deptNo: "020101", dept: "招聘组", card: "C0010547", serial: "100547", time: "2026-10-07 18:05:39", upload: "2026-10-07 18:05:47", pointNo: "XF003", point: "8365-hx-消费点", merchant: "一食堂商户", device: "8365-hx", walletNo: "2", wallet: "补贴钱包", type: "定额消费", pay: "刷卡", meal: "晚餐", amount: 21, discount: 1.5, balance: 63.3, operator: "财务-李娜", place: "二食堂", remark: "" },
+      { name: "吴十", code: "E10008", deptNo: "040200", dept: "销售部", card: "C0011391", serial: "101391", time: "2026-10-06 07:55:20", upload: "2026-10-06 07:55:28", pointNo: "XF001", point: "支付堂-7-消费点", merchant: "支付堂", device: "支付堂-7", walletNo: "1", wallet: "个人钱包", type: "单价消费", pay: "刷卡", meal: "早餐", amount: 8, discount: 0, balance: 46.3, operator: "系统管理员", place: "一食堂", remark: "" },
+      { name: "孙八", code: "E10006", deptNo: "030100", dept: "食堂运营部", card: "C0011027", serial: "101027", time: "2026-10-03 12:19:46", upload: "2026-10-03 12:19:54", pointNo: "XF002", point: "手持消费机-7E63-消费点", merchant: "手持消费", device: "手持消费机-7E63", walletNo: "3", wallet: "现金钱包", type: "计次消费", pay: "二维码", meal: "午餐", amount: 17.4, discount: 0, balance: 36.9, operator: "财务-陈刚", place: "二食堂", remark: "" }
+    ];
+    HISTORY_CONSUME_DATA.forEach((r, i) => {
+      const day = new Date();
+      day.setDate(day.getDate() - (i % 7));
+      day.setHours(7 + (i % 12), (i * 7) % 60, (i * 13) % 60, 0);
+      const p = (n) => String(n).padStart(2, "0");
+      const stampOf = (d) => `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+      r.time = stampOf(day);
+      r.upload = stampOf(new Date(day.getTime() + 8000));
+      r.online = i !== 7;
+      r.state = i === 3 ? "已退款" : i === 5 ? "退款成功" : "消费成功";
+      r.factory = i === 6 ? "东区厂区" : "总部厂区";
+      r.grade = i % 5 === 0 ? "管理人员" : "普通员工";
+    });
+    let historyConsumeRows = [];
+    let hcdDeptChecked = new Set();
+    let hcdMerchantChecked = new Set();
+
+    const hcdDeptTreeCtl = initCheckTree({
+      rootId: "hcdDeptTree",
+      bodyId: "hcdDeptTreeBody",
+      tree: DEPT_TREE,
+      checkedSet: hcdDeptChecked,
+      placeholder: "请选择所属部门",
+      inputId: "hcdDeptInput",
+      expandAll: true
+    });
+    const hcdMerchantTreeCtl = initCheckTree({
+      rootId: "hcdMerchantTree",
+      bodyId: "hcdMerchantTreeBody",
+      tree: MERCHANT_TREE,
+      checkedSet: hcdMerchantChecked,
+      placeholder: "请选择商户",
+      inputId: "hcdMerchantInput",
+      expandAll: false
+    });
+
+    function setHistoryConsumeDefaultDates() {
+      const now = new Date();
+      const start = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 6);
+      const end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+      const stamp = (d) => {
+        const p = (n) => String(n).padStart(2, "0");
+        return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T00:00`;
+      };
+      document.getElementById("hcdDateStart").value = stamp(start);
+      document.getElementById("hcdDateEnd").value = stamp(end);
+    }
+
+    function hcdInputStamp(id) {
+      const value = document.getElementById(id).value;
+      return value ? value.replace("T", " ").slice(0, 16) : "";
+    }
+
+    const hcdProofChecked = new Set();
+
+    function renderHcdProofTags() {
+      const box = document.getElementById("hcdProofTags");
+      document.querySelectorAll("#hcdProofSelect .dropdown-item").forEach((item) => {
+        item.classList.toggle("selected", hcdProofChecked.has(item.dataset.value));
+      });
+      if (!hcdProofChecked.size) {
+        box.innerHTML = `<span class="tag-placeholder">请选择凭据类型</span>`;
+        return;
+      }
+      box.innerHTML = [...hcdProofChecked].map((name) => `<span class="hcd-tag">${name}<i data-proof="${name}">×</i></span>`).join("");
+    }
+
+    function resetHcdTimeField() {
+      const input = document.querySelector("#hcdTimeFieldSelect input");
+      input.value = "创建时间";
+      input.dataset.value = "创建时间";
+      document.querySelectorAll("#hcdTimeFieldSelect .dropdown-item").forEach((item) => {
+        item.classList.toggle("selected", item.dataset.value === "创建时间");
+      });
+    }
+
+    function filterHistoryConsumeRows() {
+      const timeField = getSelectValue("hcdTimeFieldSelect") || "创建时间";
+      const start = hcdInputStamp("hcdDateStart");
+      const end = hcdInputStamp("hcdDateEnd");
+      const states = [...document.querySelectorAll("#hcdStateGroup input:checked")].map((el) => el.value);
+      const online = document.querySelector("#hcdOnlineGroup input:checked").value;
+      const factory = getSelectValue("hcdFactorySelect");
+      const point = getSelectValue("hcdPointSelect");
+      const group = getSelectValue("hcdGroupSelect");
+      const keyword = document.getElementById("hcdKeyword").value.trim();
+      const cost = getSelectValue("hcdCostSelect");
+      const grade = getSelectValue("hcdGradeSelect");
+      const wallet = getSelectValue("hcdWalletSelect");
+      const place = getSelectValue("hcdPlaceSelect");
+      const tradeIds = document.getElementById("hcdTradeIds").value.trim().split(/\s+/).filter(Boolean);
+      const thirdNos = document.getElementById("hcdThirdNos").value.trim().split(/\s+/).filter(Boolean);
+      return HISTORY_CONSUME_DATA.filter((r) => {
+        const c = historyConsumeCells(r);
+        const when = (timeField === "交易时间" ? r.time : r.upload).slice(0, 16);
+        if (start && when < start) return false;
+        if (end && when > end) return false;
+        if (states.length && !states.includes(r.state)) return false;
+        if ((r.online ? "在线消费" : "离线消费") !== online) return false;
+        if (factory && r.factory !== factory) return false;
+        if (hcdProofChecked.size && !hcdProofChecked.has(c.proof)) return false;
+        if (point && r.point !== point) return false;
+        if (group && c.group !== group) return false;
+        if (keyword && !(r.name.includes(keyword) || r.code.includes(keyword) || r.dept.includes(keyword))) return false;
+        if (!matchTreeChecked(DEPT_TREE, hcdDeptChecked, r.dept)) return false;
+        if (cost && c.costName !== cost) return false;
+        if (grade && r.grade !== grade) return false;
+        if (wallet && r.wallet !== wallet) return false;
+        if (place && r.place !== place) return false;
+        if (!matchMerchantFilter(r.merchant, hcdMerchantChecked)) return false;
+        if (tradeIds.length && !tradeIds.some((id) => c.tradeId.includes(id))) return false;
+        if (thirdNos.length && !thirdNos.some((no) => c.thirdNo.includes(no))) return false;
+        return true;
+      }).sort((a, b) => {
+        const key = timeField === "交易时间" ? "time" : "upload";
+        return b[key].localeCompare(a[key]);
+      });
+    }
+
+    const HCD_COST = {
+      "研发部": ["CC0101", "研发成本中心", "研发消费组"],
+      "平台小组": ["CC0102", "平台成本中心", "研发消费组"],
+      "招聘组": ["CC0201", "招聘成本中心", "行政消费组"],
+      "薪酬组": ["CC0202", "薪酬成本中心", "行政消费组"],
+      "一食堂": ["CC0301", "一食堂成本中心", "食堂消费组"],
+      "二食堂": ["CC0302", "二食堂成本中心", "食堂消费组"],
+      "档口管理": ["CC0303", "档口成本中心", "食堂消费组"],
+      "食堂运营部": ["CC0300", "食堂运营成本中心", "食堂消费组"],
+      "线上推广": ["CC0401", "推广成本中心", "市场消费组"],
+      "品牌部": ["CC0400", "品牌成本中心", "市场消费组"],
+      "上海办": ["CC0402", "上海办成本中心", "销售消费组"],
+      "销售部": ["CC0403", "销售成本中心", "销售消费组"]
+    };
+    const HCD_PROOF = { "刷脸": "人脸", "刷卡": "卡片", "二维码": "二维码" };
+
+    function historyConsumeCells(r) {
+      const cost = HCD_COST[r.dept] || ["CC0000", "默认成本中心", "默认消费组"];
+      const stamp = r.time.replace(/[- :]/g, "");
+      const actual = r.amount - r.discount;
+      return {
+        costCode: cost[0],
+        costName: cost[1],
+        group: cost[2],
+        proof: r.proof || HCD_PROOF[r.pay] || r.pay,
+        actual,
+        tradeId: stamp + r.serial,
+        thirdNo: r.pay === "二维码" ? "WX" + stamp : "",
+        tickets: r.type === "菜单消费" ? "Q" + r.serial : ""
+      };
+    }
+
+    function renderHistoryConsumeTable() {
+      historyConsumeRows = filterHistoryConsumeRows();
+      const body = document.getElementById("historyConsumeBody");
+      const page = hcdPager.slice(historyConsumeRows);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="29"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r) => {
+          const c = historyConsumeCells(r);
+          return `
+          <tr>
+            <td><input type="checkbox" value="${c.tradeId}" /></td>
+            <td>${r.name}</td>
+            <td>${r.code}</td>
+            <td>${r.deptNo}</td>
+            <td>${r.dept}</td>
+            <td>${c.costCode}</td>
+            <td>${c.costName}</td>
+            <td>${r.pointNo}</td>
+            <td>${r.point}</td>
+            <td>${r.upload}</td>
+            <td>${r.time}</td>
+            <td>${r.type}</td>
+            <td>${r.meal}</td>
+            <td>${c.group}</td>
+            <td>${c.proof}</td>
+            <td>${r.pay}</td>
+            <td>${r.amount.toFixed(2)}</td>
+            <td>${r.wallet}</td>
+            <td>${c.actual.toFixed(2)}</td>
+            <td>${r.balance.toFixed(2)}</td>
+            <td>${c.tradeId}</td>
+            <td>${c.thirdNo}</td>
+            <td>${c.tickets}</td>
+            <td>${r.state}</td>
+            <td>${r.operator}</td>
+            <td>${r.device}</td>
+            <td>${r.merchant}</td>
+            <td>${r.place}</td>
+            <td>${r.remark}</td>
+          </tr>`;
+        }).join("");
+      }
+      const totalAmount = historyConsumeRows.reduce((s, r) => s + r.amount, 0);
+      const totalTrade = historyConsumeRows.reduce((s, r) => s + r.amount - r.discount, 0);
+      document.getElementById("historyConsumeSummary").textContent = `合计：消费金额 ${totalAmount.toFixed(2)}　交易金额 ${totalTrade.toFixed(2)}`;
+      document.getElementById("hcdCheckAll").checked = false;
+    }
+
+    const hcdPager = createPager({
+      info: "hcdPagerInfo",
+      prev: "hcdPagerPrev",
+      next: "hcdPagerNext",
+      pageBtn: "hcdPagerPage",
+      size: "hcdPageSize",
+      jump: "hcdJumpPage"
+    }, () => renderHistoryConsumeTable());
+
+    document.getElementById("btnHcdSearch").addEventListener("click", () => {
+      const start = hcdInputStamp("hcdDateStart");
+      const end = hcdInputStamp("hcdDateEnd");
+      if (start && end && start > end) {
+        toast("开始时间不能晚于结束时间");
+        return;
+      }
+      hcdPager.reset();
+      renderHistoryConsumeTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnHcdSearchMore").addEventListener("click", (e) => {
+      e.stopPropagation();
+      document.getElementById("hcdSearchSplit").classList.toggle("open");
+    });
+    document.getElementById("hcdSearchSplit").querySelector(".more-item").addEventListener("click", () => {
+      document.getElementById("hcdSearchSplit").classList.remove("open");
+      exportHistoryConsumeCsv();
+    });
+    document.getElementById("btnHcdReset").addEventListener("click", () => {
+      setHistoryConsumeDefaultDates();
+      resetHcdTimeField();
+      document.querySelectorAll("#hcdStateGroup input").forEach((el) => { el.checked = el.value === "消费成功"; });
+      document.querySelector("#hcdOnlineGroup input[value='在线消费']").checked = true;
+      resetSelect("hcdFactorySelect");
+      resetSelect("hcdPointSelect");
+      resetSelect("hcdGroupSelect");
+      resetSelect("hcdCostSelect");
+      resetSelect("hcdGradeSelect");
+      resetSelect("hcdWalletSelect");
+      resetSelect("hcdPlaceSelect");
+      hcdProofChecked.clear();
+      renderHcdProofTags();
+      document.getElementById("hcdKeyword").value = "";
+      document.getElementById("hcdTradeIds").value = "";
+      document.getElementById("hcdThirdNos").value = "";
+      hcdDeptTreeCtl.clear();
+      hcdMerchantTreeCtl.clear();
+      hcdPager.reset();
+      renderHistoryConsumeTable();
+    });
+    document.getElementById("hcdProofSelect").addEventListener("click", (e) => {
+      const remove = e.target.closest("i[data-proof]");
+      if (remove) {
+        e.stopPropagation();
+        hcdProofChecked.delete(remove.dataset.proof);
+        renderHcdProofTags();
+        return;
+      }
+      const item = e.target.closest(".dropdown-item");
+      if (item) {
+        e.stopPropagation();
+        const value = item.dataset.value;
+        if (hcdProofChecked.has(value)) hcdProofChecked.delete(value);
+        else hcdProofChecked.add(value);
+        renderHcdProofTags();
+        return;
+      }
+      e.stopPropagation();
+      document.querySelectorAll(".el-select.open, .tree-select.open, .hcd-pop.open").forEach((s) => s.classList.remove("open"));
+      document.getElementById("hcdProofSelect").classList.toggle("open");
+    });
+    const BATCH_GROUPS = {
+      "研发消费组": [
+        ["张三", "E10001", "010101", "研发部"],
+        ["李四", "E10002", "010102", "平台小组"],
+        ["郑十一", "E10009", "010101", "研发部"],
+        ["陈一", "E10021", "010101", "研发部"],
+        ["刘二", "E10022", "010102", "平台小组"],
+        ["黄三", "E10023", "010101", "研发部"]
+      ],
+      "行政消费组": [
+        ["王五", "E10003", "020101", "招聘组"],
+        ["赵六", "E10004", "020102", "薪酬组"],
+        ["周明", "E10031", "020101", "招聘组"],
+        ["吴芳", "E10032", "020102", "薪酬组"]
+      ],
+      "食堂消费组": [
+        ["钱七", "E10005", "030101", "一食堂"],
+        ["孙八", "E10006", "030102", "二食堂"],
+        ["郑凯", "E10041", "030111", "档口管理"],
+        ["冯丽", "E10042", "030100", "食堂运营部"],
+        ["何静", "E10043", "030101", "一食堂"]
+      ],
+      "市场消费组": [
+        ["周九", "E10007", "040101", "线上推广"],
+        ["冯十二", "E10010", "040100", "品牌部"],
+        ["孙悦", "E10051", "040101", "线上推广"],
+        ["朱琳", "E10052", "040100", "品牌部"]
+      ],
+      "销售消费组": [
+        ["吴十", "E10008", "040201", "上海办"],
+        ["许宁", "E10061", "040200", "销售部"],
+        ["邓超", "E10062", "040201", "上海办"],
+        ["曹颖", "E10063", "040200", "销售部"]
+      ]
+    };
+    const BATCH_DEVICES = {
+      "支付堂-7-消费点": { device: "支付堂-7", pointNo: "XF001", point: "支付堂-7-消费点", merchant: "支付堂", place: "一食堂" },
+      "手持消费机-7E63-消费点": { device: "手持消费机-7E63", pointNo: "XF002", point: "手持消费机-7E63-消费点", merchant: "手持消费", place: "二食堂" },
+      "8365-hx-消费点": { device: "8365-hx", pointNo: "XF003", point: "8365-hx-消费点", merchant: "一食堂商户", place: "一食堂" },
+      "wjp-订餐核销-消费点": { device: "wjp-订餐核销", pointNo: "XF004", point: "wjp-订餐核销-消费点", merchant: "一食堂商户", place: "二食堂" }
+    };
+    const BATCH_WALLETS = ["个人钱包", "补贴钱包", "现金钱包"];
+    const BATCH_MEAL_TIME = { "早餐": "07:30:00", "午餐": "12:00:00", "晚餐": "18:00:00", "夜宵": "21:00:00" };
+    let batchWalletRows = [{ wallet: "", amount: "" }];
+
+    function batchCaret() {
+      return `<span class="select-caret"><svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"/></svg></span>`;
+    }
+
+    function renderBatchWallets() {
+      document.getElementById("batchWalletBody").innerHTML = batchWalletRows.map((row, i) => `
+        <tr>
+          <td>
+            <div class="el-select batch-wallet-select">
+              <input class="el-select-inner" readonly placeholder="请选择扣费钱包" value="${row.wallet}" data-value="${row.wallet}" data-index="${i}" />
+              ${batchCaret()}
+              <div class="dropdown-panel">
+                ${BATCH_WALLETS.map((name) => `<div class="dropdown-item${name === row.wallet ? " selected" : ""}" data-value="${name}">${name}</div>`).join("")}
+              </div>
+            </div>
+          </td>
+          <td><input class="el-input-inner batch-amount" data-index="${i}" placeholder="请输入金额" value="${row.amount}" /></td>
+          <td><button class="batch-del" type="button" data-index="${i}" title="删除"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M9 7V5h6v2M8 7l1 13h6l1-13"/></svg></button></td>
+        </tr>`).join("");
+      document.getElementById("batchAddWallet").disabled = batchWalletRows.length >= 5;
+    }
+
+    let batchMealView = new Date();
+    let batchPickedDate = null;
+    let batchPickedMeal = "";
+
+    function renderBatchMealPicker() {
+      const year = batchMealView.getFullYear();
+      const month = batchMealView.getMonth();
+      const firstWeekday = (new Date(year, month, 1).getDay() + 6) % 7;
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const prevDays = new Date(year, month, 0).getDate();
+      const today = new Date();
+      const sameDay = (a, b) => a && b && a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+      const cells = [];
+      for (let i = 0; i < 42; i++) {
+        let day;
+        let date;
+        let inMonth = true;
+        if (i < firstWeekday) {
+          day = prevDays - firstWeekday + 1 + i;
+          date = new Date(year, month - 1, day);
+          inMonth = false;
+        } else if (i >= firstWeekday + daysInMonth) {
+          day = i - firstWeekday - daysInMonth + 1;
+          date = new Date(year, month + 1, day);
+          inMonth = false;
+        } else {
+          day = i - firstWeekday + 1;
+          date = new Date(year, month, day);
+        }
+        const cls = ["meal-day", inMonth ? "" : "out", sameDay(date, today) ? "today" : "", sameDay(date, batchPickedDate) ? "picked" : ""].filter(Boolean).join(" ");
+        cells.push(`<button type="button" class="${cls}" data-date="${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}">${day}</button>`);
+      }
+      document.getElementById("batchMealCal").innerHTML = `
+        <div class="meal-cal-head">
+          <button type="button" data-nav="-12">«</button>
+          <button type="button" data-nav="-1">‹</button>
+          <span>${year}年 ${month + 1}月</span>
+          <button type="button" data-nav="1">›</button>
+          <button type="button" data-nav="12">»</button>
+        </div>
+        <div class="meal-week"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+        <div class="meal-grid">${cells.join("")}</div>`;
+      document.querySelectorAll("#batchMealSide button").forEach((btn) => {
+        btn.classList.toggle("picked", btn.dataset.meal === batchPickedMeal);
+      });
+      const input = document.getElementById("batchMealInput");
+      if (batchPickedDate && batchPickedMeal) {
+        const p = (n) => String(n).padStart(2, "0");
+        input.value = `${batchPickedDate.getFullYear()}-${p(batchPickedDate.getMonth() + 1)}-${p(batchPickedDate.getDate())} ${batchPickedMeal}`;
+      } else {
+        input.value = "";
+      }
+    }
+
+    function resetBatchDeductForm() {
+      resetSelect("batchGroupSelect");
+      resetSelect("batchDeviceSelect");
+      document.getElementById("batchGroupCount").textContent = "";
+      document.querySelector('input[name="batchProof"][value="卡"]').checked = true;
+      batchMealView = new Date();
+      batchPickedDate = null;
+      batchPickedMeal = "";
+      document.getElementById("batchMealPicker").classList.remove("open");
+      renderBatchMealPicker();
+      document.getElementById("batchRemark").value = "手动扣费";
+      batchWalletRows = [{ wallet: "", amount: "" }];
+      renderBatchWallets();
+      document.getElementById("batchResultModal").classList.remove("show");
+    }
+
+    function openBatchDeduct() {
+      resetBatchDeductForm();
+      document.getElementById("batchDeductModal").classList.add("show");
+    }
+
+    function closeBatchDeduct() {
+      document.getElementById("batchDeductModal").classList.remove("show");
+    }
+
+    function readBatchWallets() {
+      const rows = batchWalletRows
+        .map((row) => ({ wallet: row.wallet, amount: Number(row.amount) }))
+        .filter((row) => row.wallet || row.amount);
+      if (!rows.length || rows.some((row) => !row.wallet || !(row.amount > 0))) return { error: "请完善扣费钱包和金额" };
+      if (new Set(rows.map((row) => row.wallet)).size !== rows.length) return { error: "扣费钱包不能重复" };
+      return { rows };
+    }
+
+    function buildBatchPlan() {
+      const groupName = getSelectValue("batchGroupSelect");
+      const deviceName = getSelectValue("batchDeviceSelect");
+      const people = BATCH_GROUPS[groupName];
+      const device = BATCH_DEVICES[deviceName];
+      if (!people) return { error: "请选择消费组" };
+      if (!device) return { error: "请选择消费点" };
+      if (!batchPickedDate || !batchPickedMeal) return { error: "请选择消费时段" };
+      const p = (n) => String(n).padStart(2, "0");
+      const meal = batchPickedMeal;
+      const time = `${batchPickedDate.getFullYear()}-${p(batchPickedDate.getMonth() + 1)}-${p(batchPickedDate.getDate())} ${BATCH_MEAL_TIME[meal]}`;
+      const wallets = readBatchWallets();
+      if (wallets.error) return wallets;
+      const remark = document.getElementById("batchRemark").value.trim();
+      if (!remark) return { error: "请填写备注" };
+      const proof = document.querySelector('input[name="batchProof"]:checked').value;
+      const pay = proof === "卡" ? "刷卡" : proof === "人脸" ? "刷脸" : "二维码";
+      const proofText = proof === "卡" ? "卡片" : proof;
+      const perPerson = wallets.rows.reduce((sum, row) => sum + row.amount, 0);
+      return { groupName, people, device, deviceName: device.device, time, meal, wallets: wallets.rows, remark, pay, proofText, perPerson };
+    }
+
+    let batchFailRows = [];
+
+    function batchFailReason(personIndex, total) {
+      if (personIndex === total - 1) return "余额不足";
+      if (total >= 5 && personIndex === total - 2) return "卡片已挂失";
+      return "";
+    }
+
+    function showBatchResult(plan, successCount, failCount) {
+      document.getElementById("batchResultSum").innerHTML = `共计 <b>${plan.people.length}</b> 个人员，<span class="ok">${successCount} 人扣费成功</span>，<span class="fail">${failCount} 人扣费失败</span>`;
+      const info = [
+        ["消费组", plan.groupName],
+        ["消费点", plan.device.point],
+        ["消费时间", plan.time],
+        ["凭据类型", plan.proofText]
+      ];
+      const walletRows = plan.wallets.map((row, i) => `
+        <div class="k">${i ? "" : "扣费钱包"}</div><div>${row.wallet}</div>
+        <div class="k">${i ? "" : "交易金额"}</div><div>${row.amount.toFixed(2)}</div>`).join("");
+      document.getElementById("batchResultInfo").innerHTML = info.map(([k, v]) => `<div class="k">${k}</div><div>${v}</div>`).join("")
+        + `<div class="batch-wallet-result">${walletRows}</div>`
+        + `<div class="k">备注</div><div>${plan.remark}</div>`;
+      document.getElementById("batchFailDownload").disabled = failCount === 0;
+      document.getElementById("batchResultModal").classList.add("show");
+    }
+
+    function applyBatchDeduct() {
+      const plan = buildBatchPlan();
+      if (plan.error) {
+        toast(plan.error);
+        return;
+      }
+      const uploadDate = new Date(plan.time.replace(" ", "T"));
+      const upload = Number.isNaN(uploadDate.getTime()) ? plan.time : (() => {
+        const next = new Date(uploadDate.getTime() + 8000);
+        const p = (n) => String(n).padStart(2, "0");
+        return `${next.getFullYear()}-${p(next.getMonth() + 1)}-${p(next.getDate())} ${p(next.getHours())}:${p(next.getMinutes())}:${p(next.getSeconds())}`;
+      })();
+      const walletNames = plan.wallets.map((row) => row.wallet).join("\n");
+      const walletAmounts = plan.wallets.map((row) => row.amount.toFixed(2)).join("\n");
+      batchFailRows = [];
+      let successCount = 0;
+      plan.people.forEach((person, personIndex) => {
+        const reason = batchFailReason(personIndex, plan.people.length);
+        if (reason) {
+          batchFailRows.push([person[0], person[1], person[2], person[3], plan.groupName, plan.device.point, plan.time, plan.proofText, walletNames, walletAmounts, reason]);
+          return;
+        }
+        successCount += 1;
+        plan.wallets.forEach((row, walletIndex) => {
+          const balance = Math.max(0, 200 - row.amount - personIndex);
+          HISTORY_CONSUME_DATA.push({
+            name: person[0], code: person[1], deptNo: person[2], dept: person[3],
+            card: "C" + person[1], serial: String(800000 + personIndex * 10 + walletIndex),
+            time: plan.time, upload, pointNo: plan.device.pointNo, point: plan.device.point,
+            merchant: plan.device.merchant, device: plan.deviceName, walletNo: String(walletIndex + 1),
+            wallet: row.wallet, type: "补扣", pay: plan.pay, proof: plan.proofText, meal: plan.meal,
+            amount: row.amount, discount: 0, balance, operator: "系统管理员", place: plan.device.place,
+            remark: plan.remark, online: true, state: "消费成功", factory: "总部厂区", grade: "普通员工"
+          });
+        });
+      });
+      closeBatchDeduct();
+      hcdPager.reset();
+      renderHistoryConsumeTable();
+      showBatchResult(plan, successCount, batchFailRows.length);
+    }
+
+    function downloadBatchFailCsv() {
+      if (!batchFailRows.length) {
+        toast("没有扣费失败的人员");
+        return;
+      }
+      const headers = ["姓名", "人员编号", "部门编号", "部门名称", "消费组", "消费点", "消费时间", "凭据类型", "扣费钱包", "交易金额", "失败原因"];
+      const lines = [headers, ...batchFailRows].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `扣费失败_${getReportToday()}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    document.getElementById("batchWalletBody").addEventListener("click", (e) => {
+      const del = e.target.closest(".batch-del");
+      if (del) {
+        e.stopPropagation();
+        const index = Number(del.dataset.index);
+        if (batchWalletRows.length === 1) batchWalletRows[0] = { wallet: "", amount: "" };
+        else batchWalletRows.splice(index, 1);
+        renderBatchWallets();
+        return;
+      }
+      const option = e.target.closest(".dropdown-item");
+      const select = e.target.closest(".batch-wallet-select");
+      if (!select) return;
+      e.stopPropagation();
+      if (option) {
+        const index = Number(select.querySelector("input").dataset.index);
+        batchWalletRows[index].wallet = option.dataset.value;
+        renderBatchWallets();
+        return;
+      }
+      document.querySelectorAll(".el-select.open").forEach((el) => { if (el !== select) el.classList.remove("open"); });
+      select.classList.toggle("open");
+    });
+    document.getElementById("batchWalletBody").addEventListener("input", (e) => {
+      if (!e.target.classList.contains("batch-amount")) return;
+      batchWalletRows[Number(e.target.dataset.index)].amount = e.target.value;
+    });
+    document.getElementById("batchAddWallet").addEventListener("click", () => {
+      if (batchWalletRows.length >= 5) return;
+      batchWalletRows.push({ wallet: "", amount: "" });
+      renderBatchWallets();
+    });
+    document.getElementById("batchGroupSelect").addEventListener("click", (e) => {
+      const item = e.target.closest(".dropdown-item");
+      if (!item) return;
+      const people = BATCH_GROUPS[item.dataset.value];
+      document.getElementById("batchGroupCount").textContent = people ? `该消费组共 ${people.length} 人，将对全部人员扣费` : "";
+    }, true);
+    document.getElementById("batchMealPicker").addEventListener("click", (e) => {
+      e.stopPropagation();
+      const nav = e.target.closest("[data-nav]");
+      if (nav) {
+        batchMealView = new Date(batchMealView.getFullYear(), batchMealView.getMonth() + Number(nav.dataset.nav), 1);
+        renderBatchMealPicker();
+        return;
+      }
+      const day = e.target.closest("[data-date]");
+      if (day) {
+        const [y, m, d] = day.dataset.date.split("-").map(Number);
+        batchPickedDate = new Date(y, m - 1, d);
+        batchMealView = new Date(y, m - 1, 1);
+        renderBatchMealPicker();
+        if (batchPickedMeal) document.getElementById("batchMealPicker").classList.remove("open");
+        return;
+      }
+      const meal = e.target.closest("[data-meal]");
+      if (meal) {
+        batchPickedMeal = meal.dataset.meal;
+        renderBatchMealPicker();
+        if (batchPickedDate) document.getElementById("batchMealPicker").classList.remove("open");
+        return;
+      }
+      document.querySelectorAll(".el-select.open, .meal-picker.open").forEach((el) => {
+        if (el.id !== "batchMealPicker") el.classList.remove("open");
+      });
+      document.getElementById("batchMealPicker").classList.toggle("open");
+      if (document.getElementById("batchMealPicker").classList.contains("open")) renderBatchMealPicker();
+    });
+    document.getElementById("batchDeductClose").addEventListener("click", closeBatchDeduct);
+    document.getElementById("batchCancel").addEventListener("click", closeBatchDeduct);
+    document.getElementById("batchOk").addEventListener("click", applyBatchDeduct);
+    document.getElementById("batchResultClose").addEventListener("click", () => document.getElementById("batchResultModal").classList.remove("show"));
+    document.getElementById("batchResultOk").addEventListener("click", () => document.getElementById("batchResultModal").classList.remove("show"));
+    document.getElementById("batchFailDownload").addEventListener("click", downloadBatchFailCsv);
+
+    document.getElementById("btnHcdMore").addEventListener("click", (e) => {
+      e.stopPropagation();
+      document.getElementById("hcdMoreWrap").classList.toggle("open");
+    });
+    document.getElementById("hcdMoreWrap").querySelectorAll(".more-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        document.getElementById("hcdMoreWrap").classList.remove("open");
+        if (item.dataset.action === "导出") exportHistoryConsumeCsv();
+        else if (item.dataset.action === "批量扣费") openBatchDeduct();
+        else toast(item.dataset.action);
+      });
+    });
+    document.getElementById("btnHcdRefund").addEventListener("click", () => {
+      const ids = [...document.querySelectorAll("#historyConsumeBody input:checked")].map((el) => el.value);
+      if (!ids.length) {
+        toast("请先勾选需要退款的消费记录");
+        return;
+      }
+      let count = 0;
+      HISTORY_CONSUME_DATA.forEach((r) => {
+        if (ids.includes(historyConsumeCells(r).tradeId) && r.state === "消费成功") {
+          r.state = "已退款";
+          count += 1;
+        }
+      });
+      renderHistoryConsumeTable();
+      toast(count ? `已提交 ${count} 笔消费退款` : "所选记录不可退款");
+    });
+    document.getElementById("hcdCheckAll").addEventListener("change", (e) => {
+      document.querySelectorAll("#historyConsumeBody input[type='checkbox']").forEach((el) => { el.checked = e.target.checked; });
+    });
+
+    function exportHistoryConsumeCsv() {
+      const rows = filterHistoryConsumeRows();
+      const headers = ["姓名", "人员编号", "部门编号", "部门名称", "成本中心ID", "成本中心", "消费点编号", "消费点", "创建时间", "交易时间", "消费类型", "消费时段", "消费组名称", "凭据类型", "支付方式", "消费金额", "钱包", "交易金额", "余额", "交易ID", "第三方订单号", "消费券编号", "消费状态", "操作员", "消费机名称", "商户名称", "消费场所", "备注"];
+      const lines = [
+        headers,
+        ...rows.map((r) => {
+          const c = historyConsumeCells(r);
+          return [r.name, r.code, r.deptNo, r.dept, c.costCode, c.costName, r.pointNo, r.point, r.upload, r.time, r.type, r.meal, c.group, c.proof, r.pay, r.amount.toFixed(2), r.wallet, c.actual.toFixed(2), r.balance.toFixed(2), c.tradeId, c.thirdNo, c.tickets, r.state, r.operator, r.device, r.merchant, r.place, r.remark];
+        })
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `历史消费明细_${getReportToday()}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+    setHistoryConsumeDefaultDates();
+
     /* ===== 首页：就餐人数趋势（去重就餐人数） ===== */
     function createDiningTrendChart() {
       const LINE_COLOR = "#2f6bff";
@@ -6308,6 +9830,10 @@
           openDisplayScreenDialog();
           return;
         }
+        if (item.dataset.action === "导出收款码") {
+          exportPayCodes();
+          return;
+        }
         toast(item.dataset.action);
       });
     });
@@ -6645,7 +10171,7 @@
     });
 
     document.addEventListener("click", () => {
-      document.querySelectorAll(".el-select.open, .tree-select.open, .search-select.open").forEach((s) => s.classList.remove("open"));
+      document.querySelectorAll(".el-select.open, .tree-select.open, .search-select.open, .tag-select.open, .hcd-pop.open, .meal-picker.open").forEach((s) => s.classList.remove("open"));
       moreWrap.classList.remove("open");
     });
 
@@ -6660,6 +10186,180 @@
       "5. 支持配置滚动间隔时间，随模板下发至设备。",
       "6. （以上为初稿说明，后续可按正式需求文档修改）"
     ].join("\n");
+
+    const payCodeHelpModal = document.getElementById("payCodeHelpModal");
+    const payCodeHelpEditor = document.getElementById("payCodeHelpEditor");
+    const PAYCODE_HELP_KEY = "pay_code_help_doc_v1";
+    const PAYCODE_HELP_DEFAULT = [
+      "1. 入口：消费点设置 → 更多操作 → 导出收款码。",
+      "2. 勾选消费点后，只导出勾选的消费点；不勾选则导出全部消费点。",
+      "3. 导出文件为 zip 压缩包，包内每个收款码一张 PNG。",
+      "4. 图片样式：二维码在上方，其下为收款码编号（系统自动生成，格式 No.adminxxxxxx，字号较小，生成后不变），最下方为加粗的「消费点名称_消费点编号」。",
+      "5. 文件命名：消费点名称_消费点编号。编号为空时，用收款码编号代替。",
+      "6. 消费点名称或编号变更后，再次导出时最下方文字和二维码内容同步更新；收款码编号保持不变。"
+    ].join("\n");
+
+    function crc32Bytes(bytes) {
+      let c = 0xffffffff;
+      for (let i = 0; i < bytes.length; i++) {
+        c ^= bytes[i];
+        for (let k = 0; k < 8; k++) c = (c >>> 1) ^ (0xedb88320 & -(c & 1));
+      }
+      return (~c) >>> 0;
+    }
+
+    function buildStoredZip(files) {
+      const enc = new TextEncoder();
+      const parts = [];
+      const central = [];
+      let offset = 0;
+      files.forEach((f) => {
+        const name = enc.encode(f.name);
+        const crc = crc32Bytes(f.data);
+        const local = new Uint8Array(30 + name.length);
+        const dv = new DataView(local.buffer);
+        dv.setUint32(0, 0x04034b50, true);
+        dv.setUint16(4, 20, true);
+        dv.setUint16(6, 0x0800, true);
+        dv.setUint32(14, crc, true);
+        dv.setUint32(18, f.data.length, true);
+        dv.setUint32(22, f.data.length, true);
+        dv.setUint16(26, name.length, true);
+        local.set(name, 30);
+        parts.push(local, f.data);
+        const cen = new Uint8Array(46 + name.length);
+        const cv = new DataView(cen.buffer);
+        cv.setUint32(0, 0x02014b50, true);
+        cv.setUint16(4, 20, true);
+        cv.setUint16(6, 20, true);
+        cv.setUint16(8, 0x0800, true);
+        cv.setUint32(16, crc, true);
+        cv.setUint32(20, f.data.length, true);
+        cv.setUint32(24, f.data.length, true);
+        cv.setUint16(28, name.length, true);
+        cv.setUint32(42, offset, true);
+        cen.set(name, 46);
+        central.push(cen);
+        offset += local.length + f.data.length;
+      });
+      let centralSize = 0;
+      central.forEach((c) => { centralSize += c.length; });
+      const end = new Uint8Array(22);
+      const ev = new DataView(end.buffer);
+      ev.setUint32(0, 0x06054b50, true);
+      ev.setUint16(8, files.length, true);
+      ev.setUint16(10, files.length, true);
+      ev.setUint32(12, centralSize, true);
+      ev.setUint32(16, offset, true);
+      const chunks = parts.concat(central, [end]);
+      const total = chunks.reduce((s, b) => s + b.length, 0);
+      const out = new Uint8Array(total);
+      let pos = 0;
+      chunks.forEach((b) => { out.set(b, pos); pos += b.length; });
+      return out;
+    }
+
+    function safePayFilePart(text) {
+      const cleaned = String(text || "").replace(/[\\/:*?"<>|]/g, "_").trim();
+      return cleaned || "未命名";
+    }
+
+    function payCodeFileName(point) {
+      return `${safePayFilePart(point.name)}_${safePayFilePart(point.code || point.payNo)}.png`;
+    }
+
+    function drawPayCodeCanvas(point) {
+      const payload = JSON.stringify({
+        no: point.payNo,
+        code: point.code || "",
+        name: point.name || ""
+      });
+      const qr = qrcode(0, "M");
+      qr.addData(payload);
+      qr.make();
+      const count = qr.getModuleCount();
+      const cell = 8;
+      const qrPx = count * cell;
+      const caption = `${point.name || "未命名消费点"}_${point.code || point.payNo}`;
+      const W = Math.max(460, qrPx + 48);
+      const padTop = 20;
+      const noSize = 18;
+      const nameSize = 26;
+      const H = padTop + qrPx + 18 + noSize + 14 + nameSize + 24;
+      const canvas = document.createElement("canvas");
+      canvas.width = W;
+      canvas.height = H;
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, W, H);
+      const ox = Math.round((W - qrPx) / 2);
+      const oy = padTop;
+      ctx.fillStyle = "#000000";
+      for (let r = 0; r < count; r++) {
+        for (let c = 0; c < count; c++) {
+          if (qr.isDark(r, c)) ctx.fillRect(ox + c * cell, oy + r * cell, cell, cell);
+        }
+      }
+      ctx.fillStyle = "#111111";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "top";
+      ctx.font = `${noSize}px Arial, Microsoft YaHei, sans-serif`;
+      const noY = oy + qrPx + 16;
+      ctx.fillText("No." + point.payNo, W / 2, noY);
+      let fontSize = nameSize;
+      ctx.font = `bold ${fontSize}px Arial, Microsoft YaHei, sans-serif`;
+      while (fontSize > 14 && ctx.measureText(caption).width > W - 24) {
+        fontSize -= 1;
+        ctx.font = `bold ${fontSize}px Arial, Microsoft YaHei, sans-serif`;
+      }
+      ctx.fillText(caption, W / 2, noY + noSize + 10);
+      return canvas;
+    }
+
+    function canvasToPngBytes(canvas) {
+      return new Promise((resolve, reject) => {
+        canvas.toBlob(async (blob) => {
+          if (!blob) {
+            reject(new Error("png"));
+            return;
+          }
+          resolve(new Uint8Array(await blob.arrayBuffer()));
+        }, "image/png");
+      });
+    }
+
+    async function exportPayCodes() {
+      const list = selected.size ? [...selected].map((i) => filtered[i]).filter(Boolean) : POINTS.slice();
+      if (!list.length) {
+        toast("暂无消费点可导出");
+        return;
+      }
+      const used = new Set();
+      const files = [];
+      for (const point of list) {
+        let name = payCodeFileName(point);
+        if (used.has(name)) {
+          const base = name.replace(/\.png$/i, "");
+          let n = 2;
+          while (used.has(`${base}_${n}.png`)) n += 1;
+          name = `${base}_${n}.png`;
+        }
+        used.add(name);
+        files.push({ name, data: await canvasToPngBytes(drawPayCodeCanvas(point)) });
+      }
+      const zip = buildStoredZip(files);
+      const blob = new Blob([zip], { type: "application/zip" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      const day = formatDateYMD(new Date());
+      a.href = url;
+      a.download = `收款码_${day}.zip`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast(`已导出 ${files.length} 个收款码`);
+    }
 
     const callHelpModal = document.getElementById("callHelpModal");
     const callHelpEditor = document.getElementById("callHelpEditor");
@@ -6777,6 +10477,17 @@
       "6. 金额单位：元，保留两位小数，带千分位；支持导出，导出文件末尾附总计行。"
     ].join("\n");
 
+    const hcdHelpModal = document.getElementById("hcdHelpModal");
+    const hcdHelpEditor = document.getElementById("hcdHelpEditor");
+    const HCD_HELP_KEY = "batch_deduct_help_doc_v1";
+    const HCD_HELP_DEFAULT = [
+      "1. 入口：消费业务 > 消费数据查询 > 历史消费明细 > 更多操作 > 批量扣费。",
+      "2. 选择消费组后显示该组人数，确认后对组内全部人员扣费。",
+      "3. 填写字段：消费点、消费时段（先选日期，再选早/午/晚/夜）、凭据类型（卡、人脸、人员二维码）、补扣方式（扣费钱包和金额，最多 5 个钱包）、备注（默认手动扣费）。",
+      "4. 点击确认扣费后弹出扣费结果：共计人数、成功人数、失败人数。扣费信息分两列展示，包括消费组、消费点、消费时间、凭据类型、扣费钱包、交易金额、备注。多个钱包时，扣费钱包和交易金额紧挨着按行对应。",
+      "5. 扣费成功的人员写入历史消费明细。可下载扣费失败表格，列为姓名、人员编号、部门编号、部门名称、消费组、消费点、消费时间、凭据类型、扣费钱包、交易金额、失败原因。"
+    ].join("\n");
+
     const diningHelpModal = document.getElementById("diningHelpModal");
     const diningHelpEditor = document.getElementById("diningHelpEditor");
     const DINING_HELP_KEY = "dining_trend_help_doc_v1";
@@ -6889,6 +10600,16 @@
       closeBtn: "pickupHelpCloseBtn",
       saveBtn: "pickupHelpSave",
       closeX: "pickupHelpClose"
+    });
+    bindHelpEditor({
+      modal: payCodeHelpModal,
+      editor: payCodeHelpEditor,
+      key: PAYCODE_HELP_KEY,
+      defaultText: PAYCODE_HELP_DEFAULT,
+      openBtn: "btnPayCodeHelp",
+      closeBtn: "payCodeHelpCloseBtn",
+      saveBtn: "payCodeHelpSave",
+      closeX: "payCodeHelpClose"
     });
     bindHelpEditor({
       modal: callHelpModal,
@@ -7021,6 +10742,16 @@
       closeX: "abdHelpClose"
     });
     bindHelpEditor({
+      modal: hcdHelpModal,
+      editor: hcdHelpEditor,
+      key: HCD_HELP_KEY,
+      defaultText: HCD_HELP_DEFAULT,
+      openBtn: "btnHcdHelp",
+      closeBtn: "hcdHelpCloseBtn",
+      saveBtn: "hcdHelpSave",
+      closeX: "hcdHelpClose"
+    });
+    bindHelpEditor({
       modal: diningHelpModal,
       editor: diningHelpEditor,
       key: DINING_HELP_KEY,
@@ -7034,6 +10765,7 @@
     const HELP_DOC_REGISTRY = [
       { key: PICKUP_HELP_KEY, label: "取餐码", defaultText: PICKUP_HELP_DEFAULT },
       { key: CALL_HELP_KEY, label: "叫号屏设置", defaultText: CALL_HELP_DEFAULT },
+      { key: PAYCODE_HELP_KEY, label: "收款码", defaultText: PAYCODE_HELP_DEFAULT },
       { key: STALL_HELP_KEY, label: "就餐人数排行", defaultText: STALL_HELP_DEFAULT },
       { key: RECHARGE_IMPORT_HELP_KEY, label: "充值名单导入", defaultText: RECHARGE_IMPORT_HELP_DEFAULT },
       { key: CC_HELP_KEY, label: "成本中心汇总统计", defaultText: CC_HELP_DEFAULT },
@@ -7046,6 +10778,7 @@
       { key: OCS_HELP_KEY, label: "圈存、网页、微信、APP出纳汇总表", defaultText: OCS_HELP_DEFAULT },
       { key: DVS_HELP_KEY, label: "消费机消费汇总表", defaultText: DVS_HELP_DEFAULT },
       { key: ABD_HELP_KEY, label: "账户余额表(按部门)", defaultText: ABD_HELP_DEFAULT },
+      { key: HCD_HELP_KEY, label: "批量扣费", defaultText: HCD_HELP_DEFAULT },
       { key: DINING_HELP_KEY, label: "就餐人数趋势", defaultText: DINING_HELP_DEFAULT }
     ];
 
