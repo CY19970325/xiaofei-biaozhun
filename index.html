@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head>
-<script id="help-doc-export-data">window.__HELP_DOC_EXPORT__={"pickup_help_doc_v1":"1.消费点展示屏 提供「取餐码-制作中」「取餐码-待取餐」两个消费组件，可拖入画板，每个组件同一页面只能设置一次。\n2. 组件仅展示取餐码；「备餐中 / 请取餐」标题放在页面背景上。\n3. 支持配置字号、字体颜色、数量、列数、行/列间距、位置尺寸；拖拽缩放时列数与间距自动适配，拖拽时不可超出画布。\n4.号码从上到下从左到右排序，新号码排前面\n5.有新的待取餐码，悬浮提示  请 xxx号取餐展示2s后消失，同时语音播报，播报两次，间隔1s","call_screen_help_doc_v1":"1. 在「消费点设置」勾选一个消费点后，通过「更多操作 → 叫号屏设置」打开配置。该功能点默认关闭（3001024）\n2. 弹窗展示当前消费点名称、编号，并需选择关联叫号屏，单选，选项取信息推送已接入的FB6132_M设备。\n3. 保存后，该消费点与叫号屏建立关联，消费点待取餐/制作中的点餐订单变化时，定时下发设备","pay_code_help_doc_v1":"1. 入口：消费点设置 → 更多操作 → 导出收款码。\n2. 勾选消费点后，只导出勾选的消费点；不勾选则导出全部消费点。\n3. 导出文件为 zip 压缩包，包内每个收款码一张 PNG。\n4. 图片样式：上方为收款码编号（系统自动生成，生成后不变），中间为二维码，下方为消费点名称。\n5. 文件命名：消费点名称_消费点编号。\n6. 消费点名称变更后，再次导出时图片下方文字和二维码内容同步为最新名称；收款码编号保持不变。","stall_rank_help_doc_v1":"1. 「消费点就餐人数排行」为整块消费组件，用于展示档口就餐人数排行，每个页面只能设置一次。\n2. 前三名固定展台展示；展示数量可选 TOP 3～TOP 10，超出前三的在列表区展示。\n3.该设备绑定的消费点在前三名，则展示当前档口的标签。\n4.就餐人数\n当前月的消费次数，除以本月的工作日天数（默认按消费设置的企业日历，未设置则按自然天数），得到日均消费数，即消费人数\n5.列表滚动按固定时间从下往上滚动，滚动到最后一条数据后，自动从第4名开始展示\n","recharge_import_help_doc_v1":"烽火通信\n1、充值名单审批-充值名单导入列表增加总金额，该导入文件校验通过数据的总充值金额\n2、增加配置项，充值名单审批通过后是否自动确认，该项目需要人工确认","cost_center_summary_help_doc_v1":"1、消费报表增加定制报表，成本中心汇总统计（烽火通信）\n默认关闭，查询（3001979）、导出（3001980）\n2、成本中心+部门树+钱包为唯一值，统计筛选时段内消费金额，按消费时的部门和成本中心数据。同一成本中心的人员在不同部门，按多条展示，同一个树下不同级别的也拆开多条。只统计一二三四级的，五级及以上不统计。\n3、相同成本中心的排在一起\n4、已和现场确认，最多到四级部门，同一部门的员工可能属于不同成本中心，但一个成本中心的员工部门均相同。\n5、筛选条件：消费日期（默认近7天，按创建时间，实时统计），成本中心（模糊搜索、多选），所属部门、商户（模糊搜索，树状多选，商户数据过滤），钱包（多选）\n6、数据权：商户数据权控制消费金额（消费点-场所-商户）","person_wallet_stats_help_doc_v1":"1、消费报表增加人员钱包消费统计（烽火通信）\n默认关闭，查询（3001981），导出（3001982）\n2、只统计无成本中心的人员\n人员+钱包唯一统计筛选时间内的消费金额\n展示人员当前的各级部门\n3、筛选条件：消费日期（默认近7天，按创建时间，实时统计），所属部门（树状模糊搜索、多选），商户（树状模糊搜索、多选，数据权过滤），钱包（多选），人员编号和姓名模糊搜索\n4、数据权：商户数据权控制\n","dept_daily_stats_help_doc_v1":"1、消费报表新增部门日消费统计\n默认关闭，查询（3001983）、导出（3001984）\n2、按日统计各个二级部门及下面所有子级部门的消费金额，以及总计消费金额\n二级部门表头按消费时的部门数据动态生成\n3、按日期从早到晚排序\n4、底部增加两行数据，统计各个二级部门及下面所有子级部门筛选时间内的刷卡消费次数和刷卡消费金额，两行数据固定在每个页面底部\n5、筛选：消费日期（默认当月，按创建时间，实时统计）","dept_today_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，当日部门消费统计\n默认关闭，查询（3001985）、导出（3001986）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计当天的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、消费组筛选多选","dept_history_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，历史消费组消费统计\n默认关闭，查询（3001987）、导出（3001988）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计历史的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、筛选条件：消费日期（默认近7天，例如当天是10.14，10.8 0点至10.15 0点），实时统计，消费组筛选多选","person_withdraw_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 个人取款明细表。\n默认关闭，查询（3001989）、导出（3001990）、打印（3001991）\n2. 筛选条件：取款日期（开始-结束），默认当月\n3. 列表字段：序号、部门名称、人员编号、人员姓名、卡流水号（取人员虚拟号）、现有金额、取款额、取款日期、操作员（用户名称）。\n展示筛选时间内人员95钱包的余额退款明细，取款额（余额退款的金额），现有金额（退款后的账户余额）\n4. 部门名称只展示最后一级部门；现有金额为本次取款后的账户余额；取款日期只展示到日（年-月-日）。\n5. 排序：相同部门的记录放在一起，部门内同一人员的记录放在一起，同一人员按取款日期从早到晚排列；部门之间、人员之间默认排序\n6. 表格底部总计：显示当前筛选结果的取款总额（不受分页影响）；记录条数在左下角分页处显示。\n7. 金额单位：元，保留两位小数。\n8. 支持导出当前筛选结果，导出文件末尾附总计行。\n9.打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人\n中间每一页：表名、表头及数据、经手人、复核人、审核人\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人","cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 会计出纳汇总表。\n默认关闭，查询（3001992）、导出（3001993）、打印（3001994）\n2. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期；操作员（多选，用户名称），默认全部。\n3. 页面为两栏汇总（操作员选全部时汇总全部出纳员，选具体操作员时只汇总该操作员）：左栏依次为存款次数、管理费次数、取款次数、销户退款次数、总计次数、应缴金额；右栏依次为总存款金额、管理费金额、总取款金额、销户退款金额。\n》存款次数（总存款金额）：web后台所有充值到账的次数和金额\n》管理费次数（管理费金额）：web后台所有充值扣除管理费的次数和金额（0元不统计）\n》取款次数（取款金额）:余额退款成功的次数和金额\n》销户退款次数（销户退款金额）：销户时退款的次数和金额（0元不统计，按销户退款明细统计）\n4. 总计次数 = 存款次数 + 管理费次数 + 取款次数 + 销户退款次数。\n5. 应缴金额 = 总存款金额 + 管理费金额 - 总取款金额 - 销户退款金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员取筛选的操作员（全部时显示 ALL），制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 支持导出，导出内容与页面汇总一致。","online_cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 圈存、网页、微信、APP出纳汇总表。\n默认关闭，查询（3001995）、导出（3001996）、打印（3001997）\n2. 统计范围：通过我们对接农行部署的充值渠道（包括我们自己的微信h5和提供给第三方的农行充值接口）充值总金额和管理费金额，出纳员为点击打印的用户名称。\n3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。\n4. 页面为两栏汇总：左栏为圈存微信等充值次数、管理费数量、应缴金额；右栏为圈存微信等总存款金额、管理费金额。\n5. 应缴金额 = 圈存微信等总存款金额 + 管理费金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为点击打印的用户名称，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出内容与页面汇总一致。","device_consume_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。\n默认关闭，查询（3005100）、导出（3005101）、打印（3005102）\n2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。\n3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。\n4. 列表字段：商户名称、消费机号、消费机名称（取消费点编号和名称）、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。\n5. 消费人数 = 该消费点全部消费成功笔数；消费金额 = 全部消费成功金额合计\n6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。\n7. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dept_balance_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 账户余额表(按部门)。\n默认关闭，查询（3001503）、导出（3001504）、打印（3001505）\n2. 筛选条件：截止日期（单个日期），默认今天；所属部门（树状筛选，多选，支持模糊搜索，只展示二三级部门）；统计截至该日期日终各部门人员账户余额合计（二级和三级）。二级部门只统计直属人员，三级部门统计直属人员及下面所有子级部门人员。\n3. 列表字段：序号、部门编号、部门名称、账户余额；按部门编号顺序展示，不分页。\n4. 表格末行总计：部门数量、总余额（全部部门账户余额合计）。\n5. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","batch_deduct_help_doc_v1":"1. 入口：消费业务 > 消费数据查询 > 历史消费明细 > 更多操作 > 批量扣费（3001635）。\n2. 选择消费组后显示该组人数，确认后对组内全部人员扣费。（根据消费组数据权过滤选项，只有一个组则默认选中）\n3. 填写字段：消费设备、消费时段（先选日期，再选早/午/晚/夜）、凭据类型（卡、人脸、人员二维码）、补扣方式（扣费钱包和金额，最多 5 个钱包，钱包选项展示非内置的本地钱包）、备注（默认手动扣费）。\n4. 点击确认扣费后弹出扣费结果：共计人数、成功人数、失败人数。扣费信息分两列展示，包括消费组、消费点、消费时段、凭据类型、扣费明细、备注。\n5. 扣费成功的人员写入历史消费明细。\n6.扣费失败\n人员离职、余额不足、余额过期、钱包冻结、销户、钱包不存在则扣费失败（同一人员一个钱包失败则整条数据失败）\n可下载扣费失败表格，列为姓名、人员编号、部门编号、部门名称、消费组、消费点、消费时段、凭据类型、扣费明细、失败原因（显示具体钱包的失败原因）。","dining_trend_help_doc_v1":"江西人社厅定制首页\n1. 系统管理的首页替换成「就餐人数趋势」折线图，按去重就餐人数统计。\n2. 右上角筛选卡为「月」「年」，默认展示月。\n3. 「月」展示当月每日数据，底部显示日期标签（如 09-01）。\n4. 「年」展示当年每月数据，底部显示月份标签（如 01月）。\n5. 尚未到达的日期、月份不展示。\n6. 无记录的自然日 / 自然月保留节点，数值为 0。\n7. 当日、当月只展示已产生的真实值，不做补数预估。\n8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。\n9.按消费组数据权过滤"};</script>
+<script id="help-doc-export-data">window.__HELP_DOC_EXPORT__={"pickup_help_doc_v1":"1.消费点展示屏 提供「取餐码-制作中」「取餐码-待取餐」两个消费组件，可拖入画板，每个组件同一页面只能设置一次。\n2. 组件仅展示取餐码；「备餐中 / 请取餐」标题放在页面背景上。\n3. 支持配置字号、字体颜色、数量、列数、行/列间距、位置尺寸；拖拽缩放时列数与间距自动适配，拖拽时不可超出画布。\n4.号码从上到下从左到右排序，新号码排前面\n5.有新的待取餐码，悬浮提示  请 xxx号取餐展示2s后消失，同时语音播报，播报两次，间隔1s","call_screen_help_doc_v1":"1. 在「消费点设置」勾选一个消费点后，通过「更多操作 → 叫号屏设置」打开配置。该功能点默认关闭（3001024）\n2. 弹窗展示当前消费点名称、编号，并需选择关联叫号屏，单选，选项取信息推送已接入的FB6132_M设备。\n3. 保存后，该消费点与叫号屏建立关联，消费点待取餐/制作中的点餐订单变化时，定时下发设备","pay_code_help_doc_v1":"1. 入口：消费点设置 → 更多操作 → 导出收款码。\n2. 勾选消费点后，只导出勾选的消费点；不勾选则导出全部消费点。\n3. 导出文件为 zip 压缩包，包内每个收款码一张 PNG。\n4. 图片样式：上方为收款码编号（系统自动生成，生成后不变），中间为二维码，下方为消费点名称。\n5. 文件命名：消费点名称_消费点编号。\n6. 消费点名称变更后，再次导出时图片下方文字和二维码内容同步为最新名称；收款码编号保持不变。","stall_rank_help_doc_v1":"1. 「消费点就餐人数排行」为整块消费组件，用于展示档口就餐人数排行，每个页面只能设置一次。\n2. 前三名固定展台展示；展示数量可选 TOP 3～TOP 10，超出前三的在列表区展示。\n3.该设备绑定的消费点在前三名，则展示当前档口的标签。\n4.就餐人数\n当前月的消费次数，除以本月的工作日天数（默认按消费设置的企业日历，未设置则按自然天数），得到日均消费数，即消费人数\n5.列表滚动按固定时间从下往上滚动，滚动到最后一条数据后，自动从第4名开始展示\n","recharge_import_help_doc_v1":"烽火通信\n1、充值名单审批-充值名单导入列表增加总金额，该导入文件校验通过数据的总充值金额\n2、增加配置项，充值名单审批通过后是否自动确认，该项目需要人工确认","cost_center_summary_help_doc_v1":"1、消费报表增加定制报表，成本中心汇总统计（烽火通信）\n默认关闭，查询（3001979）、导出（3001980）\n2、成本中心+部门树+钱包为唯一值，统计筛选时段内消费金额，按消费时的部门和成本中心数据。同一成本中心的人员在不同部门，按多条展示，同一个树下不同级别的也拆开多条。只统计一二三四级的，五级及以上不统计。\n3、相同成本中心的排在一起\n4、已和现场确认，最多到四级部门，同一部门的员工可能属于不同成本中心，但一个成本中心的员工部门均相同。\n5、筛选条件：消费日期（默认近7天，按创建时间，实时统计），成本中心（模糊搜索、多选），所属部门、商户（模糊搜索，树状多选，商户数据过滤），钱包（多选）\n6、数据权：商户数据权控制消费金额（消费点-场所-商户）","person_wallet_stats_help_doc_v1":"1、消费报表增加人员钱包消费统计（烽火通信）\n默认关闭，查询（3001981），导出（3001982）\n2、只统计无成本中心的人员\n人员+钱包唯一统计筛选时间内的消费金额\n展示人员当前的各级部门\n3、筛选条件：消费日期（默认近7天，按创建时间，实时统计），所属部门（树状模糊搜索、多选），商户（树状模糊搜索、多选，数据权过滤），钱包（多选），人员编号和姓名模糊搜索\n4、数据权：商户数据权控制\n","dept_daily_stats_help_doc_v1":"1、消费报表新增部门日消费统计\n默认关闭，查询（3001983）、导出（3001984）\n2、按日统计各个二级部门及下面所有子级部门的消费金额，以及总计消费金额\n二级部门表头按消费时的部门数据动态生成\n3、按日期从早到晚排序\n4、底部增加两行数据，统计各个二级部门及下面所有子级部门筛选时间内的刷卡消费次数和刷卡消费金额，两行数据固定在每个页面底部\n5、筛选：消费日期（默认当月，按创建时间，实时统计）","dept_today_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，当日部门消费统计\n默认关闭，查询（3001985）、导出（3001986）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计当天的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、消费组筛选多选","dept_history_meal_help_doc_v1":"江西人社厅\n1、消费报表新增报表，历史消费组消费统计\n默认关闭，查询（3001987）、导出（3001988）\n2、统计逻辑：\n按消费时的消费组（未分组不统计）统计历史的消费次数和各餐段的消费次数（消费成功数据）\n3、数据权：消费组数据权过滤列表数据和消费组下拉选项\n4、筛选条件：消费日期（默认近7天，例如当天是10.14，10.8 0点至10.15 0点），实时统计，消费组筛选多选","person_withdraw_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 个人取款明细表。\n默认关闭，查询（3001989）、导出（3001990）、打印（3001991）\n2. 筛选条件：取款日期（开始-结束），默认当月\n3. 列表字段：序号、部门名称、人员编号、人员姓名、卡流水号（取人员虚拟号）、现有金额、取款额、取款日期、操作员（用户名称）。\n展示筛选时间（交易时间）内人员95钱包的余额退款明细，取款额（余额退款的金额），现有金额（退款后的账户余额）\n4. 部门名称只展示最后一级部门；现有金额为本次取款后的账户余额；取款日期只展示到日（年-月-日）。\n5. 排序：相同部门的记录放在一起，部门内同一人员的记录放在一起，同一人员按取款日期从早到晚排列；部门之间、人员之间默认排序\n6. 表格底部总计：显示当前筛选结果的取款总额（不受分页影响）；记录条数在左下角分页处显示。\n7. 金额单位：元，保留两位小数。\n8. 支持导出当前筛选结果，导出文件末尾附总计行。\n9.打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人\n中间每一页：表名、表头及数据、经手人、复核人、审核人\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人","cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 会计出纳汇总表。\n默认关闭，查询（3001992）、导出（3001993）、打印（3001994）\n2. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期；操作员（多选，用户名称），默认全部。\n3. 页面为两栏汇总（操作员选全部时汇总全部出纳员，选具体操作员时只汇总该操作员）：左栏依次为存款次数、管理费次数、取款次数、销户退款次数、总计次数、应缴金额；右栏依次为总存款金额、管理费金额、总取款金额、销户退款金额。\n》存款次数（总存款金额）：web后台所有充值到账的次数和金额\n》管理费次数（管理费金额）：web后台所有充值扣除管理费的次数和金额（0元不统计）\n》取款次数（取款金额）:余额退款成功的次数和金额\n》销户退款次数（销户退款金额）：销户时退款的次数和金额（0元不统计，按销户退款明细统计）\n4. 总计次数 = 存款次数 + 管理费次数 + 取款次数 + 销户退款次数。\n5. 应缴金额 = 总存款金额 + 管理费金额 - 总取款金额 - 销户退款金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员取筛选的操作员（全部时显示 ALL），制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 支持导出，导出内容与页面汇总一致。","online_cashier_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 圈存、网页、微信、APP出纳汇总表。\n默认关闭，查询（3001995）、导出（3001996）、打印（3001997）\n2. 统计范围：通过我们对接农行部署的充值渠道（包括我们自己的微信h5和提供给第三方的农行充值接口）充值总金额和管理费金额，出纳员为点击打印的用户名称。\n3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。\n4. 页面为两栏汇总：左栏为圈存微信等充值次数、管理费数量、应缴金额；右栏为圈存微信等总存款金额、管理费金额。\n5. 应缴金额 = 圈存微信等总存款金额 + 管理费金额。\n6. 打印：在新页签打开打印预览，左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为点击打印的用户名称，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出内容与页面汇总一致。","device_consume_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。\n默认关闭，查询（3005100）、导出（3005101）、打印（3005102）\n2. 筛选条件：消费日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期，按创建时间）、设备名称（多选）、商户名称（多选），不选表示全部。\n3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。\n4. 列表字段：商户名称、消费机号、消费机名称（取消费点编号和名称）、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。\n5. 消费人数 = 该消费点全部消费成功笔数；消费金额 = 全部消费成功金额合计\n6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。\n7. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、起始日期、截止日期、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","dept_balance_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 账户余额表(按部门)。\n默认关闭，查询（3005103）、导出（3005104）、打印（3005105）\n2. 筛选条件：截止日期（单个日期），默认今天；所属部门（树状筛选，多选，支持模糊搜索，只展示二三级部门）；统计截至该日期日终各部门人员账户余额合计（二级和三级）。二级部门只统计直属人员，三级部门统计直属人员及下面所有子级部门人员。\n3. 列表字段：序号、部门编号、部门名称、账户余额；按部门编号顺序展示，不分页。\n4. 表格末行总计：部门数量、总余额（全部部门账户余额合计）。\n5. 打印预览，点击跳转新页签查看打印效果\n第一页：表名、表头及数据、制表日期（点击打印的日期）、经手人、复核人、审核人、「第 X 页，共 Y 页」\n中间每一页：表名、表头及数据、经手人、复核人、审核人、「第 X 页，共 Y 页」\n最后一页：表名、表头及数据、总计、经手人、复核人、审核人「第 X 页，共 Y 页」\n6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","app_recharge_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > APP充值汇总表。\n2. 统计范围：仅 APP 渠道充值，出纳员统一为 system。\n3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。\n4. 页面为两栏汇总：左栏为 APP充值次数、管理费数量、应缴金额；右栏为 APP存款金额、管理费金额。\n5. 应缴金额 = APP存款金额 + 管理费金额。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为 system，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数，带千分位；支持导出，导出内容与页面汇总一致。","app_wechat_recharge_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > APP/微信充值明细表。\n2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；渠道（单选：全部 / APP / 微信），默认全部。\n3. 列表字段：编号、姓名、充值金额、充值时间（年-月-日 时:分:秒）。\n4. 按充值时间从早到晚排序；表格底部总计为当前筛选结果的充值金额合计；记录条数在左下角分页处显示。\n5. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为交易日期、渠道、打印日期、金额单位；末行为总计，底部为经手人、复核人、审核人签字栏。\n6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","app_consume_summary_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > APP消费汇总表。\n2. 统计范围：APP 渠道消费，按商户汇总。\n3. 筛选条件：消费日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；商户（树状多选），不选表示全部。\n4. 列表字段：商户名称、商户ID、消费人数、消费金额；按商户名称排序。\n5. 表格底部总计为当前筛选结果的消费人数、消费金额合计；记录条数在左下角分页处显示。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为消费日期、商户（未选显示 ALL）、制表日期、金额单位；末行为总计，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","app_consume_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > APP消费明细表。\n2. 统计范围：APP 渠道消费明细，退款金额为负数。\n3. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；商户（树状多选），不选表示全部。\n4. 列表字段：商户名称、人员编号、姓名、消费金额、消费时间（年-月-日 时:分:秒）。\n5. 按消费时间从早到晚排序；表格底部总计为当前筛选结果的消费金额合计（含退款）；记录条数在左下角分页处显示。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为交易日期、商户（未选显示 ALL）、制表日期、金额单位；末行为总计，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","canteen_manual_recharge_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 食堂个人手工充值明细表。\n2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；操作员（单选），默认全部。\n3. 列表字段：序号、人员编号、人员姓名、部门编号、部门名称、卡流水号、原有金额(元)、充值金额(元)、管理费(元)、支付方式、充值日期、操作员。\n4. 充值日期展示到秒（年-月-日 时:分:秒）；管理费无值时单元格为空；按充值日期从早到晚排序。\n5. 表格底部合计为当前筛选结果的充值金额合计；记录条数在左下角分页处显示。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为交易日期、操作员、制表日期、金额单位；末行为合计，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附合计行。","subsidy_grant_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 补助发放明细表。\n2. 筛选条件：创建日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）。\n3. 列表字段：序号、人员编号、人员姓名、部门编号、部门名称、补助金额、已领取时间、领取状态、操作员。\n4. 领取状态包括：已领取、未领取、领取失败；已领取时展示已领取时间（年-月-日 时:分:秒），否则为空。\n5. 表格底部合计：补助金额、已领取金额、未领取金额、领取失败金额；无对应记录时金额为空；记录条数在左下角分页处显示。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为创建日期、制表日期、金额单位；末行为合计，底部为经手人、复核人、审核人签字栏。\n7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附合计行。","consume_data_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 消费数据明细表。\n2. 筛选条件：消费日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）。\n3. 列表字段：商户名称、消费点编号、消费点名称、消费时间、消费时段、消费金额、人员编号、姓名、钱包。\n4. 消费金额带 ¥ 符号展示，退款为负数；消费时段、钱包无值时单元格为空；按消费时间从早到晚排序。\n5. 表格底部总计为当前筛选结果的消费金额合计（含退款）；记录条数在左下角分页处显示。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为消费日期、制表日期、金额单位；末行为总计，底部签字栏为制表、确认、承认。\n7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","cancel_person_detail_help_doc_v1":"1. 报表位置：消费业务 > 消费报表 > 注销人员明细表。\n2. 筛选条件：注销日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）。\n3. 列表字段：序号、部门名称、人员编号、人员姓名、退款金额、注销日期、操作员。\n4. 注销日期只展示到日（年-月-日）；按注销日期从早到晚排序。\n5. 表格底部总计：人数、退款总额；记录条数在左下角分页处显示。\n6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为起始日期、截止日期、打印日期；末行为总计，底部签字栏为打印人员、审核人。\n7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。","batch_deduct_help_doc_v1":"1. 入口：消费业务 > 消费数据查询 > 历史消费明细 > 更多操作 > 批量扣费（3001635）。\n2. 选择消费组后显示该组人数，确认后对组内全部人员扣费。（根据消费组数据权过滤选项，只有一个组则默认选中）\n3. 填写字段：消费设备、消费时段（先选日期，再选早/午/晚/夜）、凭据类型（卡、人脸、人员二维码）、补扣方式（扣费钱包和金额，最多 5 个钱包，钱包选项展示非内置的本地钱包）、备注（默认手动扣费）。\n4. 点击确认扣费后弹出扣费结果：共计人数、成功人数、失败人数。扣费信息分两列展示，包括消费组、消费点、消费时段、凭据类型、扣费明细、备注。\n5. 扣费成功的人员写入历史消费明细。\n6.扣费失败\n人员离职、余额不足、余额过期、钱包冻结、销户、钱包不存在则扣费失败（同一人员一个钱包失败则整条数据失败）\n可下载扣费失败表格，列为姓名、人员编号、部门编号、部门名称、消费组、消费点、消费时段、凭据类型、扣费明细、失败原因（显示具体钱包的失败原因）。","order_menu_setup_help_doc_v1":"1. 菜单位置：消费业务 > 订餐管理 > 订餐菜单设置。\n2. 左侧为菜单列表，支持按菜单名称、编号、商户搜索，可新建菜单；右侧展示当前菜单一周的餐段菜品安排。\n3. 周视图按周一至周日展示，餐段行为凌晨、早2、午、晚、小夜；可左右切换周次，点击单元格可设置菜品。\n4. 支持复制菜单、导入、导出。导入流程为：选择导入文件 → 确认导入数据 → 导入结果；支持下载模版，失败时可下载失败记录。\n5. 导出当前选中菜单本周菜品安排为 CSV。","dining_trend_help_doc_v1":"江西人社厅定制首页\n1. 系统管理的首页替换成「就餐人数趋势」折线图，按去重就餐人数统计。\n2. 右上角筛选卡为「月」「年」，默认展示月。\n3. 「月」展示当月每日数据，底部显示日期标签（如 09-01）。\n4. 「年」展示当年每月数据，底部显示月份标签（如 01月）。\n5. 尚未到达的日期、月份不展示。\n6. 无记录的自然日 / 自然月保留节点，数值为 0。\n7. 当日、当月只展示已产生的真实值，不做补数预估。\n8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。\n9.按消费组数据权过滤"};</script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -825,6 +825,255 @@
       padding: 0 10px;
     }
     .hcd-pop.open .more-menu { display: block; }
+
+    /* 订餐菜单设置 */
+    .order-menu-layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 12px;
+      min-height: calc(100vh - 180px);
+    }
+    .order-menu-left, .order-menu-right {
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 560px;
+    }
+    .order-menu-left-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .order-menu-right-head {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 14px 0;
+    }
+    .order-menu-left-head h3, .order-menu-right-head .order-current {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .order-menu-search {
+      position: relative;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .order-menu-search input {
+      width: 100%;
+      height: 32px;
+      padding: 0 30px 0 12px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .order-menu-search input:focus { border-color: var(--primary); }
+    .order-menu-search .search-ico {
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #c0c4cc;
+      pointer-events: none;
+    }
+    .order-menu-list { flex: 1; overflow: auto; padding: 6px 0; }
+    .order-menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 14px;
+      cursor: pointer;
+      color: var(--text-regular);
+      font-size: 13px;
+    }
+    .order-menu-item:hover { background: #f5f7fa; }
+    .order-menu-item.active {
+      background: #ecf5ff;
+      color: var(--primary);
+    }
+    .order-menu-item .more-ico {
+      color: #c0c4cc;
+      flex-shrink: 0;
+    }
+    .order-menu-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .order-week-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      height: 40px;
+      margin: 0 14px 12px;
+      background: #409eff;
+      color: #fff;
+      border-radius: 2px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .order-week-bar button {
+      border: none;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+      padding: 0 8px;
+    }
+    .order-week-wrap { padding: 0 14px 14px; overflow: auto; }
+    .order-week-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      min-width: 760px;
+    }
+    .order-week-table th, .order-week-table td {
+      border: 1px solid #ebeef5;
+      padding: 10px 8px;
+      text-align: center;
+      font-size: 13px;
+      vertical-align: middle;
+    }
+    .order-week-table th {
+      background: #f5f7fa;
+      color: var(--text-regular);
+      font-weight: 600;
+    }
+    .order-week-table .meal-name {
+      width: 72px;
+      background: #fafafa;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .order-week-table .unset {
+      color: #c0c4cc;
+      cursor: pointer;
+      min-height: 48px;
+    }
+    .order-week-table .dish-cell {
+      color: var(--text-regular);
+      line-height: 1.5;
+      cursor: pointer;
+    }
+    .order-import-page { max-width: 920px; margin: 0 auto; padding: 10px 20px 30px; }
+    .order-import-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 28px;
+      color: var(--text);
+    }
+    .order-steps {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 0 auto 40px;
+      max-width: 640px;
+    }
+    .order-step {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #909399;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .order-step .num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid #dcdfe6;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: #909399;
+    }
+    .order-step.active { color: var(--text); }
+    .order-step.active .num {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .order-step.done .num {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .order-step-line {
+      width: 80px;
+      height: 1px;
+      border-top: 1px dashed #dcdfe6;
+      margin: 0 12px;
+    }
+    .order-step-line.done { border-top-color: var(--primary); border-top-style: solid; }
+    .order-import-body { min-height: 220px; }
+    .order-file-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .order-file-row .label { width: 48px; color: var(--text-regular); }
+    .order-file-row .el-input-inner { width: 320px; }
+    .order-file-tip { color: #909399; font-size: 12px; margin: 0 0 8px 60px; }
+    .order-file-link {
+      display: inline-block;
+      margin-left: 60px;
+      color: var(--primary);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .order-import-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 48px;
+    }
+    .order-result {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .order-result-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #e6a23c;
+      color: #fff;
+      font-size: 36px;
+      line-height: 64px;
+      margin: 0 auto 16px;
+      font-weight: 700;
+    }
+    .order-result-icon.ok { background: #67c23a; }
+    .order-result-title { font-size: 18px; color: var(--text); margin-bottom: 8px; }
+    .order-result-desc { color: #909399; font-size: 13px; margin-bottom: 18px; }
+    .order-result-box {
+      max-width: 520px;
+      margin: 0 auto 16px;
+      text-align: left;
+      background: #f5f7fa;
+      border-radius: 4px;
+      padding: 14px 16px;
+      color: var(--text-regular);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .order-result-box .err { color: #f56c6c; }
+    .order-result-fail {
+      color: var(--text-regular);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .order-result-fail a { color: var(--primary); cursor: pointer; }
     .modal.batch-modal { width: 760px; }
     .modal.batch-modal [hidden] { display: none !important; }
     .modal.batch-modal .modal-body { overflow: visible; }
@@ -2304,6 +2553,21 @@
             <div class="menu-item" data-key="history-consume-detail">历史消费明细</div>
           </div>
         </div>
+        <div class="submenu" data-group="order-manage">
+          <div class="submenu-title">
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            订餐管理
+            <svg class="submenu-arrow" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"></path></svg>
+          </div>
+          <div class="submenu-list">
+            <div class="menu-item" data-key="order-menu-setup">订餐菜单设置</div>
+            <div class="menu-item" data-key="order-address">配送地址管理</div>
+            <div class="menu-item" data-key="order-detail">订餐明细</div>
+            <div class="menu-item" data-key="order-person-stats">人员餐段订餐统计</div>
+            <div class="menu-item" data-key="order-dish-stats">每日菜品餐段统计</div>
+            <div class="menu-item" data-key="order-review">评价管理</div>
+          </div>
+        </div>
         <div class="submenu" data-group="report">
           <div class="submenu-title">
             <svg class="menu-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
@@ -2322,6 +2586,14 @@
             <div class="menu-item" data-key="online-cashier-summary">圈存、网页、微信、APP出纳汇总表</div>
             <div class="menu-item" data-key="device-consume-summary">消费机消费汇总表</div>
             <div class="menu-item" data-key="dept-balance">账户余额表(按部门)</div>
+            <div class="menu-item" data-key="app-recharge-summary">APP充值汇总表</div>
+            <div class="menu-item" data-key="app-wechat-recharge-detail">APP/微信充值明细表</div>
+            <div class="menu-item" data-key="app-consume-summary">APP消费汇总表</div>
+            <div class="menu-item" data-key="app-consume-detail">APP消费明细表</div>
+            <div class="menu-item" data-key="canteen-manual-recharge-detail">食堂个人手工充值明细表</div>
+            <div class="menu-item" data-key="subsidy-grant-detail">补助发放明细表</div>
+            <div class="menu-item" data-key="consume-data-detail">消费数据明细表</div>
+            <div class="menu-item" data-key="cancel-person-detail">注销人员明细表</div>
           </div>
         </div>
         <div class="submenu" data-group="approve">
@@ -2971,6 +3243,461 @@
         </div>
       </div>
 
+      <div class="page-wrap page-panel hidden" id="page-app-recharge-summary">
+        <div class="page-card">
+          <div class="page-title">
+            APP充值汇总表
+            <button class="help-link" id="btnArsHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="appRechargeFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="arsDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="arsDateEnd" type="date">
+            <button class="btn btn-primary" id="btnArsSearch" type="button">查询</button>
+            <button class="btn" id="btnArsReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnArsExport" type="button">导出</button>
+            <button class="btn" id="btnArsPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <table class="cashier-sum-table">
+            <tbody id="appRechargeBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-app-wechat-recharge-detail">
+        <div class="page-card">
+          <div class="page-title">
+            APP/微信充值明细表
+            <button class="help-link" id="btnAwrHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="appWechatRechargeFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="awrDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="awrDateEnd" type="date">
+            <span class="filter-label">渠道</span>
+            <div class="el-select" id="awrChannelSelect">
+              <input class="el-select-inner" readonly="" placeholder="全部">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="APP">APP</div>
+                <div class="dropdown-item" data-value="微信">微信</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnAwrSearch" type="button">查询</button>
+            <button class="btn" id="btnAwrReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnAwrExport" type="button">导出</button>
+            <button class="btn" id="btnAwrPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>编号</th>
+                  <th>姓名</th>
+                  <th>充值金额</th>
+                  <th>充值时间</th>
+                </tr>
+              </thead>
+              <tbody id="appWechatRechargeBody"></tbody>
+              <tfoot class="meal-foot" id="appWechatRechargeFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="awrPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="awrPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="awrPagerPage" type="button">1</button>
+              <button class="pager-btn" id="awrPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="awrPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="awrJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-app-consume-summary">
+        <div class="page-card">
+          <div class="page-title">
+            APP消费汇总表
+            <button class="help-link" id="btnApcHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="appConsumeFilter">
+            <span class="filter-label">消费日期</span>
+            <input class="date-input" id="apcDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="apcDateEnd" type="date">
+            <div class="tree-select" id="apcMerchantTree">
+              <input class="el-select-inner w200" id="apcMerchantInput" readonly="" placeholder="请选择商户">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="apcMerchantTreeBody"></div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnApcSearch" type="button">查询</button>
+            <button class="btn" id="btnApcReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnApcExport" type="button">导出</button>
+            <button class="btn" id="btnApcPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>商户名称</th>
+                  <th>商户ID</th>
+                  <th>消费人数</th>
+                  <th>消费金额</th>
+                </tr>
+              </thead>
+              <tbody id="appConsumeBody"></tbody>
+              <tfoot class="meal-foot" id="appConsumeFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="apcPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="apcPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="apcPagerPage" type="button">1</button>
+              <button class="pager-btn" id="apcPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="apcPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="apcJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-app-consume-detail">
+        <div class="page-card">
+          <div class="page-title">
+            APP消费明细表
+            <button class="help-link" id="btnAcdHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="appConsumeDetailFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="acdDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="acdDateEnd" type="date">
+            <div class="tree-select" id="acdMerchantTree">
+              <input class="el-select-inner w200" id="acdMerchantInput" readonly="" placeholder="请选择商户">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="tree-panel">
+                <div id="acdMerchantTreeBody"></div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnAcdSearch" type="button">查询</button>
+            <button class="btn" id="btnAcdReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnAcdExport" type="button">导出</button>
+            <button class="btn" id="btnAcdPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>商户名称</th>
+                  <th>人员编号</th>
+                  <th>姓名</th>
+                  <th>消费金额</th>
+                  <th>消费时间</th>
+                </tr>
+              </thead>
+              <tbody id="appConsumeDetailBody"></tbody>
+              <tfoot class="meal-foot" id="appConsumeDetailFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="acdPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="acdPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="acdPagerPage" type="button">1</button>
+              <button class="pager-btn" id="acdPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="acdPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="acdJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-canteen-manual-recharge-detail">
+        <div class="page-card">
+          <div class="page-title">
+            食堂个人手工充值明细表
+            <button class="help-link" id="btnCmrHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="canteenManualRechargeFilter">
+            <span class="filter-label">交易日期</span>
+            <input class="date-input" id="cmrDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="cmrDateEnd" type="date">
+            <span class="filter-label">操作员</span>
+            <div class="el-select" id="cmrOperatorSelect">
+              <input class="el-select-inner" readonly="" placeholder="全部">
+              <span class="select-caret">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#c0c4cc"><path d="M7 10l5 5 5-5z"></path></svg>
+              </span>
+              <div class="dropdown-panel">
+                <div class="dropdown-item" data-value="">全部</div>
+                <div class="dropdown-item" data-value="邵田田">邵田田</div>
+                <div class="dropdown-item" data-value="系统管理员">系统管理员</div>
+                <div class="dropdown-item" data-value="财务-李娜">财务-李娜</div>
+                <div class="dropdown-item" data-value="财务-陈刚">财务-陈刚</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btnCmrSearch" type="button">查询</button>
+            <button class="btn" id="btnCmrReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnCmrExport" type="button">导出</button>
+            <button class="btn" id="btnCmrPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>人员编号</th>
+                  <th>人员姓名</th>
+                  <th>部门编号</th>
+                  <th>部门名称</th>
+                  <th>卡流水号</th>
+                  <th>原有金额(元)</th>
+                  <th>充值金额(元)</th>
+                  <th>管理费(元)</th>
+                  <th>支付方式</th>
+                  <th>充值日期</th>
+                  <th>操作员</th>
+                </tr>
+              </thead>
+              <tbody id="canteenManualRechargeBody"></tbody>
+              <tfoot class="meal-foot" id="canteenManualRechargeFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="cmrPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="cmrPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="cmrPagerPage" type="button">1</button>
+              <button class="pager-btn" id="cmrPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="cmrPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="cmrJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-subsidy-grant-detail">
+        <div class="page-card">
+          <div class="page-title">
+            补助发放明细表
+            <button class="help-link" id="btnBfdHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="subsidyGrantFilter">
+            <span class="filter-label">创建日期</span>
+            <input class="date-input" id="bfdDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="bfdDateEnd" type="date">
+            <button class="btn btn-primary" id="btnBfdSearch" type="button">查询</button>
+            <button class="btn" id="btnBfdReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnBfdExport" type="button">导出</button>
+            <button class="btn" id="btnBfdPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>人员编号</th>
+                  <th>人员姓名</th>
+                  <th>部门编号</th>
+                  <th>部门名称</th>
+                  <th>补助金额</th>
+                  <th>已领取时间</th>
+                  <th>领取状态</th>
+                  <th>操作员</th>
+                </tr>
+              </thead>
+              <tbody id="subsidyGrantBody"></tbody>
+              <tfoot class="meal-foot" id="subsidyGrantFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="bfdPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="bfdPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="bfdPagerPage" type="button">1</button>
+              <button class="pager-btn" id="bfdPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="bfdPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="bfdJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-consume-data-detail">
+        <div class="page-card">
+          <div class="page-title">
+            消费数据明细表
+            <button class="help-link" id="btnCddHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="consumeDataDetailFilter">
+            <span class="filter-label">消费日期</span>
+            <input class="date-input" id="cddDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="cddDateEnd" type="date">
+            <button class="btn btn-primary" id="btnCddSearch" type="button">查询</button>
+            <button class="btn" id="btnCddReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnCddExport" type="button">导出</button>
+            <button class="btn" id="btnCddPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>商户名称</th>
+                  <th>消费点编号</th>
+                  <th>消费点名称</th>
+                  <th>消费时间</th>
+                  <th>消费时段</th>
+                  <th>消费金额</th>
+                  <th>人员编号</th>
+                  <th>姓名</th>
+                  <th>钱包</th>
+                </tr>
+              </thead>
+              <tbody id="consumeDataDetailBody"></tbody>
+              <tfoot class="meal-foot" id="consumeDataDetailFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="cddPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="cddPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="cddPagerPage" type="button">1</button>
+              <button class="pager-btn" id="cddPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="cddPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="cddJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-cancel-person-detail">
+        <div class="page-card">
+          <div class="page-title">
+            注销人员明细表
+            <button class="help-link" id="btnZxdHelp" type="button">需求说明</button>
+          </div>
+          <div class="filter-bar" id="cancelPersonFilter">
+            <span class="filter-label">注销日期</span>
+            <input class="date-input" id="zxdDateStart" type="date">
+            <span class="date-sep">-</span>
+            <input class="date-input" id="zxdDateEnd" type="date">
+            <button class="btn btn-primary" id="btnZxdSearch" type="button">查询</button>
+            <button class="btn" id="btnZxdReset" type="button">重置</button>
+          </div>
+          <div class="toolbar">
+            <button class="btn" id="btnZxdExport" type="button">导出</button>
+            <button class="btn" id="btnZxdPrint" type="button">打印</button>
+            <span class="toolbar-right">单位：元</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>部门名称</th>
+                  <th>人员编号</th>
+                  <th>人员姓名</th>
+                  <th>退款金额</th>
+                  <th>注销日期</th>
+                  <th>操作员</th>
+                </tr>
+              </thead>
+              <tbody id="cancelPersonBody"></tbody>
+              <tfoot class="meal-foot" id="cancelPersonFoot"></tfoot>
+            </table>
+          </div>
+          <div class="pager">
+            <span class="pager-info" id="zxdPagerInfo">共 0 条记录 第1/1页</span>
+            <div class="pager-controls">
+              <button class="pager-btn" id="zxdPagerPrev" type="button">&lt;</button>
+              <button class="pager-btn current" id="zxdPagerPage" type="button">1</button>
+              <button class="pager-btn" id="zxdPagerNext" type="button">&gt;</button>
+              <select class="pager-size" id="zxdPageSize">
+                <option value="15" selected="">15条/页</option>
+                <option value="20">20条/页</option>
+                <option value="50">50条/页</option>
+              </select>
+              <span class="pager-jump">
+                跳至 <input type="text" id="zxdJumpPage"> 页
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="page-wrap page-panel hidden" id="page-device-consume-summary">
         <div class="page-card">
           <div class="page-title">
@@ -2978,7 +3705,7 @@
             <button class="help-link" id="btnDvsHelp" type="button">需求说明</button>
           </div>
           <div class="filter-bar" id="deviceSummaryFilter">
-            <span class="filter-label">交易日期</span>
+            <span class="filter-label">消费日期</span>
             <input class="date-input" id="dvsDateStart" type="date">
             <span class="date-sep">-</span>
             <input class="date-input" id="dvsDateEnd" type="date">
@@ -3005,7 +3732,8 @@
           </div>
           <div class="toolbar">
             <button class="btn" id="btnDvsExport" type="button">导出</button>
-            <button class="btn" id="btnDvsPrint" type="button">打印</button>
+            <button class="btn" id="btnDvsPrintAll" type="button">打印全部</button>
+            <button class="btn" id="btnDvsPrintFive" type="button">打印5列</button>
             <span class="toolbar-right">单位：元</span>
           </div>
           <div class="table-wrap">
@@ -3325,6 +4053,89 @@
               <span class="pager-jump">
                 跳至 <input type="text" id="hcdJumpPage"> 页
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrap page-panel hidden" id="page-order-menu-setup">
+        <div class="page-card" id="orderMenuMain">
+          <div class="page-title">
+            订餐菜单设置
+            <button class="help-link" id="btnOrderMenuHelp" type="button">需求说明</button>
+          </div>
+          <div class="order-menu-layout">
+            <div class="order-menu-left">
+              <div class="order-menu-left-head">
+                <h3>菜单列表</h3>
+                <button class="btn btn-primary" id="btnOrderMenuAdd" type="button">新建菜单</button>
+              </div>
+              <div class="order-menu-search">
+                <input id="orderMenuKeyword" placeholder="请输入菜单名称、菜单编号、商户...">
+                <span class="search-ico">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3-3"></path></svg>
+                </span>
+              </div>
+              <div class="order-menu-list" id="orderMenuList"></div>
+            </div>
+            <div class="order-menu-right">
+              <div class="order-menu-right-head">
+                <div class="order-current" id="orderMenuCurrent">当前选中：-</div>
+                <div class="order-menu-actions">
+                  <button class="btn" id="btnOrderMenuCopy" type="button">复制菜单</button>
+                  <button class="btn" id="btnOrderMenuImport" type="button">导入</button>
+                  <button class="btn" id="btnOrderMenuExport" type="button">导出</button>
+                </div>
+              </div>
+              <div class="order-week-bar">
+                <button type="button" id="btnOrderWeekPrev" aria-label="上一周">&lt;</button>
+                <span id="orderWeekRange">-</span>
+                <button type="button" id="btnOrderWeekNext" aria-label="下一周">&gt;</button>
+              </div>
+              <div class="order-week-wrap">
+                <table class="order-week-table">
+                  <thead id="orderWeekHead"></thead>
+                  <tbody id="orderWeekBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-card hidden" id="orderMenuImport">
+          <div class="order-import-page">
+            <div class="order-import-title" id="orderImportTitle">订餐菜单导入</div>
+            <div class="order-steps" id="orderImportSteps">
+              <div class="order-step active" data-step="1"><span class="num">1</span>选择导入文件</div>
+              <div class="order-step-line" data-line="1"></div>
+              <div class="order-step" data-step="2"><span class="num">2</span>确认导入数据</div>
+              <div class="order-step-line" data-line="2"></div>
+              <div class="order-step" data-step="3"><span class="num">3</span>导入结果</div>
+            </div>
+            <div class="order-import-body" id="orderImportStep1">
+              <div class="order-file-row">
+                <span class="label">文件</span>
+                <input class="el-input-inner" id="orderImportFileName" readonly="" placeholder="">
+                <button class="btn" id="btnOrderPickFile" type="button">选择文件</button>
+                <input type="file" id="orderImportFile" accept=".xlsx,.xls" hidden="">
+              </div>
+              <div class="order-file-tip">支持xlsx</div>
+              <a class="order-file-link" id="btnOrderTpl" role="button">下载模版</a>
+              <div class="order-import-actions">
+                <button class="btn btn-primary" id="btnOrderImportNext1" type="button">下一步</button>
+                <button class="btn" id="btnOrderImportBack1" type="button">返回</button>
+              </div>
+            </div>
+            <div class="order-import-body hidden" id="orderImportStep2">
+              <div class="order-result-desc" style="text-align:center;padding-top:40px">请确认导入数据无误后继续。</div>
+              <div class="order-import-actions">
+                <button class="btn btn-primary" id="btnOrderImportNext2" type="button">下一步</button>
+                <button class="btn" id="btnOrderImportPrev2" type="button">上一步</button>
+              </div>
+            </div>
+            <div class="order-import-body hidden" id="orderImportStep3">
+              <div class="order-result" id="orderImportResult"></div>
+              <div class="order-import-actions" id="orderImportResultActions"></div>
             </div>
           </div>
         </div>
@@ -3802,6 +4613,142 @@
     </div>
   </div>
 
+  <div class="modal-mask" id="arsHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>APP充值汇总表 - 需求说明</span>
+        <span class="modal-close" id="arsHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="arsHelpEditor" spellcheck="false" placeholder="在此填写APP充值汇总表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="arsHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="arsHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="awrHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>APP/微信充值明细表 - 需求说明</span>
+        <span class="modal-close" id="awrHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="awrHelpEditor" spellcheck="false" placeholder="在此填写APP/微信充值明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="awrHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="awrHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="apcHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>APP消费汇总表 - 需求说明</span>
+        <span class="modal-close" id="apcHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="apcHelpEditor" spellcheck="false" placeholder="在此填写APP消费汇总表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="apcHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="apcHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="acdHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>APP消费明细表 - 需求说明</span>
+        <span class="modal-close" id="acdHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="acdHelpEditor" spellcheck="false" placeholder="在此填写APP消费明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="acdHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="acdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="cmrHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>食堂个人手工充值明细表 - 需求说明</span>
+        <span class="modal-close" id="cmrHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="cmrHelpEditor" spellcheck="false" placeholder="在此填写食堂个人手工充值明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="cmrHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="cmrHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="bfdHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>补助发放明细表 - 需求说明</span>
+        <span class="modal-close" id="bfdHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="bfdHelpEditor" spellcheck="false" placeholder="在此填写补助发放明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="bfdHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="bfdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="cddHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>消费数据明细表 - 需求说明</span>
+        <span class="modal-close" id="cddHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="cddHelpEditor" spellcheck="false" placeholder="在此填写消费数据明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="cddHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="cddHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="zxdHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>注销人员明细表 - 需求说明</span>
+        <span class="modal-close" id="zxdHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="zxdHelpEditor" spellcheck="false" placeholder="在此填写注销人员明细表相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="zxdHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="zxdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
   <div class="modal-mask" id="dvsHelpModal">
     <div class="modal modal-help">
       <div class="modal-header">
@@ -3849,6 +4796,23 @@
       <div class="modal-footer">
         <button class="btn" id="hcdHelpCloseBtn" type="button">取消</button>
         <button class="btn btn-primary" id="hcdHelpSave" type="button">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-mask" id="orderMenuHelpModal">
+    <div class="modal modal-help">
+      <div class="modal-header">
+        <span>订餐菜单设置 - 需求说明</span>
+        <span class="modal-close" id="orderMenuHelpClose">×</span>
+      </div>
+      <div class="modal-body help-modal-body">
+        <textarea class="help-editor" id="orderMenuHelpEditor" spellcheck="false" placeholder="在此填写订餐菜单设置相关需求说明…"></textarea>
+        <div class="help-tip">可直接修改上方内容，点击「保存」后下次打开仍会保留。</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" id="orderMenuHelpCloseBtn" type="button">取消</button>
+        <button class="btn btn-primary" id="orderMenuHelpSave" type="button">保存</button>
       </div>
     </div>
   </div>
@@ -6591,7 +7555,16 @@ var qrcode = function() {
         "online-cashier-summary": { el: "page-online-cashier-summary", title: "圈存、网页、微信、APP出纳汇总表", group: "report" },
         "device-consume-summary": { el: "page-device-consume-summary", title: "消费机消费汇总表", group: "report" },
         "dept-balance": { el: "page-dept-balance", title: "账户余额表(按部门)", group: "report" },
+        "app-recharge-summary": { el: "page-app-recharge-summary", title: "APP充值汇总表", group: "report" },
+        "app-wechat-recharge-detail": { el: "page-app-wechat-recharge-detail", title: "APP/微信充值明细表", group: "report" },
+        "app-consume-summary": { el: "page-app-consume-summary", title: "APP消费汇总表", group: "report" },
+        "app-consume-detail": { el: "page-app-consume-detail", title: "APP消费明细表", group: "report" },
+        "canteen-manual-recharge-detail": { el: "page-canteen-manual-recharge-detail", title: "食堂个人手工充值明细表", group: "report" },
+        "subsidy-grant-detail": { el: "page-subsidy-grant-detail", title: "补助发放明细表", group: "report" },
+        "consume-data-detail": { el: "page-consume-data-detail", title: "消费数据明细表", group: "report" },
+        "cancel-person-detail": { el: "page-cancel-person-detail", title: "注销人员明细表", group: "report" },
         "history-consume-detail": { el: "page-history-consume-detail", title: "历史消费明细", group: "consume-query" },
+        "order-menu-setup": { el: "page-order-menu-setup", title: "订餐菜单设置", group: "order-manage" },
         "recharge-approve": { el: "page-recharge-approve", title: "充值名单审批", group: "approve" }
       };
       Object.keys(pages).forEach((key) => {
@@ -6638,6 +7611,30 @@ var qrcode = function() {
       if (pageKey === "online-cashier-summary") {
         renderOnlineCashierSummary();
       }
+      if (pageKey === "app-recharge-summary") {
+        renderAppRechargeSummary();
+      }
+      if (pageKey === "app-wechat-recharge-detail") {
+        renderAppWechatRechargeTable();
+      }
+      if (pageKey === "app-consume-summary") {
+        renderAppConsumeTable();
+      }
+      if (pageKey === "app-consume-detail") {
+        renderAppConsumeDetailTable();
+      }
+      if (pageKey === "canteen-manual-recharge-detail") {
+        renderCanteenManualRechargeTable();
+      }
+      if (pageKey === "subsidy-grant-detail") {
+        renderSubsidyGrantTable();
+      }
+      if (pageKey === "consume-data-detail") {
+        renderConsumeDataDetailTable();
+      }
+      if (pageKey === "cancel-person-detail") {
+        renderCancelPersonTable();
+      }
       if (pageKey === "device-consume-summary") {
         renderDeviceSummaryTable();
       }
@@ -6646,6 +7643,10 @@ var qrcode = function() {
       }
       if (pageKey === "history-consume-detail") {
         renderHistoryConsumeTable();
+      }
+      if (pageKey === "order-menu-setup") {
+        showOrderMenuMain();
+        renderOrderMenuPage();
       }
       if (pageKey === "recharge-approve") {
         renderRechargeApproveTable();
@@ -6792,6 +7793,38 @@ var qrcode = function() {
         switchConsumePage("online-cashier-summary");
         return;
       }
+      if (item.dataset.key === "app-recharge-summary") {
+        switchConsumePage("app-recharge-summary");
+        return;
+      }
+      if (item.dataset.key === "app-wechat-recharge-detail") {
+        switchConsumePage("app-wechat-recharge-detail");
+        return;
+      }
+      if (item.dataset.key === "app-consume-summary") {
+        switchConsumePage("app-consume-summary");
+        return;
+      }
+      if (item.dataset.key === "app-consume-detail") {
+        switchConsumePage("app-consume-detail");
+        return;
+      }
+      if (item.dataset.key === "canteen-manual-recharge-detail") {
+        switchConsumePage("canteen-manual-recharge-detail");
+        return;
+      }
+      if (item.dataset.key === "subsidy-grant-detail") {
+        switchConsumePage("subsidy-grant-detail");
+        return;
+      }
+      if (item.dataset.key === "consume-data-detail") {
+        switchConsumePage("consume-data-detail");
+        return;
+      }
+      if (item.dataset.key === "cancel-person-detail") {
+        switchConsumePage("cancel-person-detail");
+        return;
+      }
       if (item.dataset.key === "device-consume-summary") {
         switchConsumePage("device-consume-summary");
         return;
@@ -6802,6 +7835,10 @@ var qrcode = function() {
       }
       if (item.dataset.key === "history-consume-detail") {
         switchConsumePage("history-consume-detail");
+        return;
+      }
+      if (item.dataset.key === "order-menu-setup") {
+        switchConsumePage("order-menu-setup");
         return;
       }
       if (item.dataset.key === "point") {
@@ -8034,9 +9071,9 @@ var qrcode = function() {
       .print-toolbar button:hover { background: #66b1ff; border-color: #66b1ff; }
       .print-sheet { width: 273mm; margin: 20px auto; padding: 12mm; box-sizing: border-box; background: #fff; color: #000; font-size: 13px; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
       .print-sheet h1 { margin: 0 0 12px; text-align: center; font-size: 24px; font-weight: 700; }
-      .print-meta { display: flex; align-items: center; line-height: 24px; }
-      .print-meta span { width: 30%; }
-      .print-meta .meta-right { margin-left: auto; width: auto; }
+      .print-meta { display: flex; align-items: center; line-height: 24px; gap: 24px; }
+      .print-meta span { white-space: nowrap; }
+      .print-meta .meta-right { margin-left: auto; }
       .print-table { width: 100%; margin-top: 4px; border-collapse: collapse; }
       .print-table th, .print-table td { padding: 4px 6px; text-align: center; font-weight: 400; white-space: nowrap; }
       .print-table thead th { border-top: 1px solid #000; border-bottom: 1px solid #000; }
@@ -8352,6 +9389,1534 @@ var qrcode = function() {
     document.getElementById("btnOcsPrint").addEventListener("click", openOnlineCashierPrint);
     setOnlineCashierDefaultDates();
 
+    /* ===== APP充值汇总表 ===== */
+    const APP_RECHARGE_DAILY_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let back = 0; back < 75; back++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() - back);
+        const rechargeCount = 1 + (back * 5) % 6;
+        const feeCount = back % 11 === 0 ? 1 : 0;
+        rows.push({
+          date: formatDateYMD(d),
+          rechargeCount,
+          rechargeAmount: Math.round(rechargeCount * (30 + (back * 23) % 90 + ((back * 13) % 100) / 100) * 100) / 100,
+          feeCount,
+          feeAmount: feeCount * 2
+        });
+      }
+      return rows;
+    })();
+
+    function setAppRechargeDefaultDates() {
+      const now = new Date();
+      document.getElementById("arsDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("arsDateEnd").value = getReportToday();
+    }
+
+    function checkAppRechargeDateRange() {
+      const start = document.getElementById("arsDateStart").value;
+      const end = document.getElementById("arsDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function calcAppRechargeSummary() {
+      const start = document.getElementById("arsDateStart").value;
+      const end = document.getElementById("arsDateEnd").value;
+      const s = { rechargeCount: 0, rechargeAmount: 0, feeCount: 0, feeAmount: 0 };
+      APP_RECHARGE_DAILY_DATA.forEach((r) => {
+        if (start && r.date < start) return;
+        if (end && r.date > end) return;
+        Object.keys(s).forEach((k) => { s[k] += r[k]; });
+      });
+      s.payable = s.rechargeAmount + s.feeAmount;
+      return s;
+    }
+
+    function appRechargeLines(s) {
+      return [
+        ["APP充值次数", s.rechargeCount, "APP存款金额", formatMoney(s.rechargeAmount)],
+        ["管理费数量", s.feeCount, "管理费金额", formatMoney(s.feeAmount)],
+        ["应缴金额", formatMoney(s.payable), "", ""]
+      ];
+    }
+
+    function appRechargeRowsHtml(s) {
+      return appRechargeLines(s).map(([k, v, k2, v2]) =>
+        `<tr><td class="k">${k}</td><td class="v">${v}</td><td class="k2">${k2}</td><td class="v2">${v2}</td></tr>`
+      ).join("");
+    }
+
+    function renderAppRechargeSummary() {
+      document.getElementById("appRechargeBody").innerHTML = appRechargeRowsHtml(calcAppRechargeSummary());
+    }
+
+    function exportAppRechargeCsv() {
+      if (!checkAppRechargeDateRange()) return;
+      const start = document.getElementById("arsDateStart").value;
+      const end = document.getElementById("arsDateEnd").value;
+      const lines = [
+        ["APP充值汇总表"],
+        ["汇总日期", `${start} -- ${end}`, "制表日期", getReportToday()],
+        ["出纳员", "system", "金额单位", "元"],
+        ...appRechargeLines(calcAppRechargeSummary())
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `APP充值汇总表_${start}_${end}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openAppRechargePrint() {
+      if (!checkAppRechargeDateRange()) return;
+      const start = document.getElementById("arsDateStart").value;
+      const end = document.getElementById("arsDateEnd").value;
+      openPrintTab("APP充值汇总表", `
+        <h1>APP充值汇总表</h1>
+        <div class="print-meta"><span>汇总日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>出纳员：system</span><span class="meta-right">金额单位：元</span></div>
+        <table class="print-summary">
+          <tbody>${appRechargeRowsHtml(calcAppRechargeSummary())}</tbody>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`, "", true);
+    }
+
+    document.getElementById("btnArsSearch").addEventListener("click", () => {
+      if (!checkAppRechargeDateRange()) return;
+      renderAppRechargeSummary();
+      toast("查询完成");
+    });
+    document.getElementById("btnArsReset").addEventListener("click", () => {
+      setAppRechargeDefaultDates();
+      renderAppRechargeSummary();
+    });
+    document.getElementById("btnArsExport").addEventListener("click", exportAppRechargeCsv);
+    document.getElementById("btnArsPrint").addEventListener("click", openAppRechargePrint);
+    setAppRechargeDefaultDates();
+
+    /* ===== APP/微信充值明细表 ===== */
+    const AWR_PEOPLE = [
+      { code: "DZ1943", name: "黄雯琦" },
+      { code: "98699", name: "杨温俐" },
+      { code: "DZ0688", name: "陈思远" },
+      { code: "03951", name: "刘雨桐" },
+      { code: "DZ2201", name: "周子墨" },
+      { code: "87102", name: "吴佳怡" },
+      { code: "DZ3108", name: "郑浩然" },
+      { code: "15640", name: "孙婉清" },
+      { code: "DZ4520", name: "赵明轩" },
+      { code: "66318", name: "钱诗涵" }
+    ];
+    const AWR_AMOUNTS = [20, 50, 100, 200, 300, 500, 600];
+    const APP_WECHAT_RECHARGE_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 60; i++) {
+        const p = AWR_PEOPLE[i % AWR_PEOPLE.length];
+        const d = new Date(now);
+        d.setDate(now.getDate() - ((i * 3) % 45));
+        d.setHours(8 + (i * 5) % 12, (i * 7) % 60, (i * 11) % 60, 0);
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, "0");
+        const day = String(d.getDate()).padStart(2, "0");
+        const hh = String(d.getHours()).padStart(2, "0");
+        const mm = String(d.getMinutes()).padStart(2, "0");
+        const ss = String(d.getSeconds()).padStart(2, "0");
+        rows.push({
+          code: p.code,
+          name: p.name,
+          amount: AWR_AMOUNTS[(i * 3) % AWR_AMOUNTS.length],
+          time: `${y}-${m}-${day} ${hh}:${mm}:${ss}`,
+          date: `${y}-${m}-${day}`,
+          channel: i % 3 === 0 ? "微信" : "APP"
+        });
+      }
+      return rows;
+    })();
+    let appWechatRechargeRows = [];
+
+    function setAppWechatRechargeDefaultDates() {
+      const now = new Date();
+      document.getElementById("awrDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("awrDateEnd").value = getReportToday();
+    }
+
+    function checkAppWechatRechargeDateRange() {
+      const start = document.getElementById("awrDateStart").value;
+      const end = document.getElementById("awrDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function getAwrChannelLabel() {
+      return getSelectValue("awrChannelSelect") || "全部";
+    }
+
+    function filterAppWechatRechargeRows() {
+      const start = document.getElementById("awrDateStart").value;
+      const end = document.getElementById("awrDateEnd").value;
+      const channel = getSelectValue("awrChannelSelect");
+      return APP_WECHAT_RECHARGE_DATA
+        .filter((r) => {
+          if (start && r.date < start) return false;
+          if (end && r.date > end) return false;
+          if (channel && r.channel !== channel) return false;
+          return true;
+        })
+        .sort((a, b) => a.time.localeCompare(b.time));
+    }
+
+    function renderAppWechatRechargeTable() {
+      appWechatRechargeRows = filterAppWechatRechargeRows();
+      const body = document.getElementById("appWechatRechargeBody");
+      const page = awrPager.slice(appWechatRechargeRows);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="4"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r) => `
+          <tr>
+            <td>${r.code}</td>
+            <td>${r.name}</td>
+            <td>${r.amount.toFixed(2)}</td>
+            <td>${r.time}</td>
+          </tr>`).join("");
+      }
+      const totalAmount = appWechatRechargeRows.reduce((s, r) => s + r.amount, 0);
+      document.getElementById("appWechatRechargeFoot").innerHTML = `
+        <tr>
+          <td colspan="2"><span class="foot-title">总计：</span></td>
+          <td><div class="foot-label">充值金额</div><div class="foot-value">${totalAmount.toFixed(2)}</div></td>
+          <td></td>
+        </tr>`;
+    }
+
+    const awrPager = createPager({
+      info: "awrPagerInfo",
+      prev: "awrPagerPrev",
+      next: "awrPagerNext",
+      pageBtn: "awrPagerPage",
+      size: "awrPageSize",
+      jump: "awrJumpPage"
+    }, () => renderAppWechatRechargeTable());
+
+    function exportAppWechatRechargeCsv() {
+      if (!checkAppWechatRechargeDateRange()) return;
+      const rows = filterAppWechatRechargeRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const totalAmount = rows.reduce((s, r) => s + r.amount, 0);
+      const lines = [
+        ["编号", "姓名", "充值金额", "充值时间"],
+        ...rows.map((r) => [r.code, r.name, r.amount.toFixed(2), r.time]),
+        ["总计", "", totalAmount.toFixed(2), ""]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `APP微信充值明细表_${document.getElementById("awrDateStart").value}_${document.getElementById("awrDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openAppWechatRechargePrint() {
+      if (!checkAppWechatRechargeDateRange()) return;
+      const rows = filterAppWechatRechargeRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("awrDateStart").value;
+      const end = document.getElementById("awrDateEnd").value;
+      const totalAmount = rows.reduce((s, r) => s + r.amount, 0);
+      openPrintTab("APP/微信充值明细表", `
+        <h1>APP/微信充值明细表</h1>
+        <div class="print-meta"><span>交易日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">打印日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>渠道：${getAwrChannelLabel()}</span><span class="meta-right">金额单位：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr><th>编号</th><th>姓名</th><th>充值金额</th><th>充值时间</th></tr>
+          </thead>
+          <tbody>
+            ${rows.map((r) => `
+              <tr>
+                <td>${r.code}</td><td>${r.name}</td>
+                <td class="num">${formatMoney(r.amount)}</td><td>${r.time}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td><td>${rows.length}</td>
+              <td class="num">${formatMoney(totalAmount)}</td><td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-table td, .print-table th { font-size: 12px; }`,
+        true);
+    }
+
+    bindSelect("awrChannelSelect");
+    document.getElementById("btnAwrSearch").addEventListener("click", () => {
+      if (!checkAppWechatRechargeDateRange()) return;
+      awrPager.reset();
+      renderAppWechatRechargeTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnAwrReset").addEventListener("click", () => {
+      setAppWechatRechargeDefaultDates();
+      resetSelect("awrChannelSelect");
+      awrPager.reset();
+      renderAppWechatRechargeTable();
+    });
+    document.getElementById("btnAwrExport").addEventListener("click", exportAppWechatRechargeCsv);
+    document.getElementById("btnAwrPrint").addEventListener("click", openAppWechatRechargePrint);
+    setAppWechatRechargeDefaultDates();
+
+    /* ===== APP消费汇总表 ===== */
+    const APP_CONSUME_MERCHANTS = [
+      { name: "二食堂食品外卖", id: "329" },
+      { name: "发展超市", id: "132" },
+      { name: "生鲜直供", id: "334" },
+      { name: "十足超市", id: "127" },
+      { name: "温州报业发行广告有限公司", id: "729" },
+      { name: "洗车场", id: "669" },
+      { name: "行政中心理发室", id: "128" },
+      { name: "绣山影院", id: "310" },
+      { name: "一鸣奶吧", id: "509" },
+      { name: "一食堂食品外卖", id: "216" },
+      { name: "奕家人超市", id: "129" }
+    ];
+    const APP_CONSUME_DAILY_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let back = 0; back < 60; back++) {
+        const d = new Date(now);
+        d.setDate(now.getDate() - back);
+        const date = formatDateYMD(d);
+        APP_CONSUME_MERCHANTS.forEach((m, i) => {
+          const seed = back * 11 + i * 17;
+          if (seed % 5 === 0) return;
+          const people = 1 + (seed % 12);
+          const amount = Math.round(people * (8 + (seed % 40) + ((seed * 3) % 100) / 100) * 100) / 100;
+          rows.push({ date, name: m.name, id: m.id, people, amount });
+        });
+      }
+      return rows;
+    })();
+    const APC_MERCHANT_TREE = APP_CONSUME_MERCHANTS.map((m) => ({ label: m.name }));
+    let apcMerchantChecked = new Set();
+    let appConsumeRows = [];
+
+    const apcMerchantTreeCtl = initCheckTree({
+      rootId: "apcMerchantTree",
+      bodyId: "apcMerchantTreeBody",
+      tree: APC_MERCHANT_TREE,
+      checkedSet: apcMerchantChecked,
+      placeholder: "请选择商户",
+      inputId: "apcMerchantInput",
+      expandAll: true
+    });
+
+    function setAppConsumeDefaultDates() {
+      const now = new Date();
+      document.getElementById("apcDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("apcDateEnd").value = getReportToday();
+    }
+
+    function checkAppConsumeDateRange() {
+      const start = document.getElementById("apcDateStart").value;
+      const end = document.getElementById("apcDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function filterAppConsumeRows() {
+      const start = document.getElementById("apcDateStart").value;
+      const end = document.getElementById("apcDateEnd").value;
+      const sums = APP_CONSUME_MERCHANTS.map((m) => ({ name: m.name, id: m.id, people: 0, amount: 0 }));
+      const idx = Object.fromEntries(sums.map((s, i) => [s.name, i]));
+      APP_CONSUME_DAILY_DATA.forEach((r) => {
+        if (start && r.date < start) return;
+        if (end && r.date > end) return;
+        const s = sums[idx[r.name]];
+        s.people += r.people;
+        s.amount = Math.round((s.amount + r.amount) * 100) / 100;
+      });
+      return sums
+        .filter((s) => matchGroupChecked(s.name, apcMerchantChecked))
+        .filter((s) => s.people > 0)
+        .sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
+    }
+
+    function sumAppConsumeRows(rows) {
+      return {
+        people: rows.reduce((t, r) => t + r.people, 0),
+        amount: Math.round(rows.reduce((t, r) => t + r.amount, 0) * 100) / 100
+      };
+    }
+
+    function renderAppConsumeTable() {
+      appConsumeRows = filterAppConsumeRows();
+      const body = document.getElementById("appConsumeBody");
+      const page = apcPager.slice(appConsumeRows);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="4"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r) => `
+          <tr>
+            <td>${r.name}</td>
+            <td>${r.id}</td>
+            <td>${r.people}</td>
+            <td>${r.amount.toFixed(2)}</td>
+          </tr>`).join("");
+      }
+      const total = sumAppConsumeRows(appConsumeRows);
+      document.getElementById("appConsumeFoot").innerHTML = `
+        <tr>
+          <td colspan="2"><span class="foot-title">总计：</span></td>
+          <td><div class="foot-label">消费人数</div><div class="foot-value">${total.people}</div></td>
+          <td><div class="foot-label">消费金额</div><div class="foot-value">${total.amount.toFixed(2)}</div></td>
+        </tr>`;
+    }
+
+    const apcPager = createPager({
+      info: "apcPagerInfo",
+      prev: "apcPagerPrev",
+      next: "apcPagerNext",
+      pageBtn: "apcPagerPage",
+      size: "apcPageSize",
+      jump: "apcJumpPage"
+    }, () => renderAppConsumeTable());
+
+    function exportAppConsumeCsv() {
+      if (!checkAppConsumeDateRange()) return;
+      const rows = filterAppConsumeRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const total = sumAppConsumeRows(rows);
+      const lines = [
+        ["商户名称", "商户ID", "消费人数", "消费金额"],
+        ...rows.map((r) => [r.name, r.id, r.people, r.amount.toFixed(2)]),
+        ["总计", "", total.people, total.amount.toFixed(2)]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `APP消费汇总表_${document.getElementById("apcDateStart").value}_${document.getElementById("apcDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openAppConsumePrint() {
+      if (!checkAppConsumeDateRange()) return;
+      const rows = filterAppConsumeRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("apcDateStart").value;
+      const end = document.getElementById("apcDateEnd").value;
+      const total = sumAppConsumeRows(rows);
+      openPrintTab("APP消费汇总表", `
+        <h1>APP消费汇总表</h1>
+        <div class="print-meta"><span>消费日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>商户：${checkedLabel(apcMerchantChecked)}</span><span class="meta-right">金额单位：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr><th>商户名称</th><th>商户ID</th><th>消费人数</th><th>消费金额</th></tr>
+          </thead>
+          <tbody>
+            ${rows.map((r) => `
+              <tr>
+                <td class="left">${r.name}</td><td>${r.id}</td>
+                <td class="num">${r.people}</td><td class="num">${formatMoney(r.amount)}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td><td></td>
+              <td class="num">${total.people}</td><td class="num">${formatMoney(total.amount)}</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-table td.left { text-align: left; }`,
+        true);
+    }
+
+    document.getElementById("btnApcSearch").addEventListener("click", () => {
+      if (!checkAppConsumeDateRange()) return;
+      apcPager.reset();
+      renderAppConsumeTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnApcReset").addEventListener("click", () => {
+      setAppConsumeDefaultDates();
+      apcMerchantTreeCtl.clear();
+      apcPager.reset();
+      renderAppConsumeTable();
+    });
+    document.getElementById("btnApcExport").addEventListener("click", exportAppConsumeCsv);
+    document.getElementById("btnApcPrint").addEventListener("click", openAppConsumePrint);
+    setAppConsumeDefaultDates();
+
+    /* ===== APP消费明细表 ===== */
+    const ACD_PEOPLE = [
+      { code: "05961", name: "叶新望" },
+      { code: "96666", name: "陈言亮" },
+      { code: "DZ1186", name: "董文来" },
+      { code: "92210", name: "林晓晴" },
+      { code: "04128", name: "王思远" },
+      { code: "DZ2208", name: "周佳怡" },
+      { code: "87301", name: "吴浩然" },
+      { code: "DZ3091", name: "郑婉清" }
+    ];
+    const ACD_AMOUNTS = [15, 30, 45, 60, 80, 100, 120];
+    const APP_CONSUME_DETAIL_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 80; i++) {
+        const m = APP_CONSUME_MERCHANTS[i % APP_CONSUME_MERCHANTS.length];
+        const p = ACD_PEOPLE[i % ACD_PEOPLE.length];
+        const d = new Date(now);
+        d.setDate(now.getDate() - ((i * 2) % 40));
+        d.setHours(8 + (i * 3) % 12, (i * 7) % 60, (i * 11) % 60, 0);
+        const y = d.getFullYear();
+        const mo = String(d.getMonth() + 1).padStart(2, "0");
+        const day = String(d.getDate()).padStart(2, "0");
+        const hh = String(d.getHours()).padStart(2, "0");
+        const mm = String(d.getMinutes()).padStart(2, "0");
+        const ss = String(d.getSeconds()).padStart(2, "0");
+        let amount = ACD_AMOUNTS[(i * 5) % ACD_AMOUNTS.length];
+        if (i % 11 === 0) amount = -amount;
+        rows.push({
+          merchant: m.name,
+          code: p.code,
+          name: p.name,
+          amount,
+          time: `${y}-${mo}-${day} ${hh}:${mm}:${ss}`,
+          date: `${y}-${mo}-${day}`
+        });
+      }
+      return rows;
+    })();
+    let acdMerchantChecked = new Set();
+    let appConsumeDetailRows = [];
+
+    const acdMerchantTreeCtl = initCheckTree({
+      rootId: "acdMerchantTree",
+      bodyId: "acdMerchantTreeBody",
+      tree: APC_MERCHANT_TREE,
+      checkedSet: acdMerchantChecked,
+      placeholder: "请选择商户",
+      inputId: "acdMerchantInput",
+      expandAll: true
+    });
+
+    function setAppConsumeDetailDefaultDates() {
+      const now = new Date();
+      document.getElementById("acdDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("acdDateEnd").value = getReportToday();
+    }
+
+    function checkAppConsumeDetailDateRange() {
+      const start = document.getElementById("acdDateStart").value;
+      const end = document.getElementById("acdDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function filterAppConsumeDetailRows() {
+      const start = document.getElementById("acdDateStart").value;
+      const end = document.getElementById("acdDateEnd").value;
+      return APP_CONSUME_DETAIL_DATA
+        .filter((r) => {
+          if (start && r.date < start) return false;
+          if (end && r.date > end) return false;
+          if (!matchGroupChecked(r.merchant, acdMerchantChecked)) return false;
+          return true;
+        })
+        .sort((a, b) => a.time.localeCompare(b.time));
+    }
+
+    function renderAppConsumeDetailTable() {
+      appConsumeDetailRows = filterAppConsumeDetailRows();
+      const body = document.getElementById("appConsumeDetailBody");
+      const page = acdPager.slice(appConsumeDetailRows);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="5"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r) => `
+          <tr>
+            <td>${r.merchant}</td>
+            <td>${r.code}</td>
+            <td>${r.name}</td>
+            <td>${r.amount.toFixed(2)}</td>
+            <td>${r.time}</td>
+          </tr>`).join("");
+      }
+      const totalAmount = Math.round(appConsumeDetailRows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      document.getElementById("appConsumeDetailFoot").innerHTML = `
+        <tr>
+          <td colspan="3"><span class="foot-title">总计：</span></td>
+          <td><div class="foot-label">消费金额</div><div class="foot-value">${totalAmount.toFixed(2)}</div></td>
+          <td></td>
+        </tr>`;
+    }
+
+    const acdPager = createPager({
+      info: "acdPagerInfo",
+      prev: "acdPagerPrev",
+      next: "acdPagerNext",
+      pageBtn: "acdPagerPage",
+      size: "acdPageSize",
+      jump: "acdJumpPage"
+    }, () => renderAppConsumeDetailTable());
+
+    function exportAppConsumeDetailCsv() {
+      if (!checkAppConsumeDetailDateRange()) return;
+      const rows = filterAppConsumeDetailRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const totalAmount = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const lines = [
+        ["商户名称", "人员编号", "姓名", "消费金额", "消费时间"],
+        ...rows.map((r) => [r.merchant, r.code, r.name, r.amount.toFixed(2), r.time]),
+        ["总计", "", "", totalAmount.toFixed(2), ""]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `APP消费明细表_${document.getElementById("acdDateStart").value}_${document.getElementById("acdDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openAppConsumeDetailPrint() {
+      if (!checkAppConsumeDetailDateRange()) return;
+      const rows = filterAppConsumeDetailRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("acdDateStart").value;
+      const end = document.getElementById("acdDateEnd").value;
+      const totalAmount = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      openPrintTab("APP消费明细表", `
+        <h1>APP消费明细表</h1>
+        <div class="print-meta"><span>交易日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>商户：${checkedLabel(acdMerchantChecked)}</span><span class="meta-right">金额单位：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr><th>商户名称</th><th>人员编号</th><th>姓名</th><th>消费金额</th><th>消费时间</th></tr>
+          </thead>
+          <tbody>
+            ${rows.map((r) => `
+              <tr>
+                <td class="left">${r.merchant}</td><td>${r.code}</td><td>${r.name}</td>
+                <td class="num">${formatMoney(r.amount)}</td><td>${r.time}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td><td colspan="2">${rows.length}</td>
+              <td class="num">${formatMoney(totalAmount)}</td><td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-table td.left { text-align: left; } .print-table { font-size: 11px; }`,
+        true);
+    }
+
+    document.getElementById("btnAcdSearch").addEventListener("click", () => {
+      if (!checkAppConsumeDetailDateRange()) return;
+      acdPager.reset();
+      renderAppConsumeDetailTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnAcdReset").addEventListener("click", () => {
+      setAppConsumeDetailDefaultDates();
+      acdMerchantTreeCtl.clear();
+      acdPager.reset();
+      renderAppConsumeDetailTable();
+    });
+    document.getElementById("btnAcdExport").addEventListener("click", exportAppConsumeDetailCsv);
+    document.getElementById("btnAcdPrint").addEventListener("click", openAppConsumeDetailPrint);
+    setAppConsumeDetailDefaultDates();
+
+    /* ===== 食堂个人手工充值明细表 ===== */
+    const CMR_PEOPLE = [
+      { code: "08768", name: "王世周", deptCode: "N01", deptName: "党委机构", card: "10231" },
+      { code: "DZ2212", name: "李智", deptCode: "N03", deptName: "政府机构", card: "10547" },
+      { code: "09102", name: "张敏", deptCode: "N01", deptName: "党委机构", card: "11026" },
+      { code: "DZ3088", name: "陈浩", deptCode: "N02", deptName: "人大机构", card: "11390" },
+      { code: "05541", name: "刘洋", deptCode: "N03", deptName: "政府机构", card: "11802" },
+      { code: "DZ1540", name: "赵丽", deptCode: "N04", deptName: "政协机构", card: "12003" },
+      { code: "07890", name: "孙强", deptCode: "N01", deptName: "党委机构", card: "12551" },
+      { code: "DZ4099", name: "周芳", deptCode: "N02", deptName: "人大机构", card: "13018" }
+    ];
+    const CMR_OPERATORS = ["邵田田", "系统管理员", "财务-李娜", "财务-陈刚"];
+    const CMR_PAY_WAYS = ["转账", "现金", "转账", "转账"];
+    const CMR_AMOUNTS = [100, 200, 500, 1000, 1500, 2000, 250];
+    const CANTEEN_MANUAL_RECHARGE_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 48; i++) {
+        const p = CMR_PEOPLE[i % CMR_PEOPLE.length];
+        const d = new Date(now);
+        d.setDate(now.getDate() - ((i * 3) % 35));
+        d.setHours(9 + (i % 8), (i * 7) % 60, (i * 13) % 60, 0);
+        const y = d.getFullYear();
+        const mo = String(d.getMonth() + 1).padStart(2, "0");
+        const day = String(d.getDate()).padStart(2, "0");
+        const hh = String(d.getHours()).padStart(2, "0");
+        const mm = String(d.getMinutes()).padStart(2, "0");
+        const ss = String(d.getSeconds()).padStart(2, "0");
+        const amount = CMR_AMOUNTS[i % CMR_AMOUNTS.length];
+        const balance = Math.round((50 + ((i * 37) % 800) + ((i * 11) % 10) / 10) * 100) / 100;
+        const fee = i % 7 === 0 ? 2 : 0;
+        rows.push({
+          code: p.code,
+          name: p.name,
+          deptCode: p.deptCode,
+          deptName: p.deptName,
+          card: String(Number(p.card) + i).padStart(5, "0"),
+          balance,
+          amount,
+          fee,
+          payWay: CMR_PAY_WAYS[i % CMR_PAY_WAYS.length],
+          time: `${y}-${mo}-${day} ${hh}:${mm}:${ss}`,
+          date: `${y}-${mo}-${day}`,
+          operator: CMR_OPERATORS[i % CMR_OPERATORS.length]
+        });
+      }
+      return rows;
+    })();
+    let canteenManualRechargeRows = [];
+
+    function setCanteenManualRechargeDefaultDates() {
+      const now = new Date();
+      document.getElementById("cmrDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("cmrDateEnd").value = getReportToday();
+    }
+
+    function checkCanteenManualRechargeDateRange() {
+      const start = document.getElementById("cmrDateStart").value;
+      const end = document.getElementById("cmrDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function getCmrOperatorLabel() {
+      return getSelectValue("cmrOperatorSelect") || "全部";
+    }
+
+    function filterCanteenManualRechargeRows() {
+      const start = document.getElementById("cmrDateStart").value;
+      const end = document.getElementById("cmrDateEnd").value;
+      const operator = getSelectValue("cmrOperatorSelect");
+      return CANTEEN_MANUAL_RECHARGE_DATA
+        .filter((r) => {
+          if (start && r.date < start) return false;
+          if (end && r.date > end) return false;
+          if (operator && r.operator !== operator) return false;
+          return true;
+        })
+        .sort((a, b) => a.time.localeCompare(b.time));
+    }
+
+    function cmrFeeText(fee) {
+      return fee ? fee.toFixed(2) : "";
+    }
+
+    function cmrRowCells(r, index) {
+      return [
+        index + 1,
+        r.code,
+        r.name,
+        r.deptCode,
+        r.deptName,
+        r.card,
+        r.balance.toFixed(2),
+        r.amount.toFixed(2),
+        cmrFeeText(r.fee),
+        r.payWay,
+        r.time,
+        r.operator
+      ];
+    }
+
+    function renderCanteenManualRechargeTable() {
+      canteenManualRechargeRows = filterCanteenManualRechargeRows();
+      const body = document.getElementById("canteenManualRechargeBody");
+      const page = cmrPager.slice(canteenManualRechargeRows);
+      const offset = page.rows.length ? canteenManualRechargeRows.indexOf(page.rows[0]) : 0;
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="12"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r, i) => `
+          <tr>${cmrRowCells(r, offset + i).map((v) => `<td>${v}</td>`).join("")}</tr>
+        `).join("");
+      }
+      const totalAmount = Math.round(canteenManualRechargeRows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      document.getElementById("canteenManualRechargeFoot").innerHTML = `
+        <tr>
+          <td colspan="7"><span class="foot-title">合计：</span></td>
+          <td><div class="foot-label">充值金额</div><div class="foot-value">${totalAmount.toFixed(2)}</div></td>
+          <td colspan="4"></td>
+        </tr>`;
+    }
+
+    const cmrPager = createPager({
+      info: "cmrPagerInfo",
+      prev: "cmrPagerPrev",
+      next: "cmrPagerNext",
+      pageBtn: "cmrPagerPage",
+      size: "cmrPageSize",
+      jump: "cmrJumpPage"
+    }, () => renderCanteenManualRechargeTable());
+
+    function exportCanteenManualRechargeCsv() {
+      if (!checkCanteenManualRechargeDateRange()) return;
+      const rows = filterCanteenManualRechargeRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const totalAmount = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const headers = ["序号", "人员编号", "人员姓名", "部门编号", "部门名称", "卡流水号", "原有金额(元)", "充值金额(元)", "管理费(元)", "支付方式", "充值日期", "操作员"];
+      const lines = [
+        headers,
+        ...rows.map((r, i) => cmrRowCells(r, i)),
+        ["合计", "", "", "", "", "", "", totalAmount.toFixed(2), "", "", "", ""]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `食堂个人手工充值明细表_${document.getElementById("cmrDateStart").value}_${document.getElementById("cmrDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openCanteenManualRechargePrint() {
+      if (!checkCanteenManualRechargeDateRange()) return;
+      const rows = filterCanteenManualRechargeRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("cmrDateStart").value;
+      const end = document.getElementById("cmrDateEnd").value;
+      const totalAmount = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      openPrintTab("食堂个人手工充值明细表", `
+        <h1>食堂个人手工充值明细表</h1>
+        <div class="print-meta"><span>交易日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span>操作员：${getCmrOperatorLabel()}</span><span class="meta-right">金额单位：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr>
+              <th>序号</th><th>人员编号</th><th>人员姓名</th><th>部门编号</th><th>部门名称</th><th>卡流水号</th>
+              <th>原有金额(元)</th><th>充值金额(元)</th><th>管理费(元)</th><th>支付方式</th><th>充值日期</th><th>操作员</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((r, i) => `
+              <tr>
+                <td>${i + 1}</td><td>${r.code}</td><td>${r.name}</td><td>${r.deptCode}</td><td>${r.deptName}</td><td>${r.card}</td>
+                <td class="num">${formatMoney(r.balance)}</td><td class="num">${formatMoney(r.amount)}</td>
+                <td class="num">${cmrFeeText(r.fee)}</td><td>${r.payWay}</td><td>${r.time}</td><td>${r.operator}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>合计</td><td colspan="6"></td>
+              <td class="num">${formatMoney(totalAmount)}</td>
+              <td colspan="4"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-table { font-size: 9px; table-layout: fixed; }
+         .print-table td, .print-table th { padding: 2px 3px; white-space: nowrap; overflow: hidden; }`,
+        true);
+    }
+
+    bindSelect("cmrOperatorSelect");
+    document.getElementById("btnCmrSearch").addEventListener("click", () => {
+      if (!checkCanteenManualRechargeDateRange()) return;
+      cmrPager.reset();
+      renderCanteenManualRechargeTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnCmrReset").addEventListener("click", () => {
+      setCanteenManualRechargeDefaultDates();
+      resetSelect("cmrOperatorSelect");
+      cmrPager.reset();
+      renderCanteenManualRechargeTable();
+    });
+    document.getElementById("btnCmrExport").addEventListener("click", exportCanteenManualRechargeCsv);
+    document.getElementById("btnCmrPrint").addEventListener("click", openCanteenManualRechargePrint);
+    setCanteenManualRechargeDefaultDates();
+
+    /* ===== 补助发放明细表 ===== */
+    const BFD_PEOPLE = [
+      { code: "96505", name: "吴言欣", deptCode: "N16", deptName: "县（市、区）" },
+      { code: "96503", name: "林温镇", deptCode: "N16", deptName: "县（市、区）" },
+      { code: "96508", name: "陈晓雯", deptCode: "N16", deptName: "县（市、区）" },
+      { code: "96499", name: "黄志远", deptCode: "N15", deptName: "乡镇街道" },
+      { code: "96511", name: "郑思涵", deptCode: "N16", deptName: "县（市、区）" },
+      { code: "96502", name: "王浩然", deptCode: "N14", deptName: "市级机关" },
+      { code: "96517", name: "赵婉清", deptCode: "N16", deptName: "县（市、区）" },
+      { code: "96520", name: "刘俊杰", deptCode: "N15", deptName: "乡镇街道" }
+    ];
+    const BFD_AMOUNTS = [1100, 1100, 1200, 1000, 1100, 1100, 1100, 1200];
+    const BFD_STATUSES = ["已领取", "已领取", "已领取", "未领取", "已领取", "领取失败", "已领取", "已领取"];
+    const SUBSIDY_GRANT_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 40; i++) {
+        const p = BFD_PEOPLE[i % BFD_PEOPLE.length];
+        const create = new Date(now);
+        create.setDate(now.getDate() - ((i * 2) % 30));
+        create.setHours(10 + (i % 6), (i * 5) % 60, (i * 7) % 60, 0);
+        const status = BFD_STATUSES[i % BFD_STATUSES.length];
+        let receiveTime = "";
+        if (status === "已领取") {
+          const recv = new Date(create);
+          recv.setHours(create.getHours() + 1 + (i % 3), (i * 11) % 60, (i * 13) % 60, 0);
+          const y = recv.getFullYear();
+          const mo = String(recv.getMonth() + 1).padStart(2, "0");
+          const day = String(recv.getDate()).padStart(2, "0");
+          const hh = String(recv.getHours()).padStart(2, "0");
+          const mm = String(recv.getMinutes()).padStart(2, "0");
+          const ss = String(recv.getSeconds()).padStart(2, "0");
+          receiveTime = `${y}-${mo}-${day} ${hh}:${mm}:${ss}`;
+        }
+        rows.push({
+          code: p.code,
+          name: p.name,
+          deptCode: p.deptCode,
+          deptName: p.deptName,
+          amount: BFD_AMOUNTS[i % BFD_AMOUNTS.length],
+          receiveTime,
+          status,
+          operator: "STT",
+          createDate: formatDateYMD(create)
+        });
+      }
+      return rows;
+    })();
+    let subsidyGrantRows = [];
+
+    function setSubsidyGrantDefaultDates() {
+      const now = new Date();
+      document.getElementById("bfdDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("bfdDateEnd").value = getReportToday();
+    }
+
+    function checkSubsidyGrantDateRange() {
+      const start = document.getElementById("bfdDateStart").value;
+      const end = document.getElementById("bfdDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function filterSubsidyGrantRows() {
+      const start = document.getElementById("bfdDateStart").value;
+      const end = document.getElementById("bfdDateEnd").value;
+      return SUBSIDY_GRANT_DATA
+        .filter((r) => {
+          if (start && r.createDate < start) return false;
+          if (end && r.createDate > end) return false;
+          return true;
+        })
+        .sort((a, b) => a.createDate.localeCompare(b.createDate) || a.code.localeCompare(b.code));
+    }
+
+    function sumSubsidyGrant(rows) {
+      const total = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const received = Math.round(rows.filter((r) => r.status === "已领取").reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const unclaimed = Math.round(rows.filter((r) => r.status === "未领取").reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const failed = Math.round(rows.filter((r) => r.status === "领取失败").reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      return { total, received, unclaimed, failed };
+    }
+
+    function bfdAmountText(n) {
+      return n ? n.toFixed(2) : "";
+    }
+
+    function renderSubsidyGrantTable() {
+      subsidyGrantRows = filterSubsidyGrantRows();
+      const body = document.getElementById("subsidyGrantBody");
+      const page = bfdPager.slice(subsidyGrantRows);
+      const offset = page.rows.length ? subsidyGrantRows.indexOf(page.rows[0]) : 0;
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="9"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r, i) => `
+          <tr>
+            <td>${offset + i + 1}</td>
+            <td>${r.code}</td>
+            <td>${r.name}</td>
+            <td>${r.deptCode}</td>
+            <td>${r.deptName}</td>
+            <td>${r.amount.toFixed(2)}</td>
+            <td>${r.receiveTime}</td>
+            <td>${r.status}</td>
+            <td>${r.operator}</td>
+          </tr>`).join("");
+      }
+      const s = sumSubsidyGrant(subsidyGrantRows);
+      document.getElementById("subsidyGrantFoot").innerHTML = `
+        <tr>
+          <td colspan="5"><span class="foot-title">合计：</span></td>
+          <td><div class="foot-label">补助金额</div><div class="foot-value">${s.total.toFixed(2)}</div></td>
+          <td><div class="foot-label">已领取金额</div><div class="foot-value">${bfdAmountText(s.received)}</div></td>
+          <td><div class="foot-label">未领取金额</div><div class="foot-value">${bfdAmountText(s.unclaimed)}</div></td>
+          <td><div class="foot-label">领取失败金额</div><div class="foot-value">${bfdAmountText(s.failed)}</div></td>
+        </tr>`;
+    }
+
+    const bfdPager = createPager({
+      info: "bfdPagerInfo",
+      prev: "bfdPagerPrev",
+      next: "bfdPagerNext",
+      pageBtn: "bfdPagerPage",
+      size: "bfdPageSize",
+      jump: "bfdJumpPage"
+    }, () => renderSubsidyGrantTable());
+
+    function exportSubsidyGrantCsv() {
+      if (!checkSubsidyGrantDateRange()) return;
+      const rows = filterSubsidyGrantRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const s = sumSubsidyGrant(rows);
+      const lines = [
+        ["序号", "人员编号", "人员姓名", "部门编号", "部门名称", "补助金额", "已领取时间", "领取状态", "操作员"],
+        ...rows.map((r, i) => [i + 1, r.code, r.name, r.deptCode, r.deptName, r.amount.toFixed(2), r.receiveTime, r.status, r.operator]),
+        ["合计", "", "", "", "", s.total.toFixed(2), `已领取金额:${bfdAmountText(s.received)}`, `未领取金额:${bfdAmountText(s.unclaimed)}`, `领取失败金额:${bfdAmountText(s.failed)}`]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `补助发放明细表_${document.getElementById("bfdDateStart").value}_${document.getElementById("bfdDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openSubsidyGrantPrint() {
+      if (!checkSubsidyGrantDateRange()) return;
+      const rows = filterSubsidyGrantRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("bfdDateStart").value;
+      const end = document.getElementById("bfdDateEnd").value;
+      const s = sumSubsidyGrant(rows);
+      openPrintTab("补助发放明细表", `
+        <h1>补助发放明细表</h1>
+        <div class="print-meta"><span>创建日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span class="meta-right">金额单位：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr>
+              <th>序号</th><th>人员编号</th><th>人员姓名</th><th>部门编号</th><th>部门名称</th>
+              <th>补助金额</th><th>已领取时间</th><th>领取状态</th><th>操作员</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((r, i) => `
+              <tr>
+                <td>${i + 1}</td><td>${r.code}</td><td>${r.name}</td><td>${r.deptCode}</td><td>${r.deptName}</td>
+                <td class="num">${formatMoney(r.amount)}</td><td>${r.receiveTime || ""}</td>
+                <td>${r.status}</td><td>${r.operator}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>合计</td><td colspan="4"></td>
+              <td class="num">${formatMoney(s.total)}</td>
+              <td colspan="3" style="text-align:left;font-weight:400">
+                补助金额：${formatMoney(s.total)}　
+                已领取金额：${bfdAmountText(s.received) ? formatMoney(s.received) : "-"}　
+                未领取金额：${bfdAmountText(s.unclaimed) ? formatMoney(s.unclaimed) : "-"}　
+                领取失败金额：${bfdAmountText(s.failed) ? formatMoney(s.failed) : "-"}
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        `.print-table { font-size: 10px; }
+         .print-table td, .print-table th { padding: 3px 4px; }`,
+        true);
+    }
+
+    document.getElementById("btnBfdSearch").addEventListener("click", () => {
+      if (!checkSubsidyGrantDateRange()) return;
+      bfdPager.reset();
+      renderSubsidyGrantTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnBfdReset").addEventListener("click", () => {
+      setSubsidyGrantDefaultDates();
+      bfdPager.reset();
+      renderSubsidyGrantTable();
+    });
+    document.getElementById("btnBfdExport").addEventListener("click", exportSubsidyGrantCsv);
+    document.getElementById("btnBfdPrint").addEventListener("click", openSubsidyGrantPrint);
+    setSubsidyGrantDefaultDates();
+
+    /* ===== 消费数据明细表 ===== */
+    const CDD_POINTS = [
+      { merchant: "绣山影院", pointNo: "65533", pointName: "APPXF", meal: "", wallet: "" },
+      { merchant: "绣山影院", pointNo: "65534", pointName: "APPTK", meal: "", wallet: "" },
+      { merchant: "发展超市", pointNo: "1037", pointName: "发展超市", meal: "午", wallet: "个人钱包" },
+      { merchant: "一鸣奶吧", pointNo: "1085", pointName: "一鸣奶吧（新机）", meal: "早", wallet: "补贴钱包" },
+      { merchant: "生鲜直供", pointNo: "65533", pointName: "APPXF", meal: "", wallet: "" },
+      { merchant: "奕家人超市", pointNo: "1063", pointName: "奕家人超市", meal: "晚", wallet: "个人钱包" },
+      { merchant: "洗车场", pointNo: "1012", pointName: "大会堂洗车场", meal: "", wallet: "现金钱包" }
+    ];
+    const CDD_PEOPLE = [
+      { code: "03930", name: "张雪菊" },
+      { code: "01210", name: "吴小琴" },
+      { code: "08861", name: "陈立国" },
+      { code: "DZ2201", name: "林晓燕" },
+      { code: "05540", name: "黄伟杰" },
+      { code: "97102", name: "周诗涵" }
+    ];
+    const CDD_AMOUNTS = [15, 30, 45, 60, 80, 100, 120];
+    const CONSUME_DATA_DETAIL = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 60; i++) {
+        const pt = CDD_POINTS[i % CDD_POINTS.length];
+        const p = CDD_PEOPLE[i % CDD_PEOPLE.length];
+        const d = new Date(now);
+        d.setDate(now.getDate() - ((i * 2) % 40));
+        d.setHours(8 + (i * 3) % 12, (i * 7) % 60, (i * 11) % 60, 0);
+        const y = d.getFullYear();
+        const mo = String(d.getMonth() + 1).padStart(2, "0");
+        const day = String(d.getDate()).padStart(2, "0");
+        const hh = String(d.getHours()).padStart(2, "0");
+        const mm = String(d.getMinutes()).padStart(2, "0");
+        const ss = String(d.getSeconds()).padStart(2, "0");
+        let amount = CDD_AMOUNTS[(i * 3) % CDD_AMOUNTS.length];
+        if (pt.pointName === "APPTK" || i % 13 === 0) amount = -amount;
+        rows.push({
+          merchant: pt.merchant,
+          pointNo: pt.pointNo,
+          pointName: pt.pointName,
+          time: `${y}-${mo}-${day} ${hh}:${mm}:${ss}`,
+          date: `${y}-${mo}-${day}`,
+          meal: pt.meal,
+          amount,
+          code: p.code,
+          name: p.name,
+          wallet: pt.wallet
+        });
+      }
+      return rows;
+    })();
+    let consumeDataDetailRows = [];
+
+    function setConsumeDataDetailDefaultDates() {
+      const now = new Date();
+      document.getElementById("cddDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("cddDateEnd").value = getReportToday();
+    }
+
+    function checkConsumeDataDetailDateRange() {
+      const start = document.getElementById("cddDateStart").value;
+      const end = document.getElementById("cddDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function filterConsumeDataDetailRows() {
+      const start = document.getElementById("cddDateStart").value;
+      const end = document.getElementById("cddDateEnd").value;
+      return CONSUME_DATA_DETAIL
+        .filter((r) => {
+          if (start && r.date < start) return false;
+          if (end && r.date > end) return false;
+          return true;
+        })
+        .sort((a, b) => a.time.localeCompare(b.time));
+    }
+
+    function cddMoneyText(n) {
+      const abs = Math.abs(n).toFixed(2);
+      return n < 0 ? `-¥${abs}` : `¥${abs}`;
+    }
+
+    function renderConsumeDataDetailTable() {
+      consumeDataDetailRows = filterConsumeDataDetailRows();
+      const body = document.getElementById("consumeDataDetailBody");
+      const page = cddPager.slice(consumeDataDetailRows);
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="9"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r) => `
+          <tr>
+            <td>${r.merchant}</td>
+            <td>${r.pointNo}</td>
+            <td>${r.pointName}</td>
+            <td>${r.time}</td>
+            <td>${r.meal}</td>
+            <td>${cddMoneyText(r.amount)}</td>
+            <td>${r.code}</td>
+            <td>${r.name}</td>
+            <td>${r.wallet}</td>
+          </tr>`).join("");
+      }
+      const total = Math.round(consumeDataDetailRows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      document.getElementById("consumeDataDetailFoot").innerHTML = `
+        <tr>
+          <td colspan="5"><span class="foot-title">总计：</span></td>
+          <td><div class="foot-label">消费金额</div><div class="foot-value">${cddMoneyText(total)}</div></td>
+          <td colspan="3"></td>
+        </tr>`;
+    }
+
+    const cddPager = createPager({
+      info: "cddPagerInfo",
+      prev: "cddPagerPrev",
+      next: "cddPagerNext",
+      pageBtn: "cddPagerPage",
+      size: "cddPageSize",
+      jump: "cddJumpPage"
+    }, () => renderConsumeDataDetailTable());
+
+    function exportConsumeDataDetailCsv() {
+      if (!checkConsumeDataDetailDateRange()) return;
+      const rows = filterConsumeDataDetailRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const total = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const lines = [
+        ["商户名称", "消费点编号", "消费点名称", "消费时间", "消费时段", "消费金额", "人员编号", "姓名", "钱包"],
+        ...rows.map((r) => [r.merchant, r.pointNo, r.pointName, r.time, r.meal, r.amount.toFixed(2), r.code, r.name, r.wallet]),
+        ["总计", "", "", "", "", total.toFixed(2), "", "", ""]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `消费数据明细表_${document.getElementById("cddDateStart").value}_${document.getElementById("cddDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openConsumeDataDetailPrint() {
+      if (!checkConsumeDataDetailDateRange()) return;
+      const rows = filterConsumeDataDetailRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("cddDateStart").value;
+      const end = document.getElementById("cddDateEnd").value;
+      const total = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      openPrintTab("消费数据明细表", `
+        <h1>消费数据明细表</h1>
+        <div class="print-meta"><span>消费日期：${start || "-"} -- ${end || "-"}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
+        <div class="print-meta"><span class="meta-right">金额单位：元</span></div>
+        <table class="print-table">
+          <thead>
+            <tr>
+              <th>商户名称</th><th>消费点编号</th><th>消费点名称</th><th>消费时间</th><th>消费时段</th>
+              <th>消费金额</th><th>人员编号</th><th>姓名</th><th>钱包</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((r) => `
+              <tr>
+                <td class="left">${r.merchant}</td><td>${r.pointNo}</td><td>${r.pointName}</td>
+                <td>${r.time}</td><td>${r.meal}</td><td class="num">${cddMoneyText(r.amount)}</td>
+                <td>${r.code}</td><td>${r.name}</td><td>${r.wallet}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td><td colspan="4"></td>
+              <td class="num">${cddMoneyText(total)}</td>
+              <td colspan="3"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>制表：</span><span>确认：</span><span>承认：</span></div>`,
+        `.print-table { font-size: 10px; }
+         .print-table td.left { text-align: left; }
+         .print-table td, .print-table th { padding: 3px 4px; }`,
+        true);
+    }
+
+    document.getElementById("btnCddSearch").addEventListener("click", () => {
+      if (!checkConsumeDataDetailDateRange()) return;
+      cddPager.reset();
+      renderConsumeDataDetailTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnCddReset").addEventListener("click", () => {
+      setConsumeDataDetailDefaultDates();
+      cddPager.reset();
+      renderConsumeDataDetailTable();
+    });
+    document.getElementById("btnCddExport").addEventListener("click", exportConsumeDataDetailCsv);
+    document.getElementById("btnCddPrint").addEventListener("click", openConsumeDataDetailPrint);
+    setConsumeDataDetailDefaultDates();
+
+    /* ===== 注销人员明细表 ===== */
+    const ZXD_PEOPLE = [
+      { dept: "政府机构", code: "92075", name: "智慧大院测试" },
+      { dept: "党委机构", code: "08768", name: "王世周" },
+      { dept: "人大机构", code: "DZ2212", name: "李智" },
+      { dept: "政协机构", code: "09102", name: "张敏" },
+      { dept: "政府机构", code: "DZ3088", name: "陈浩" },
+      { dept: "乡镇街道", code: "05541", name: "刘洋" },
+      { dept: "县（市、区）", code: "96505", name: "吴言欣" },
+      { dept: "市级机关", code: "07890", name: "孙强" }
+    ];
+    const ZXD_OPERATORS = ["陈佳欣", "邵田田", "系统管理员", "财务-李娜"];
+    const CANCEL_PERSON_DATA = (() => {
+      const rows = [];
+      const now = new Date();
+      for (let i = 0; i < 28; i++) {
+        const p = ZXD_PEOPLE[i % ZXD_PEOPLE.length];
+        const d = new Date(now);
+        d.setDate(now.getDate() - ((i * 5) % 90));
+        const amount = Math.round((50 + ((i * 137) % 12000) + ((i * 17) % 100) / 100) * 100) / 100;
+        rows.push({
+          dept: p.dept,
+          code: p.code,
+          name: p.name,
+          amount,
+          date: formatDateYMD(d),
+          operator: ZXD_OPERATORS[i % ZXD_OPERATORS.length]
+        });
+      }
+      return rows;
+    })();
+    let cancelPersonRows = [];
+
+    function setCancelPersonDefaultDates() {
+      const now = new Date();
+      document.getElementById("zxdDateStart").value = formatDateYMD(new Date(now.getFullYear(), now.getMonth(), 1));
+      document.getElementById("zxdDateEnd").value = getReportToday();
+    }
+
+    function checkCancelPersonDateRange() {
+      const start = document.getElementById("zxdDateStart").value;
+      const end = document.getElementById("zxdDateEnd").value;
+      if (start && end && start > end) {
+        toast("开始日期不能晚于结束日期");
+        return false;
+      }
+      return true;
+    }
+
+    function filterCancelPersonRows() {
+      const start = document.getElementById("zxdDateStart").value;
+      const end = document.getElementById("zxdDateEnd").value;
+      return CANCEL_PERSON_DATA
+        .filter((r) => {
+          if (start && r.date < start) return false;
+          if (end && r.date > end) return false;
+          return true;
+        })
+        .sort((a, b) => a.date.localeCompare(b.date) || a.code.localeCompare(b.code));
+    }
+
+    function renderCancelPersonTable() {
+      cancelPersonRows = filterCancelPersonRows();
+      const body = document.getElementById("cancelPersonBody");
+      const page = zxdPager.slice(cancelPersonRows);
+      const offset = page.rows.length ? cancelPersonRows.indexOf(page.rows[0]) : 0;
+      if (!page.rows.length) {
+        body.innerHTML = `<tr><td colspan="7"><div class="empty-table">暂无数据</div></td></tr>`;
+      } else {
+        body.innerHTML = page.rows.map((r, i) => `
+          <tr>
+            <td>${offset + i + 1}</td>
+            <td>${r.dept}</td>
+            <td>${r.code}</td>
+            <td>${r.name}</td>
+            <td>${r.amount.toFixed(2)}</td>
+            <td>${r.date}</td>
+            <td>${r.operator}</td>
+          </tr>`).join("");
+      }
+      const totalAmount = Math.round(cancelPersonRows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      document.getElementById("cancelPersonFoot").innerHTML = `
+        <tr>
+          <td><span class="foot-title">总计：</span></td>
+          <td></td>
+          <td><div class="foot-value">${cancelPersonRows.length}</div></td>
+          <td><div class="foot-label">退款总额</div></td>
+          <td><div class="foot-value">${totalAmount.toFixed(2)}</div></td>
+          <td colspan="2"></td>
+        </tr>`;
+    }
+
+    const zxdPager = createPager({
+      info: "zxdPagerInfo",
+      prev: "zxdPagerPrev",
+      next: "zxdPagerNext",
+      pageBtn: "zxdPagerPage",
+      size: "zxdPageSize",
+      jump: "zxdJumpPage"
+    }, () => renderCancelPersonTable());
+
+    function exportCancelPersonCsv() {
+      if (!checkCancelPersonDateRange()) return;
+      const rows = filterCancelPersonRows();
+      if (!rows.length) {
+        toast("暂无数据可导出");
+        return;
+      }
+      const totalAmount = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      const lines = [
+        ["序号", "部门名称", "人员编号", "人员姓名", "退款金额", "注销日期", "操作员"],
+        ...rows.map((r, i) => [i + 1, r.dept, r.code, r.name, r.amount.toFixed(2), r.date, r.operator]),
+        ["总计", "", rows.length, "退款总额", totalAmount.toFixed(2), "", ""]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `注销人员明细表_${document.getElementById("zxdDateStart").value}_${document.getElementById("zxdDateEnd").value}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function openCancelPersonPrint() {
+      if (!checkCancelPersonDateRange()) return;
+      const rows = filterCancelPersonRows();
+      if (!rows.length) {
+        toast("暂无数据可打印");
+        return;
+      }
+      const start = document.getElementById("zxdDateStart").value;
+      const end = document.getElementById("zxdDateEnd").value;
+      const totalAmount = Math.round(rows.reduce((s, r) => s + r.amount, 0) * 100) / 100;
+      openPrintTab("注销人员明细表", `
+        <h1>注销人员明细表</h1>
+        <div class="print-meta">
+          <span>起始日期：${start || "-"}</span>
+          <span>截止日期：${end || "-"}</span>
+          <span class="meta-right">打印日期：${getReportToday()}</span>
+        </div>
+        <table class="print-table">
+          <thead>
+            <tr>
+              <th>序号</th><th>部门名称</th><th>人员编号</th><th>人员姓名</th>
+              <th>退款金额</th><th>注销日期</th><th>操作员</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map((r, i) => `
+              <tr>
+                <td>${i + 1}</td><td>${r.dept}</td><td>${r.code}</td><td>${r.name}</td>
+                <td class="num">${formatMoney(r.amount)}</td><td>${r.date}</td><td>${r.operator}</td>
+              </tr>`).join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td><td></td><td>${rows.length}</td>
+              <td>退款总额</td><td class="num">${formatMoney(totalAmount)}</td>
+              <td colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="print-sign"><span>打印人员：</span><span>审核人：</span></div>`,
+        `.print-sign span { width: 40%; }
+         .print-table { font-size: 12px; }`,
+        true);
+    }
+
+    document.getElementById("btnZxdSearch").addEventListener("click", () => {
+      if (!checkCancelPersonDateRange()) return;
+      zxdPager.reset();
+      renderCancelPersonTable();
+      toast("查询完成");
+    });
+    document.getElementById("btnZxdReset").addEventListener("click", () => {
+      setCancelPersonDefaultDates();
+      zxdPager.reset();
+      renderCancelPersonTable();
+    });
+    document.getElementById("btnZxdExport").addEventListener("click", exportCancelPersonCsv);
+    document.getElementById("btnZxdPrint").addEventListener("click", openCancelPersonPrint);
+    setCancelPersonDefaultDates();
+
     /* ===== 消费机消费汇总表 ===== */
     /* segs：参与的餐段；app：APP 消费（不分餐段）；refund：APP 退款（金额为负） */
     const CONSUME_DEVICES = [
@@ -8562,7 +11127,7 @@ var qrcode = function() {
       toast("导出成功");
     }
 
-    function openDeviceSummaryPrint() {
+    function openDeviceSummaryPrint(mode) {
       if (!checkDeviceSummaryDateRange()) return;
       const rows = filterDeviceSummaryRows();
       if (!rows.length) {
@@ -8573,31 +11138,41 @@ var qrcode = function() {
       const end = document.getElementById("dvsDateEnd").value;
       const money = (n) => (n ? formatMoney(n) : "");
       const total = sumDeviceRows(rows);
-      const cells = (s) => deviceValueCells(s, money).map((v) => `<td class="num">${v}</td>`).join("");
+      const fiveCols = mode === "five";
+      const headCells = fiveCols
+        ? `<th>商户名称</th><th>消费机号</th><th>消费机名称</th><th>消费人数</th><th>消费金额</th>`
+        : `<th>商户名称</th><th>消费机号</th><th>消费机名称</th>${DEVICE_VALUE_LABELS.map((l) => `<th>${l}</th>`).join("")}`;
+      const bodyRows = fiveCols
+        ? rows.map((r) => `
+            <tr>
+              <td>${r.merchant}</td><td>${r.no}</td><td class="left">${r.name}</td>
+              <td class="num">${r.totalCount}</td><td class="num">${money(r.totalAmount)}</td>
+            </tr>`).join("")
+        : rows.map((r) => {
+            const cells = deviceValueCells(r, money).map((v) => `<td class="num">${v}</td>`).join("");
+            return `<tr><td>${r.merchant}</td><td>${r.no}</td><td class="left">${r.name}</td>${cells}</tr>`;
+          }).join("");
+      const footRow = fiveCols
+        ? `<tr><td colspan="3">总计</td><td class="num">${total.totalCount}</td><td class="num">${money(total.totalAmount)}</td></tr>`
+        : `<tr><td colspan="3">总计</td>${deviceValueCells(total, money).map((v) => `<td class="num">${v}</td>`).join("")}</tr>`;
+      const signRow = fiveCols
+        ? `<div class="print-sign"><span>审核人：</span><span>食堂领导：</span><span>局分管领导：</span></div>`
+        : `<div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`;
       openPrintTab("消费机消费汇总表", `
         <h1>消费机消费汇总表</h1>
         <div class="print-meta"><span>开始日期：${start || "-"}</span><span>截止日期：${end || "-"}</span></div>
         <div class="print-meta"><span>设备名称：${checkedLabel(dvsDeviceChecked)}</span><span>商户名称：${checkedLabel(dvsMerchantChecked)}</span><span class="meta-right">制表日期：${getReportToday()}</span></div>
         <table class="print-table">
-          <thead>
-            <tr>
-              <th>商户名称</th><th>消费机号</th><th>消费机名称</th>
-              ${DEVICE_VALUE_LABELS.map((l) => `<th>${l}</th>`).join("")}
-            </tr>
-          </thead>
-          <tbody>
-            ${rows.map((r) => `<tr><td>${r.merchant}</td><td>${r.no}</td><td class="left">${r.name}</td>${cells(r)}</tr>`).join("")}
-          </tbody>
-          <tfoot>
-            <tr><td colspan="3">总计</td>${cells(total)}</tr>
-          </tfoot>
+          <thead><tr>${headCells}</tr></thead>
+          <tbody>${bodyRows}</tbody>
+          <tfoot>${footRow}</tfoot>
         </table>
-        <div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
+        ${signRow}`,
         `.print-table td.left { text-align: left; }
-         .print-table { font-size: 9px; table-layout: fixed; }
+         .print-table { font-size: ${fiveCols ? "12px" : "9px"}; table-layout: fixed; }
          .print-table td, .print-table th {
            white-space: nowrap; overflow: hidden; text-overflow: clip;
-           font-size: 9px; padding: 2px 3px; line-height: 1.3;
+           font-size: ${fiveCols ? "12px" : "9px"}; padding: 2px 3px; line-height: 1.3;
          }
          .print-sheet.portrait h1 { font-size: 18px; }
          .print-meta { font-size: 11px; }
@@ -8619,7 +11194,8 @@ var qrcode = function() {
       renderDeviceSummaryTable();
     });
     document.getElementById("btnDvsExport").addEventListener("click", exportDeviceSummaryCsv);
-    document.getElementById("btnDvsPrint").addEventListener("click", openDeviceSummaryPrint);
+    document.getElementById("btnDvsPrintAll").addEventListener("click", () => openDeviceSummaryPrint("all"));
+    document.getElementById("btnDvsPrintFive").addEventListener("click", () => openDeviceSummaryPrint("five"));
     setDeviceSummaryDefaultDates();
 
     /* ===== 账户余额表(按部门) ===== */
@@ -9443,6 +12019,305 @@ var qrcode = function() {
       toast("导出成功");
     }
     setHistoryConsumeDefaultDates();
+
+    /* ===== 订餐菜单设置 ===== */
+    const ORDER_MEALS = ["凌晨", "早2", "午", "晚", "小夜"];
+    const ORDER_MENUS = [
+      { id: "om001", name: "订餐菜单-001", merchant: "商户1101", code: "OM001" },
+      { id: "om002", name: "订餐菜单-002", merchant: "商户1103", code: "OM002" },
+      { id: "om003", name: "订餐菜单-003", merchant: "商户1105", code: "OM003" },
+      { id: "om004", name: "订餐菜单-004", merchant: "商户1201", code: "OM004" },
+      { id: "om005", name: "测试餐单", merchant: "商户1208", code: "OM005" }
+    ];
+    let orderMenuId = "om003";
+    let orderWeekStart = null;
+    let orderDishes = {};
+    let orderImportFile = null;
+
+    function mondayOf(date) {
+      const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+      const day = (d.getDay() + 6) % 7;
+      d.setDate(d.getDate() - day);
+      return d;
+    }
+
+    function orderDateKey(d) {
+      const p = (n) => String(n).padStart(2, "0");
+      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+    }
+
+    function orderDishKey(menuId, dateStr, meal) {
+      return `${menuId}|${dateStr}|${meal}`;
+    }
+
+    function currentOrderMenu() {
+      return ORDER_MENUS.find((m) => m.id === orderMenuId) || ORDER_MENUS[0];
+    }
+
+    function showOrderMenuMain() {
+      document.getElementById("orderMenuMain").classList.remove("hidden");
+      document.getElementById("orderMenuImport").classList.add("hidden");
+    }
+
+    function showOrderMenuImport() {
+      document.getElementById("orderMenuMain").classList.add("hidden");
+      document.getElementById("orderMenuImport").classList.remove("hidden");
+      const menu = currentOrderMenu();
+      document.getElementById("orderImportTitle").textContent = `订餐菜单（${menu.name}）导入`;
+      orderImportFile = null;
+      document.getElementById("orderImportFileName").value = "";
+      document.getElementById("orderImportFile").value = "";
+      setOrderImportStep(1);
+    }
+
+    function setOrderImportStep(step) {
+      document.querySelectorAll("#orderImportSteps .order-step").forEach((el) => {
+        const n = Number(el.dataset.step);
+        el.classList.toggle("active", n === step);
+        el.classList.toggle("done", n < step);
+        if (n < step) el.querySelector(".num").textContent = "✓";
+        else el.querySelector(".num").textContent = String(n);
+      });
+      document.querySelectorAll("#orderImportSteps .order-step-line").forEach((el) => {
+        el.classList.toggle("done", Number(el.dataset.line) < step);
+      });
+      document.getElementById("orderImportStep1").classList.toggle("hidden", step !== 1);
+      document.getElementById("orderImportStep2").classList.toggle("hidden", step !== 2);
+      document.getElementById("orderImportStep3").classList.toggle("hidden", step !== 3);
+    }
+
+    function renderOrderMenuList() {
+      const keyword = document.getElementById("orderMenuKeyword").value.trim();
+      const list = ORDER_MENUS.filter((m) => !keyword || `${m.name}${m.code}${m.merchant}`.includes(keyword));
+      document.getElementById("orderMenuList").innerHTML = list.map((m) => `
+        <div class="order-menu-item${m.id === orderMenuId ? " active" : ""}" data-id="${m.id}">
+          <span>${m.name}（${m.merchant}）</span>
+          <span class="more-ico">☰</span>
+        </div>`).join("") || `<div class="empty-table" style="padding:24px">暂无菜单</div>`;
+    }
+
+    function renderOrderWeek() {
+      if (!orderWeekStart) orderWeekStart = mondayOf(new Date());
+      const days = Array.from({ length: 7 }, (_, i) => {
+        const d = new Date(orderWeekStart);
+        d.setDate(orderWeekStart.getDate() + i);
+        return d;
+      });
+      const weekNames = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
+      const p = (n) => String(n).padStart(2, "0");
+      const start = days[0];
+      const end = days[6];
+      const sameMonth = start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
+      document.getElementById("orderWeekRange").textContent = sameMonth
+        ? `${start.getFullYear()}年${start.getMonth() + 1}月${p(start.getDate())}日 ~ ${start.getMonth() + 1}月${p(end.getDate())}日`
+        : start.getFullYear() === end.getFullYear()
+          ? `${start.getFullYear()}年${start.getMonth() + 1}月${p(start.getDate())}日 ~ ${end.getMonth() + 1}月${p(end.getDate())}日`
+          : `${start.getFullYear()}年${start.getMonth() + 1}月${p(start.getDate())}日 ~ ${end.getFullYear()}年${end.getMonth() + 1}月${p(end.getDate())}日`;
+      document.getElementById("orderWeekHead").innerHTML = `<tr>
+        <th class="meal-name"></th>
+        ${days.map((d, i) => `<th>${weekNames[i]} ${p(d.getMonth() + 1)}-${p(d.getDate())}</th>`).join("")}
+      </tr>`;
+      document.getElementById("orderWeekBody").innerHTML = ORDER_MEALS.map((meal) => `
+        <tr>
+          <td class="meal-name">${meal}</td>
+          ${days.map((d) => {
+            const key = orderDishKey(orderMenuId, orderDateKey(d), meal);
+            const dish = orderDishes[key];
+            return dish
+              ? `<td class="dish-cell" data-key="${key}">${dish}</td>`
+              : `<td class="unset" data-key="${key}">未设置菜品</td>`;
+          }).join("")}
+        </tr>`).join("");
+      const menu = currentOrderMenu();
+      document.getElementById("orderMenuCurrent").innerHTML = `当前选中：<b>${menu.name}</b>　　商户：<b>${menu.merchant}</b>`;
+    }
+
+    function renderOrderMenuPage() {
+      renderOrderMenuList();
+      renderOrderWeek();
+    }
+
+    function exportOrderMenuCsv() {
+      const menu = currentOrderMenu();
+      if (!orderWeekStart) orderWeekStart = mondayOf(new Date());
+      const days = Array.from({ length: 7 }, (_, i) => {
+        const d = new Date(orderWeekStart);
+        d.setDate(orderWeekStart.getDate() + i);
+        return d;
+      });
+      const headers = ["餐段", ...days.map((d) => orderDateKey(d))];
+      const lines = [
+        headers,
+        ...ORDER_MEALS.map((meal) => [
+          meal,
+          ...days.map((d) => orderDishes[orderDishKey(orderMenuId, orderDateKey(d), meal)] || "")
+        ])
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `订餐菜单_${menu.name}_${orderDateKey(days[0])}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("导出成功");
+    }
+
+    function downloadOrderTemplate() {
+      const lines = [
+        ["日期", "餐段", "菜品名称"],
+        [getReportToday(), "午", "示例菜品"]
+      ].map((cells) => cells.map((v) => `"${String(v).replace(/"/g, '""')}"`).join(","));
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "订餐菜单导入模版.csv";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast("模版已下载");
+    }
+
+    function finishOrderImport() {
+      const menu = currentOrderMenu();
+      const fileName = (orderImportFile && orderImportFile.name) || "";
+      const failNight = /夜|失败|fail/i.test(fileName);
+      const failMorning = /早|失败|fail/i.test(fileName);
+      if (!failNight && !failMorning) {
+        if (!orderWeekStart) orderWeekStart = mondayOf(new Date());
+        ORDER_MEALS.forEach((meal) => {
+          for (let i = 0; i < 7; i++) {
+            const d = new Date(orderWeekStart);
+            d.setDate(orderWeekStart.getDate() + i);
+            const key = orderDishKey(orderMenuId, orderDateKey(d), meal);
+            if (!orderDishes[key]) orderDishes[key] = `${meal}示例菜`;
+          }
+        });
+        document.getElementById("orderImportResult").innerHTML = `
+          <div class="order-result-icon ok">✓</div>
+          <div class="order-result-title">导入成功</div>
+          <div class="order-result-desc">订餐菜单「${menu.name}」已导入完成</div>`;
+        document.getElementById("orderImportResultActions").innerHTML = `
+          <button class="btn btn-primary" id="btnOrderImportNextFile" type="button">导入下一个文件</button>
+          <button class="btn" id="btnOrderImportReturn" type="button">返回</button>`;
+      } else {
+        const errs = [];
+        if (failMorning) errs.push("餐段[早]不存在或未启用");
+        if (failNight || !failMorning) errs.push("餐段[夜]不存在或未启用");
+        document.getElementById("orderImportResult").innerHTML = `
+          <div class="order-result-icon">!</div>
+          <div class="order-result-title">导入数据部分失败</div>
+          <div class="order-result-desc">${errs[0]}</div>
+          <div class="order-result-box">你提交的内容有如下错误：<br>${errs.map((e) => `<span class="err">ⓧ ${e}</span>`).join("<br>")}</div>
+          <div class="order-result-fail">失败记录：<a id="btnOrderFailDownload">下载</a></div>`;
+        document.getElementById("orderImportResultActions").innerHTML = `
+          <button class="btn btn-primary" id="btnOrderImportNextFile" type="button">导入下一个文件</button>
+          <button class="btn btn-primary" id="btnOrderImportRetry" type="button">重新尝试</button>
+          <button class="btn" id="btnOrderImportReturn" type="button">返回</button>`;
+        toast("订餐菜单导入失败");
+      }
+      document.getElementById("orderImportResultActions").onclick = (e) => {
+        const btn = e.target.closest("button,a");
+        if (!btn) return;
+        if (btn.id === "btnOrderImportReturn") {
+          showOrderMenuMain();
+          renderOrderMenuPage();
+        } else if (btn.id === "btnOrderImportNextFile" || btn.id === "btnOrderImportRetry") {
+          orderImportFile = null;
+          document.getElementById("orderImportFileName").value = "";
+          document.getElementById("orderImportFile").value = "";
+          setOrderImportStep(1);
+        } else if (btn.id === "btnOrderFailDownload") {
+          const blob = new Blob(["\uFEFF餐段,失败原因\n夜,餐段[夜]不存在或未启用\n"], { type: "text/csv;charset=utf-8;" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = `订餐菜单导入失败_${getReportToday()}.csv`;
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+          toast("导出成功");
+        }
+      };
+      setOrderImportStep(3);
+      renderOrderMenuPage();
+    }
+
+    document.getElementById("orderMenuList").addEventListener("click", (e) => {
+      const item = e.target.closest(".order-menu-item");
+      if (!item) return;
+      orderMenuId = item.dataset.id;
+      renderOrderMenuPage();
+    });
+    document.getElementById("orderMenuKeyword").addEventListener("input", renderOrderMenuList);
+    document.getElementById("btnOrderWeekPrev").addEventListener("click", () => {
+      orderWeekStart = new Date(orderWeekStart.getFullYear(), orderWeekStart.getMonth(), orderWeekStart.getDate() - 7);
+      renderOrderWeek();
+    });
+    document.getElementById("btnOrderWeekNext").addEventListener("click", () => {
+      orderWeekStart = new Date(orderWeekStart.getFullYear(), orderWeekStart.getMonth(), orderWeekStart.getDate() + 7);
+      renderOrderWeek();
+    });
+    document.getElementById("orderWeekBody").addEventListener("click", (e) => {
+      const cell = e.target.closest("[data-key]");
+      if (!cell) return;
+      const key = cell.dataset.key;
+      const name = window.prompt("请输入菜品名称", orderDishes[key] || "");
+      if (name == null) return;
+      const text = name.trim();
+      if (text) orderDishes[key] = text;
+      else delete orderDishes[key];
+      renderOrderWeek();
+    });
+    document.getElementById("btnOrderMenuAdd").addEventListener("click", () => {
+      const no = String(ORDER_MENUS.length + 1).padStart(3, "0");
+      const item = { id: "om" + no, name: `订餐菜单-${no}`, merchant: "商户1105", code: "OM" + no };
+      ORDER_MENUS.push(item);
+      orderMenuId = item.id;
+      renderOrderMenuPage();
+      toast("已新建菜单");
+    });
+    document.getElementById("btnOrderMenuCopy").addEventListener("click", () => {
+      const src = currentOrderMenu();
+      const no = String(ORDER_MENUS.length + 1).padStart(3, "0");
+      const item = { id: "om" + no, name: `${src.name}-副本`, merchant: src.merchant, code: "OM" + no };
+      ORDER_MENUS.push(item);
+      Object.keys(orderDishes).forEach((key) => {
+        if (key.startsWith(src.id + "|")) {
+          orderDishes[key.replace(src.id + "|", item.id + "|")] = orderDishes[key];
+        }
+      });
+      orderMenuId = item.id;
+      renderOrderMenuPage();
+      toast("菜单已复制");
+    });
+    document.getElementById("btnOrderMenuImport").addEventListener("click", showOrderMenuImport);
+    document.getElementById("btnOrderMenuExport").addEventListener("click", exportOrderMenuCsv);
+    document.getElementById("btnOrderPickFile").addEventListener("click", () => document.getElementById("orderImportFile").click());
+    document.getElementById("orderImportFile").addEventListener("change", (e) => {
+      orderImportFile = e.target.files && e.target.files[0] ? e.target.files[0] : null;
+      document.getElementById("orderImportFileName").value = orderImportFile ? orderImportFile.name : "";
+    });
+    document.getElementById("btnOrderTpl").addEventListener("click", downloadOrderTemplate);
+    document.getElementById("btnOrderImportBack1").addEventListener("click", () => {
+      showOrderMenuMain();
+      renderOrderMenuPage();
+    });
+    document.getElementById("btnOrderImportNext1").addEventListener("click", () => {
+      if (!orderImportFile) {
+        toast("请选择导入文件");
+        return;
+      }
+      setOrderImportStep(2);
+    });
+    document.getElementById("btnOrderImportPrev2").addEventListener("click", () => setOrderImportStep(1));
+    document.getElementById("btnOrderImportNext2").addEventListener("click", finishOrderImport);
+    orderWeekStart = mondayOf(new Date());
 
     /* ===== 首页：就餐人数趋势（去重就餐人数） ===== */
     function createDiningTrendChart() {
@@ -10451,17 +13326,120 @@ var qrcode = function() {
       "7. 金额单位：元，保留两位小数，带千分位；支持导出，导出内容与页面汇总一致。"
     ].join("\n");
 
+    const arsHelpModal = document.getElementById("arsHelpModal");
+    const arsHelpEditor = document.getElementById("arsHelpEditor");
+    const ARS_HELP_KEY = "app_recharge_summary_help_doc_v1";
+    const ARS_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > APP充值汇总表。",
+      "2. 统计范围：仅 APP 渠道充值，出纳员统一为 system。",
+      "3. 筛选条件：交易日期（开始-结束），默认本月 1 日至今天，开始日期不能晚于结束日期。",
+      "4. 页面为两栏汇总：左栏为 APP充值次数、管理费数量、应缴金额；右栏为 APP存款金额、管理费金额。",
+      "5. 应缴金额 = APP存款金额 + 管理费金额。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；汇总日期取筛选的交易日期，出纳员为 system，制表日期为点击打印的日期，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数，带千分位；支持导出，导出内容与页面汇总一致。"
+    ].join("\n");
+
+    const awrHelpModal = document.getElementById("awrHelpModal");
+    const awrHelpEditor = document.getElementById("awrHelpEditor");
+    const AWR_HELP_KEY = "app_wechat_recharge_detail_help_doc_v1";
+    const AWR_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > APP/微信充值明细表。",
+      "2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；渠道（单选：全部 / APP / 微信），默认全部。",
+      "3. 列表字段：编号、姓名、充值金额、充值时间（年-月-日 时:分:秒）。",
+      "4. 按充值时间从早到晚排序；表格底部总计为当前筛选结果的充值金额合计；记录条数在左下角分页处显示。",
+      "5. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为交易日期、渠道、打印日期、金额单位；末行为总计，底部为经手人、复核人、审核人签字栏。",
+      "6. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
+    const apcHelpModal = document.getElementById("apcHelpModal");
+    const apcHelpEditor = document.getElementById("apcHelpEditor");
+    const APC_HELP_KEY = "app_consume_summary_help_doc_v1";
+    const APC_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > APP消费汇总表。",
+      "2. 统计范围：APP 渠道消费，按商户汇总。",
+      "3. 筛选条件：消费日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；商户（树状多选），不选表示全部。",
+      "4. 列表字段：商户名称、商户ID、消费人数、消费金额；按商户名称排序。",
+      "5. 表格底部总计为当前筛选结果的消费人数、消费金额合计；记录条数在左下角分页处显示。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为消费日期、商户（未选显示 ALL）、制表日期、金额单位；末行为总计，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
+    const acdHelpModal = document.getElementById("acdHelpModal");
+    const acdHelpEditor = document.getElementById("acdHelpEditor");
+    const ACD_HELP_KEY = "app_consume_detail_help_doc_v1";
+    const ACD_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > APP消费明细表。",
+      "2. 统计范围：APP 渠道消费明细，退款金额为负数。",
+      "3. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；商户（树状多选），不选表示全部。",
+      "4. 列表字段：商户名称、人员编号、姓名、消费金额、消费时间（年-月-日 时:分:秒）。",
+      "5. 按消费时间从早到晚排序；表格底部总计为当前筛选结果的消费金额合计（含退款）；记录条数在左下角分页处显示。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为交易日期、商户（未选显示 ALL）、制表日期、金额单位；末行为总计，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
+    const cmrHelpModal = document.getElementById("cmrHelpModal");
+    const cmrHelpEditor = document.getElementById("cmrHelpEditor");
+    const CMR_HELP_KEY = "canteen_manual_recharge_detail_help_doc_v1";
+    const CMR_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 食堂个人手工充值明细表。",
+      "2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）；操作员（单选），默认全部。",
+      "3. 列表字段：序号、人员编号、人员姓名、部门编号、部门名称、卡流水号、原有金额(元)、充值金额(元)、管理费(元)、支付方式、充值日期、操作员。",
+      "4. 充值日期展示到秒（年-月-日 时:分:秒）；管理费无值时单元格为空；按充值日期从早到晚排序。",
+      "5. 表格底部合计为当前筛选结果的充值金额合计；记录条数在左下角分页处显示。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为交易日期、操作员、制表日期、金额单位；末行为合计，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附合计行。"
+    ].join("\n");
+
+    const bfdHelpModal = document.getElementById("bfdHelpModal");
+    const bfdHelpEditor = document.getElementById("bfdHelpEditor");
+    const BFD_HELP_KEY = "subsidy_grant_detail_help_doc_v1";
+    const BFD_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 补助发放明细表。",
+      "2. 筛选条件：创建日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）。",
+      "3. 列表字段：序号、人员编号、人员姓名、部门编号、部门名称、补助金额、已领取时间、领取状态、操作员。",
+      "4. 领取状态包括：已领取、未领取、领取失败；已领取时展示已领取时间（年-月-日 时:分:秒），否则为空。",
+      "5. 表格底部合计：补助金额、已领取金额、未领取金额、领取失败金额；无对应记录时金额为空；记录条数在左下角分页处显示。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为创建日期、制表日期、金额单位；末行为合计，底部为经手人、复核人、审核人签字栏。",
+      "7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附合计行。"
+    ].join("\n");
+
+    const cddHelpModal = document.getElementById("cddHelpModal");
+    const cddHelpEditor = document.getElementById("cddHelpEditor");
+    const CDD_HELP_KEY = "consume_data_detail_help_doc_v1";
+    const CDD_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 消费数据明细表。",
+      "2. 筛选条件：消费日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）。",
+      "3. 列表字段：商户名称、消费点编号、消费点名称、消费时间、消费时段、消费金额、人员编号、姓名、钱包。",
+      "4. 消费金额带 ¥ 符号展示，退款为负数；消费时段、钱包无值时单元格为空；按消费时间从早到晚排序。",
+      "5. 表格底部总计为当前筛选结果的消费金额合计（含退款）；记录条数在左下角分页处显示。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为消费日期、制表日期、金额单位；末行为总计，底部签字栏为制表、确认、承认。",
+      "7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
+    const zxdHelpModal = document.getElementById("zxdHelpModal");
+    const zxdHelpEditor = document.getElementById("zxdHelpEditor");
+    const ZXD_HELP_KEY = "cancel_person_detail_help_doc_v1";
+    const ZXD_HELP_DEFAULT = [
+      "1. 报表位置：消费业务 > 消费报表 > 注销人员明细表。",
+      "2. 筛选条件：注销日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）。",
+      "3. 列表字段：序号、部门名称、人员编号、人员姓名、退款金额、注销日期、操作员。",
+      "4. 注销日期只展示到日（年-月-日）；按注销日期从早到晚排序。",
+      "5. 表格底部总计：人数、退款总额；记录条数在左下角分页处显示。",
+      "6. 打印：在新页签打开打印预览（A4 竖版），左上角为打印按钮；表头为起始日期、截止日期、打印日期；末行为总计，底部签字栏为打印人员、审核人。",
+      "7. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
+    ].join("\n");
+
     const dvsHelpModal = document.getElementById("dvsHelpModal");
     const dvsHelpEditor = document.getElementById("dvsHelpEditor");
     const DVS_HELP_KEY = "device_consume_summary_help_doc_v1";
     const DVS_HELP_DEFAULT = [
       "1. 报表位置：消费业务 > 消费报表 > 消费机消费汇总表。",
-      "2. 筛选条件：交易日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。",
+      "2. 筛选条件：消费日期（开始-结束，默认本月 1 日至今天，开始日期不能晚于结束日期）、设备名称（多选）、商户名称（多选），不选表示全部。",
       "3. 按「商户 + 消费机」汇总一行，相同商户的消费机排在一起。",
       "4. 列表字段：商户名称、消费机号、消费机名称、早段次数、早段金额、午段次数、午段金额、晚段次数、晚段金额、消费人数、消费金额。",
       "5. 消费人数 = 该消费机全部消费笔数（含不分餐段的 APP 消费/退款）；消费金额 = 全部消费金额合计，退款为负数。",
       "6. 表格底部总计为当前筛选结果合计；记录条数在左下角分页处显示。",
-      "7. 打印：在新页签打开打印预览，左上角为打印按钮；表头为开始日期、截止日期、设备名称、商户名称（未选择时显示 ALL）、制表日期（点击打印的日期）；末行为总计，底部为经手人、复核人、审核人签字栏，打印时页脚右下角显示「第 X 页，共 Y 页」。",
+      "7. 打印分两种：打印全部（全部列，底部为经手人、复核人、审核人）、打印5列（仅商户名称、消费机号、消费机名称、消费人数、消费金额，底部为审核人、食堂领导、局分管领导）。均在新页签打开打印预览，表头为开始日期、截止日期、设备名称、商户名称（未选择时显示 ALL）、制表日期；末行为总计，打印时页脚右下角显示「第 X 页，共 Y 页」。",
       "8. 金额单位：元，保留两位小数；支持导出，导出文件末尾附总计行。"
     ].join("\n");
 
@@ -10486,6 +13464,17 @@ var qrcode = function() {
       "3. 填写字段：消费点、消费时段（先选日期，再选早/午/晚/夜）、凭据类型（卡、人脸、人员二维码）、补扣方式（扣费钱包和金额，最多 5 个钱包）、备注（默认手动扣费）。",
       "4. 点击确认扣费后弹出扣费结果：共计人数、成功人数、失败人数。扣费信息分两列展示，包括消费组、消费点、消费时间、凭据类型、扣费钱包、交易金额、备注。多个钱包时，扣费钱包和交易金额紧挨着按行对应。",
       "5. 扣费成功的人员写入历史消费明细。可下载扣费失败表格，列为姓名、人员编号、部门编号、部门名称、消费组、消费点、消费时间、凭据类型、扣费钱包、交易金额、失败原因。"
+    ].join("\n");
+
+    const orderMenuHelpModal = document.getElementById("orderMenuHelpModal");
+    const orderMenuHelpEditor = document.getElementById("orderMenuHelpEditor");
+    const ORDER_MENU_HELP_KEY = "order_menu_setup_help_doc_v1";
+    const ORDER_MENU_HELP_DEFAULT = [
+      "1. 菜单位置：消费业务 > 订餐管理 > 订餐菜单设置。",
+      "2. 左侧为菜单列表，支持按菜单名称、编号、商户搜索，可新建菜单；右侧展示当前菜单一周的餐段菜品安排。",
+      "3. 周视图按周一至周日展示，餐段行为凌晨、早2、午、晚、小夜；可左右切换周次，点击单元格可设置菜品。",
+      "4. 支持复制菜单、导入、导出。导入流程为：选择导入文件 → 确认导入数据 → 导入结果；支持下载模版，失败时可下载失败记录。",
+      "5. 导出当前选中菜单本周菜品安排为 CSV。"
     ].join("\n");
 
     const diningHelpModal = document.getElementById("diningHelpModal");
@@ -10722,6 +13711,86 @@ var qrcode = function() {
       closeX: "ocsHelpClose"
     });
     bindHelpEditor({
+      modal: arsHelpModal,
+      editor: arsHelpEditor,
+      key: ARS_HELP_KEY,
+      defaultText: ARS_HELP_DEFAULT,
+      openBtn: "btnArsHelp",
+      closeBtn: "arsHelpCloseBtn",
+      saveBtn: "arsHelpSave",
+      closeX: "arsHelpClose"
+    });
+    bindHelpEditor({
+      modal: awrHelpModal,
+      editor: awrHelpEditor,
+      key: AWR_HELP_KEY,
+      defaultText: AWR_HELP_DEFAULT,
+      openBtn: "btnAwrHelp",
+      closeBtn: "awrHelpCloseBtn",
+      saveBtn: "awrHelpSave",
+      closeX: "awrHelpClose"
+    });
+    bindHelpEditor({
+      modal: apcHelpModal,
+      editor: apcHelpEditor,
+      key: APC_HELP_KEY,
+      defaultText: APC_HELP_DEFAULT,
+      openBtn: "btnApcHelp",
+      closeBtn: "apcHelpCloseBtn",
+      saveBtn: "apcHelpSave",
+      closeX: "apcHelpClose"
+    });
+    bindHelpEditor({
+      modal: acdHelpModal,
+      editor: acdHelpEditor,
+      key: ACD_HELP_KEY,
+      defaultText: ACD_HELP_DEFAULT,
+      openBtn: "btnAcdHelp",
+      closeBtn: "acdHelpCloseBtn",
+      saveBtn: "acdHelpSave",
+      closeX: "acdHelpClose"
+    });
+    bindHelpEditor({
+      modal: cmrHelpModal,
+      editor: cmrHelpEditor,
+      key: CMR_HELP_KEY,
+      defaultText: CMR_HELP_DEFAULT,
+      openBtn: "btnCmrHelp",
+      closeBtn: "cmrHelpCloseBtn",
+      saveBtn: "cmrHelpSave",
+      closeX: "cmrHelpClose"
+    });
+    bindHelpEditor({
+      modal: bfdHelpModal,
+      editor: bfdHelpEditor,
+      key: BFD_HELP_KEY,
+      defaultText: BFD_HELP_DEFAULT,
+      openBtn: "btnBfdHelp",
+      closeBtn: "bfdHelpCloseBtn",
+      saveBtn: "bfdHelpSave",
+      closeX: "bfdHelpClose"
+    });
+    bindHelpEditor({
+      modal: cddHelpModal,
+      editor: cddHelpEditor,
+      key: CDD_HELP_KEY,
+      defaultText: CDD_HELP_DEFAULT,
+      openBtn: "btnCddHelp",
+      closeBtn: "cddHelpCloseBtn",
+      saveBtn: "cddHelpSave",
+      closeX: "cddHelpClose"
+    });
+    bindHelpEditor({
+      modal: zxdHelpModal,
+      editor: zxdHelpEditor,
+      key: ZXD_HELP_KEY,
+      defaultText: ZXD_HELP_DEFAULT,
+      openBtn: "btnZxdHelp",
+      closeBtn: "zxdHelpCloseBtn",
+      saveBtn: "zxdHelpSave",
+      closeX: "zxdHelpClose"
+    });
+    bindHelpEditor({
       modal: dvsHelpModal,
       editor: dvsHelpEditor,
       key: DVS_HELP_KEY,
@@ -10752,6 +13821,16 @@ var qrcode = function() {
       closeX: "hcdHelpClose"
     });
     bindHelpEditor({
+      modal: orderMenuHelpModal,
+      editor: orderMenuHelpEditor,
+      key: ORDER_MENU_HELP_KEY,
+      defaultText: ORDER_MENU_HELP_DEFAULT,
+      openBtn: "btnOrderMenuHelp",
+      closeBtn: "orderMenuHelpCloseBtn",
+      saveBtn: "orderMenuHelpSave",
+      closeX: "orderMenuHelpClose"
+    });
+    bindHelpEditor({
       modal: diningHelpModal,
       editor: diningHelpEditor,
       key: DINING_HELP_KEY,
@@ -10778,7 +13857,16 @@ var qrcode = function() {
       { key: OCS_HELP_KEY, label: "圈存、网页、微信、APP出纳汇总表", defaultText: OCS_HELP_DEFAULT },
       { key: DVS_HELP_KEY, label: "消费机消费汇总表", defaultText: DVS_HELP_DEFAULT },
       { key: ABD_HELP_KEY, label: "账户余额表(按部门)", defaultText: ABD_HELP_DEFAULT },
+      { key: ARS_HELP_KEY, label: "APP充值汇总表", defaultText: ARS_HELP_DEFAULT },
+      { key: AWR_HELP_KEY, label: "APP/微信充值明细表", defaultText: AWR_HELP_DEFAULT },
+      { key: APC_HELP_KEY, label: "APP消费汇总表", defaultText: APC_HELP_DEFAULT },
+      { key: ACD_HELP_KEY, label: "APP消费明细表", defaultText: ACD_HELP_DEFAULT },
+      { key: CMR_HELP_KEY, label: "食堂个人手工充值明细表", defaultText: CMR_HELP_DEFAULT },
+      { key: BFD_HELP_KEY, label: "补助发放明细表", defaultText: BFD_HELP_DEFAULT },
+      { key: CDD_HELP_KEY, label: "消费数据明细表", defaultText: CDD_HELP_DEFAULT },
+      { key: ZXD_HELP_KEY, label: "注销人员明细表", defaultText: ZXD_HELP_DEFAULT },
       { key: HCD_HELP_KEY, label: "批量扣费", defaultText: HCD_HELP_DEFAULT },
+      { key: ORDER_MENU_HELP_KEY, label: "订餐菜单设置", defaultText: ORDER_MENU_HELP_DEFAULT },
       { key: DINING_HELP_KEY, label: "就餐人数趋势", defaultText: DINING_HELP_DEFAULT }
     ];
 
