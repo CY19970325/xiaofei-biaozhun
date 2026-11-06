@@ -10581,13 +10581,20 @@ var qrcode = function() {
             </tr>`,
           footHtml: `
             <tr>
-              <td>总计</td><td>${rows.length}</td><td></td><td></td><td></td>
-              <td class="num">取款总额</td><td class="num">${formatMoney(totalAmount)}</td><td></td><td></td>
+              <td>总计</td>
+              <td colspan="4" class="foot-count"><span class="foot-count-inner">${rows.length}</span></td>
+              <td class="num">取款总额</td>
+              <td colspan="3" class="num foot-amount">${formatMoney(totalAmount)}</td>
             </tr>`,
           signHtml: `<div class="print-sign"><span>经手人：</span><span>复核人：</span><span>审核人：</span></div>`,
           rowsPerPage: 28
         }),
-        `.print-table td, .print-table th { white-space: normal; font-size: 11px; padding: 3px 4px; }`,
+        `.print-table td, .print-table th { white-space: normal; font-size: 11px; padding: 3px 4px; }
+         .print-table td.foot-count { text-align: left !important; padding: 0 !important; }
+         .print-table td.foot-count .foot-count-inner {
+           display: inline-block; width: 25%; box-sizing: border-box; text-align: center; padding: 3px 4px;
+         }
+         .print-table td.foot-amount { text-align: center !important; }`,
         isPrintPortrait(9)
       );
     }
@@ -16305,8 +16312,7 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
         "6. 不能导入尚未生成订餐日历的日期。",
         "7. 每个餐段每天最多导入 100 道菜。",
         "8. 允许部分成功、部分失败：校验通过的行写入并覆盖对应「日期+餐段」已有菜品，失败行可下载失败记录。",
-        "9. 下方示例含故意错误的日期（今天、昨天、未生成日历），便于演示校验失败；正式导入请改为未来且已生成日历的日期。",
-        "10. 请从下方表头行开始填写数据，勿修改表头名称。下载后请直接上传本模版，勿用 Excel「另存为」（另存后可能无法解析）。"
+        "9. 请从下方表头行开始填写数据，勿修改表头名称。下载后请直接上传本模版，勿用 Excel「另存为」（另存后可能无法解析）。"
       ];
       const headers = ["日期", "餐段", "菜品编号", "菜品名称"];
       const samples = [
@@ -19274,7 +19280,7 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
             </select>
           </div>
           <div class="form-row"><div class="form-label">行间距</div><input id="propGapRow" type="number" min="0" max="80" value="${d.gapRow}" /></div>
-          <div class="form-row"><div class="form-label">列间距</div><input id="propGapCol" type="number" min="0" max="80" value="${d.gapCol}" /></div>
+          <div class="form-row"><div class="form-label">列宽</div><input id="propGapCol" type="number" min="0" max="80" value="${d.gapCol}" /></div>
         `;
       }
 
