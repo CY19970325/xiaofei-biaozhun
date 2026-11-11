@@ -19587,11 +19587,22 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
       "8. 鼠标悬停节点可查看对应日期 / 月份的就餐人数。"
     ].join("\n");
 
-    /* 需求说明存储：稳定 key（无版本号）；旧 _vN 可迁入；默认稿永远让位给用户正文 */
+    /* 需求说明存储：稳定 key（无版本号）；旧 _vN 可迁入；默认稿永远让位给用户正文。
+     * 若页面带 __HELP_DOC_EXPORT__（上传的导出文件），以嵌入稿为准，不再被浏览器旧 localStorage 盖住。 */
     const HelpDocStore = {
       _defaults: Object.create(null),
+      _embedded: null,
       _isEmpty(val) {
         return val == null || String(val).trim() === "";
+      },
+      _hasEmbedded(key) {
+        return !!(this._embedded && Object.prototype.hasOwnProperty.call(this._embedded, key));
+      },
+      _clearLegacyLocal(stableKey) {
+        this._listLegacyLocalKeys(stableKey).forEach((k) => {
+          try { localStorage.removeItem(k); } catch (e) {}
+        });
+        try { localStorage.removeItem(stableKey); } catch (e) {}
       },
       _escapeReg(s) {
         return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -19718,6 +19729,7 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
        * - 仅当选中稿优于当前稳定稿时才写回（用于修复误迁移）
        */
       _resolve(stableKey, current) {
+        if (this._hasEmbedded(stableKey)) return this._embedded[stableKey];
         const defaultText = this._defaultOf(stableKey);
         const legacy = this._pickBestLegacyText(stableKey);
         const cur = this._isEmpty(current) ? this._readLocal(stableKey) : current;
@@ -19749,6 +19761,7 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
         return best;
       },
       get(key) {
+        if (this._hasEmbedded(key)) return this._embedded[key];
         const raw = this._backendGet(key);
         if (raw && typeof raw.then === "function") {
           return raw
@@ -19758,7 +19771,9 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
         return this._resolve(key, raw);
       },
       set(key, value) {
-        return this._backendSet(key, value);
+        const text = String(value == null ? "" : value);
+        if (this._embedded) this._embedded[key] = text;
+        return this._backendSet(key, text);
       },
       /** 仅当稳定 key 尚无「非默认」正文时写入 */
       setIfEmpty(key, value) {
@@ -20349,60 +20364,72 @@ ${shared.map((s) => `<si><t>${xlsxEscape(s)}</t></si>`).join("")}
       return Promise.resolve(val);
     }
 
-    // 注册默认稿，供评分时「默认稿让位用户稿」；并再跑一遍 resolve 修复误迁入的默认稿
+    // 注册默认稿，供评分时「默认稿让位用户稿」
     HELP_DOC_REGISTRY.forEach((item) => {
       HelpDocStore._defaults[item.key] = item.defaultText || "";
     });
-    (function repairHelpDocsPreferUserText() {
-      const FLAG = "help_doc_repair_user_over_default_v2";
-      let needRepair = true;
-      try {
-        needRepair = localStorage.getItem(FLAG) !== "1";
-      } catch (e) {}
-      if (needRepair) {
-        HELP_DOC_REGISTRY.forEach((item) => {
-          try { HelpDocStore.get(item.key); } catch (e) {}
-        });
-        try { localStorage.setItem(FLAG, "1"); } catch (e) {}
-      }
-      // 无论是否首次修复，都用 resolve 后的正文刷新已挂载编辑器（避免绑定时已误载入默认稿）
-      document.querySelectorAll(".req-panel[data-help-key]").forEach((aside) => {
-        const key = aside.dataset.helpKey;
-        const editor = aside.querySelector(".req-editor");
-        if (!key || !editor) return;
-        const fallback = HelpDocStore._defaults[key] || "";
-        const apply = (text) => {
-          editor.value = (text == null || String(text).trim() === "") ? fallback : text;
-        };
-        try {
-          const raw = HelpDocStore.get(key);
-          if (raw && typeof raw.then === "function") raw.then(apply).catch(() => apply(null));
-          else apply(raw);
-        } catch (e) {
-          apply(null);
-        }
-      });
-    })();
 
     function applyEmbeddedHelpDocs() {
       const data = window.__HELP_DOC_EXPORT__;
       if (!data || typeof data !== "object") return 0;
-      let n = 0;
+      const written = Object.create(null);
       Object.keys(data).forEach((key) => {
         const value = data[key];
-        if (value == null) return;
-        // 兼容旧导出里的 _vN key → 写入稳定 key；已有用户正文 / 默认稿均不覆盖
+        if (value == null || String(value).trim() === "") return;
+        // 兼容旧导出 _vN → 稳定 key；以导出文件为准，清掉浏览器里同族旧稿，避免「换浏览器才更新」
         const stableKey = String(key).replace(/_v\d+$/, "");
-        const result = HelpDocStore.setIfEmpty(stableKey, String(value));
-        if (result && typeof result.then === "function") {
-          result.then((ok) => { if (ok) n += 1; });
-        } else if (result) {
-          n += 1;
-        }
+        const text = String(value);
+        HelpDocStore._clearLegacyLocal(stableKey);
+        written[stableKey] = text;
       });
-      return n;
+      const keys = Object.keys(written);
+      if (!keys.length) return 0;
+      HelpDocStore._embedded = written;
+      keys.forEach((stableKey) => {
+        HelpDocStore.set(stableKey, written[stableKey]);
+      });
+      document.querySelectorAll(".req-panel[data-help-key]").forEach((aside) => {
+        const key = aside.dataset.helpKey;
+        const editor = aside.querySelector(".req-editor");
+        if (!key || !editor || !Object.prototype.hasOwnProperty.call(written, key)) return;
+        editor.value = written[key];
+      });
+      return keys.length;
     }
-    applyEmbeddedHelpDocs();
+
+    const embeddedCount = applyEmbeddedHelpDocs();
+    // 无导出嵌入稿时，才做旧 key 迁移；有导出文件时绝不让 localStorage 旧稿盖住
+    if (!embeddedCount) {
+      (function repairHelpDocsPreferUserText() {
+        const FLAG = "help_doc_repair_user_over_default_v2";
+        let needRepair = true;
+        try {
+          needRepair = localStorage.getItem(FLAG) !== "1";
+        } catch (e) {}
+        if (needRepair) {
+          HELP_DOC_REGISTRY.forEach((item) => {
+            try { HelpDocStore.get(item.key); } catch (e) {}
+          });
+          try { localStorage.setItem(FLAG, "1"); } catch (e) {}
+        }
+        document.querySelectorAll(".req-panel[data-help-key]").forEach((aside) => {
+          const key = aside.dataset.helpKey;
+          const editor = aside.querySelector(".req-editor");
+          if (!key || !editor) return;
+          const fallback = HelpDocStore._defaults[key] || "";
+          const apply = (text) => {
+            editor.value = (text == null || String(text).trim() === "") ? fallback : text;
+          };
+          try {
+            const raw = HelpDocStore.get(key);
+            if (raw && typeof raw.then === "function") raw.then(apply).catch(() => apply(null));
+            else apply(raw);
+          } catch (e) {
+            apply(null);
+          }
+        });
+      })();
+    }
 
     async function collectHelpDocsForExport() {
       const docs = {};
